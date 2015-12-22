@@ -132,7 +132,7 @@
 /* Search Bar */
 .customSearchBar {
   float: right !important;
-  width: 85%;
+  width: 50%;
   margin-top: 10px;
 	margin-right: 10px;
 	margin-bottom: 10px;
