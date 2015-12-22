@@ -126,7 +126,8 @@
 
 .fixedImage {
     position: fixed;
-    top: 20px;
+    top: 2000px;
+    right: 1000px;
 }
 
 /* Search Bar */
@@ -136,6 +137,11 @@
   margin-top: 10px;
 	margin-right: 10px;
 	margin-bottom: 10px;
+}
+
+/* Product Image */
+.productImageFixed {
+  position: fixed;
 }
 
 #fontProduct {
