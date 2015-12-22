@@ -73,7 +73,7 @@ function ContentModalCtrl($scope, $modal) {
                 //'<h3>Heading</h3>',
                 //content block 1
                 '<h4>Subheading</h4>',
-                '<p>',
+                //'<p>',
                 '<table class="tablePPTimeline" style="width: 400px;">',
                 '<tbody>',
                 '<div class="thPPTimeline">',
@@ -140,15 +140,15 @@ function ContentModalCtrl($scope, $modal) {
                 '</tr>',
                 '</tbody>',
                 '</table>',
-                '</p>',
+                //'</p>',
                 //content block 2
-                '<h4>Subheading</h4>',
-                '<p>',
-                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempus lacinia nisl, et hendrerit enim consequat posuere. Etiam ut interdum nisl, in ultricies arcu. ' +
-                'In mattis ultrices velit, et tristique sem mattis nec. Nullam fermentum quis erat non dapibus. Aenean sodales est at aliquet bibendum. Suspendisse ultricies quam ' +
-                'nec blandit tincidunt. Phasellus viverra est sit amet tortor semper facilisis. Vivamus vitae ipsum lacus. Proin pharetra, tellus in efficitur blandit, tellus nisl ' +
-                'venenatis turpis, ut commodo sapien felis eget quam.',
-                '</p>',
+                //'<h4>Subheading</h4>',
+                //'<p>',
+                //'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempus lacinia nisl, et hendrerit enim consequat posuere. Etiam ut interdum nisl, in ultricies arcu. ' +
+                //'In mattis ultrices velit, et tristique sem mattis nec. Nullam fermentum quis erat non dapibus. Aenean sodales est at aliquet bibendum. Suspendisse ultricies quam ' +
+                //'nec blandit tincidunt. Phasellus viverra est sit amet tortor semper facilisis. Vivamus vitae ipsum lacus. Proin pharetra, tellus in efficitur blandit, tellus nisl ' +
+                //'venenatis turpis, ut commodo sapien felis eget quam.',
+                //'</p>',
                 '</div>',
                 //Optional footer
                 '<div class="modal-footer">',
