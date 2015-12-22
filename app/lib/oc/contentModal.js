@@ -17,12 +17,12 @@ function contentmodal() {
         return [
             '<style>',
             //this style is conditional based on nav placement and site css
-            'contentmodal a, contentmodal a:hover, contentmodal a:focus {color:#fff; text-decoration:none;}',
+            'contentmodal a, contentmodal a:hover, contentmodal a:focus {color:#000000; text-decoration:none;}',
             '</style>',
             // update the size of the modal window within the open()
             '<a ng-click="open(500)">',
             // replace the *Open Modal* below with your link name
-            '<span class="fa fa-info-circle"></span> {{\'Open Modal\' | r | xlat}}',
+            '<span class="fa fa-info-circle"></span> {{\'VIEW SCHEDULE\' | r | xlat}}',
             '</a>'
         ].join('');
     }
