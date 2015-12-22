@@ -63,7 +63,7 @@ function ContentModalCtrl($scope, $modal) {
                 '</style>',
                 '<div class="modal-header" class="col-xs-12 row pull-right">',
                 //Optional title in top header
-                '<h5 class="modal-title text-primary">Title</h5>',
+                '<h5 class="modal-title text-primary">Purchase Power Production Schedule</h5>',
                 //Optional close (x) in top header
                 '<a class="pull-right close" ng-click="close()">',
                 '<i class="fa fa-times"></i>',
@@ -74,8 +74,70 @@ function ContentModalCtrl($scope, $modal) {
                 //content block 1
                 '<h4>Subheading</h4>',
                 '<p>',
-                'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s,' +
-                'when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
+                '<table class="tablePPTimeline" style="width: 400px;">',
+                '<tbody>',
+                <tr>
+                  <th class="thPPTimeline"><span style="font-family: arial,helvetica,sans-serif;"><span style="font-size: 14px;"><b><i>Orders received within this time frame&nbsp;by Noon CT on&nbsp;final date:</i></b></span></span></th>
+                  <th class="thPPTimeline"><span style="font-family: arial,helvetica,sans-serif;"><span style="font-size: 14px;"><b><i>Will ship&nbsp;no later than&nbsp;this date:</i></b></span></span></th>
+                </tr>
+                <tr>
+                  <td class="tdPPTimeline"><span style="font-size:14px;"><span style="font-family:arial,helvetica,sans-serif;"><b style="font-family: arial, helvetica, sans-serif; font-size: 14px; line-height: 20.8px;">October 26th - November 16th</b></span></span></td>
+                  <td class="tdPPTimeline"><span style="font-size:14px;"><span style="font-family:arial,helvetica,sans-serif;"><b style="font-family: arial, helvetica, sans-serif; font-size: 14px; line-height: 20.8px;">December 11th</b></span></span></td>
+                </tr>
+                <tr>
+                  <td class="tdPPTimeline"><span style="font-family: arial,helvetica,sans-serif;"><span style="font-size: 14px;"><b>November 16th - December 14th</b></span></span></td>
+                  <td class="tdPPTimeline"><span style="font-family: arial,helvetica,sans-serif;"><span style="font-size: 14px;"><b>January 22nd</b></span></span></td>
+                </tr>
+                <tr>
+                  <td class="tdPPTimeline"><span style="font-family: arial,helvetica,sans-serif;"><span style="font-size: 14px;"><b>December 14th - Januaray 11th</b></span></span></td>
+                  <td class="tdPPTimeline"><span style="font-family: arial,helvetica,sans-serif;"><span style="font-size: 14px;"><b>February 5th</b></span></span></td>
+                </tr>
+                <tr>
+                  <td class="tdPPTimeline"><span style="font-family: arial,helvetica,sans-serif;"><span style="font-size: 14px;"><b>January 11th - February 8th</b></span></span></td>
+                  <td class="tdPPTimeline"><span style="font-family: arial,helvetica,sans-serif;"><span style="font-size: 14px;"><b>March 4th</b></span></span></td>
+                </tr>
+                <tr>
+                  <td class="tdPPTimeline"><span style="font-family: arial,helvetica,sans-serif;"><span style="font-size: 14px;"><b>February 8th - March 14th</b></span></span></td>
+                  <td class="tdPPTimeline"><span style="font-family: arial,helvetica,sans-serif;"><span style="font-size: 14px;"><b>April 8th</b></span></span></td>
+                </tr>
+                <tr>
+                  <td class="tdPPTimeline"><span style="font-family: arial,helvetica,sans-serif;"><span style="font-size: 14px;"><b>March 14th - April 11th</b></span></span></td>
+                  <td class="tdPPTimeline"><span style="font-family: arial,helvetica,sans-serif;"><span style="font-size: 14px;"><b>May 6th</b></span></span></td>
+                </tr>
+                <tr>
+                  <td class="tdPPTimeline"><font face="arial, helvetica, sans-serif"><span style="font-size: 14px;"><b>April 11th - May 9th</b></span></font></td>
+                  <td class="tdPPTimeline"><span style="font-family: arial,helvetica,sans-serif;"><span style="font-size: 14px;"><b>June 3rd</b></span></span></td>
+                </tr>
+                <tr>
+                  <td class="tdPPTimeline"><span style="font-family: arial,helvetica,sans-serif;"><span style="font-size: 14px;"><b>May 9th - June 6th</b></span></span></td>
+                  <td class="tdPPTimeline"><span style="font-family: arial,helvetica,sans-serif;"><span style="font-size: 14px;"><b>July 1st</b></span></span></td>
+                </tr>
+                <tr>
+                  <td class="tdPPTimeline"><span style="font-family: arial,helvetica,sans-serif;"><span style="font-size: 14px;"><b>June 6th - July 11th</b></span></span></td>
+                  <td class="tdPPTimeline"><span style="font-family: arial,helvetica,sans-serif;"><span style="font-size: 14px;"><b>August 5th</b></span></span></td>
+                </tr>
+                <tr>
+                  <td class="tdPPTimeline"><span style="font-family: arial,helvetica,sans-serif;"><span style="font-size: 14px;"><b>July 11th - August 8th</b></span></span></td>
+                  <td class="tdPPTimeline"><font face="arial, helvetica, sans-serif"><span style="font-size: 14px;"><b>September 2nd</b></span></font></td>
+                </tr>
+                <tr>
+                  <td class="tdPPTimeline"><span style="font-family: arial,helvetica,sans-serif;"><span style="font-size: 14px;"><b>August 8th - September 6th</b></span></span></td>
+                  <td class="tdPPTimeline"><span style="font-family: arial,helvetica,sans-serif;"><span style="font-size: 14px;"><b>September 30th</b></span></span></td>
+                </tr>
+                <tr>
+                  <td class="tdPPTimeline"><span style="font-family: arial,helvetica,sans-serif;"><span style="font-size: 14px;"><b>September 6th - October 3rd</b></span></span></td>
+                  <td class="tdPPTimeline"><span style="font-family: arial,helvetica,sans-serif;"><span style="font-size: 14px;"><b>October 28th</b></span></span></td>
+                </tr>
+                <tr>
+                  <td class="tdPPTimeline">October 3rd - October 24th</td>
+                  <td class="tdPPTimeline">November 18th</td>
+                </tr>
+                <tr>
+                  <td class="tdPPTimeline">October 24th - November 14th</td>
+                  <td class="tdPPTimeline">December 9th - In time for the Holidays</td>
+                </tr>
+                '</tbody>',
+                '</table>',
                 '</p>',
                 //content block 2
                 '<h4>Subheading</h4>',
