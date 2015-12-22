@@ -124,10 +124,14 @@
   margin-top: -10px;
 }
 
-.fixedImage
-{
+.fixedImage {
     position: fixed;
     top: 20px;
+}
+
+.customSearchBar {
+  float: right !important;
+  width: 100%;
 }
 
 #fontProduct {
@@ -180,7 +184,7 @@
 	border-top-color: #73a2c7;*/
 }
 
-/* Them CSS Edits */
+/* Theme CSS Edits */
 .container .navbar-nav li.active a:hover  {background-color: ##359FD5;}
 .container .navbar-nav li.active a:focus  {background-color: ##359FD5;}
 .navbar-default .navbar-nav .open > a  {background-color: ##359FD5;}
