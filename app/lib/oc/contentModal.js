@@ -69,12 +69,12 @@ function ContentModalCtrl($scope, $modal) {
                 '<i class="fa fa-times"></i>',
                 '</a>',
                 '</div>',
-                '<div class="modal-body">',
+                //'<div class="modal-body">',
                 //'<h3>Heading</h3>',
                 //content block 1
                 //'<h4>Subheading</h4>',
                 //'<p>',
-                '<table class="tablePPTimeline NSGcenter" style="width: 485px;">',
+                '<table class="modal-body tablePPTimeline NSGcenter" style="width: 485px;">',
                 '<tbody>',
                 //'<div class="thPPTimeline">',
                 '<tr>',
@@ -149,7 +149,7 @@ function ContentModalCtrl($scope, $modal) {
                 //'nec blandit tincidunt. Phasellus viverra est sit amet tortor semper facilisis. Vivamus vitae ipsum lacus. Proin pharetra, tellus in efficitur blandit, tellus nisl ' +
                 //'venenatis turpis, ut commodo sapien felis eget quam.',
                 //'</p>',
-                '</div>',
+                //'</div>',
                 //Optional footer
                 '<div class="modal-footer">',
                 '<div class="pull-left">',
