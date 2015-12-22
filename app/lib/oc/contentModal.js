@@ -76,66 +76,66 @@ function ContentModalCtrl($scope, $modal) {
                 '<p>',
                 '<table class="tablePPTimeline" style="width: 400px;">',
                 '<tbody>',
-                <tr>
-                  <th class="thPPTimeline"><span style="font-family: arial,helvetica,sans-serif;"><span style="font-size: 14px;"><b><i>Orders received within this time frame&nbsp;by Noon CT on&nbsp;final date:</i></b></span></span></th>
-                  <th class="thPPTimeline"><span style="font-family: arial,helvetica,sans-serif;"><span style="font-size: 14px;"><b><i>Will ship&nbsp;no later than&nbsp;this date:</i></b></span></span></th>
-                </tr>
-                <tr>
-                  <td class="tdPPTimeline"><span style="font-size:14px;"><span style="font-family:arial,helvetica,sans-serif;"><b style="font-family: arial, helvetica, sans-serif; font-size: 14px; line-height: 20.8px;">October 26th - November 16th</b></span></span></td>
-                  <td class="tdPPTimeline"><span style="font-size:14px;"><span style="font-family:arial,helvetica,sans-serif;"><b style="font-family: arial, helvetica, sans-serif; font-size: 14px; line-height: 20.8px;">December 11th</b></span></span></td>
-                </tr>
-                <tr>
-                  <td class="tdPPTimeline"><span style="font-family: arial,helvetica,sans-serif;"><span style="font-size: 14px;"><b>November 16th - December 14th</b></span></span></td>
-                  <td class="tdPPTimeline"><span style="font-family: arial,helvetica,sans-serif;"><span style="font-size: 14px;"><b>January 22nd</b></span></span></td>
-                </tr>
-                <tr>
-                  <td class="tdPPTimeline"><span style="font-family: arial,helvetica,sans-serif;"><span style="font-size: 14px;"><b>December 14th - Januaray 11th</b></span></span></td>
-                  <td class="tdPPTimeline"><span style="font-family: arial,helvetica,sans-serif;"><span style="font-size: 14px;"><b>February 5th</b></span></span></td>
-                </tr>
-                <tr>
-                  <td class="tdPPTimeline"><span style="font-family: arial,helvetica,sans-serif;"><span style="font-size: 14px;"><b>January 11th - February 8th</b></span></span></td>
-                  <td class="tdPPTimeline"><span style="font-family: arial,helvetica,sans-serif;"><span style="font-size: 14px;"><b>March 4th</b></span></span></td>
-                </tr>
-                <tr>
-                  <td class="tdPPTimeline"><span style="font-family: arial,helvetica,sans-serif;"><span style="font-size: 14px;"><b>February 8th - March 14th</b></span></span></td>
-                  <td class="tdPPTimeline"><span style="font-family: arial,helvetica,sans-serif;"><span style="font-size: 14px;"><b>April 8th</b></span></span></td>
-                </tr>
-                <tr>
-                  <td class="tdPPTimeline"><span style="font-family: arial,helvetica,sans-serif;"><span style="font-size: 14px;"><b>March 14th - April 11th</b></span></span></td>
-                  <td class="tdPPTimeline"><span style="font-family: arial,helvetica,sans-serif;"><span style="font-size: 14px;"><b>May 6th</b></span></span></td>
-                </tr>
-                <tr>
-                  <td class="tdPPTimeline"><font face="arial, helvetica, sans-serif"><span style="font-size: 14px;"><b>April 11th - May 9th</b></span></font></td>
-                  <td class="tdPPTimeline"><span style="font-family: arial,helvetica,sans-serif;"><span style="font-size: 14px;"><b>June 3rd</b></span></span></td>
-                </tr>
-                <tr>
-                  <td class="tdPPTimeline"><span style="font-family: arial,helvetica,sans-serif;"><span style="font-size: 14px;"><b>May 9th - June 6th</b></span></span></td>
-                  <td class="tdPPTimeline"><span style="font-family: arial,helvetica,sans-serif;"><span style="font-size: 14px;"><b>July 1st</b></span></span></td>
-                </tr>
-                <tr>
-                  <td class="tdPPTimeline"><span style="font-family: arial,helvetica,sans-serif;"><span style="font-size: 14px;"><b>June 6th - July 11th</b></span></span></td>
-                  <td class="tdPPTimeline"><span style="font-family: arial,helvetica,sans-serif;"><span style="font-size: 14px;"><b>August 5th</b></span></span></td>
-                </tr>
-                <tr>
-                  <td class="tdPPTimeline"><span style="font-family: arial,helvetica,sans-serif;"><span style="font-size: 14px;"><b>July 11th - August 8th</b></span></span></td>
-                  <td class="tdPPTimeline"><font face="arial, helvetica, sans-serif"><span style="font-size: 14px;"><b>September 2nd</b></span></font></td>
-                </tr>
-                <tr>
-                  <td class="tdPPTimeline"><span style="font-family: arial,helvetica,sans-serif;"><span style="font-size: 14px;"><b>August 8th - September 6th</b></span></span></td>
-                  <td class="tdPPTimeline"><span style="font-family: arial,helvetica,sans-serif;"><span style="font-size: 14px;"><b>September 30th</b></span></span></td>
-                </tr>
-                <tr>
-                  <td class="tdPPTimeline"><span style="font-family: arial,helvetica,sans-serif;"><span style="font-size: 14px;"><b>September 6th - October 3rd</b></span></span></td>
-                  <td class="tdPPTimeline"><span style="font-family: arial,helvetica,sans-serif;"><span style="font-size: 14px;"><b>October 28th</b></span></span></td>
-                </tr>
-                <tr>
-                  <td class="tdPPTimeline">October 3rd - October 24th</td>
-                  <td class="tdPPTimeline">November 18th</td>
-                </tr>
-                <tr>
-                  <td class="tdPPTimeline">October 24th - November 14th</td>
-                  <td class="tdPPTimeline">December 9th - In time for the Holidays</td>
-                </tr>
+                '<tr>',
+                  '<th class="thPPTimeline">Orders received within this time frame&nbsp;by Noon CT on&nbsp;final date:</th>',
+                  '<th class="thPPTimeline">Will ship&nbsp;no later than&nbsp;this date:</th>',
+                '</tr>',
+                '<tr>',
+                  '<td class="tdPPTimeline">October 26th - November 16th</td>',
+                  '<td class="tdPPTimeline">December 11th</td>',
+                '</tr>',
+                '<tr>',
+                  '<td class="tdPPTimeline">November 16th - December 14th</td>',
+                  '<td class="tdPPTimeline">January 22nd</td>',
+                '</tr>',
+                '<tr>',
+                  '<td class="tdPPTimeline">December 14th - Januaray 11th</td>',
+                  '<td class="tdPPTimeline">February 5th</td>',
+                '</tr>',
+                '<tr>',
+                  '<td class="tdPPTimeline">January 11th - February 8th</td>',
+                  '<td class="tdPPTimeline">March 4th</td>',
+                '</tr>',
+                '<tr>',
+                  '<td class="tdPPTimeline">February 8th - March 14th</td>',
+                  '<td class="tdPPTimeline">April 8th</td>',
+                '</tr>',
+                '<tr>',
+                  '<td class="tdPPTimeline">March 14th - April 11th</td>',
+                  '<td class="tdPPTimeline">May 6th</td>',
+                '</tr>',
+                '<tr>',
+                  '<td class="tdPPTimeline">April 11th - May 9th</td>',
+                  '<td class="tdPPTimeline">June 3rd</td>',
+                '</tr>',
+                '<tr>',
+                  '<td class="tdPPTimeline">May 9th - June 6th</td>',
+                  '<td class="tdPPTimeline">July 1st</td>',
+                '</tr>',
+                '<tr>',
+                  '<td class="tdPPTimeline">June 6th - July 11th</td>',
+                  '<td class="tdPPTimeline">August 5th</td>',
+                '</tr>',
+                '<tr>',
+                  '<td class="tdPPTimeline">July 11th - August 8th</td>',
+                  '<td class="tdPPTimeline">September 2nd</td>',
+                '</tr>',
+                '<tr>',
+                  '<td class="tdPPTimeline">August 8th - September 6th</td>',
+                  '<td class="tdPPTimeline">September 30th</td>',
+                '</tr>',
+                '<tr>',
+                  '<td class="tdPPTimeline">September 6th - October 3rd</td>',
+                  '<td class="tdPPTimeline">October 28th</td>',
+                '</tr>',
+                '<tr>',
+                  '<td class="tdPPTimeline">October 3rd - October 24th</td>',
+                  '<td class="tdPPTimeline">November 18th</td>',
+                '</tr>',
+                '<tr>',
+                  '<td class="tdPPTimeline">October 24th - November 14th</td>',
+                  '<td class="tdPPTimeline">December 9th - In time for the Holidays</td>',
+                '</tr>',
                 '</tbody>',
                 '</table>',
                 '</p>',
