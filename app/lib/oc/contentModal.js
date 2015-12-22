@@ -81,6 +81,7 @@ function ContentModalCtrl($scope, $modal) {
                   '<th>Orders received within this time frame&nbsp;by Noon CT on&nbsp;final date:</th>',
                   '<th>Will ship&nbsp;no later than&nbsp;this date:</th>',
                 '</tr>',
+                '</div>',
                 '<tr>',
                   '<td class="tdPPTimeline">October 26th - November 16th</td>',
                   '<td class="tdPPTimeline">December 11th</td>',
