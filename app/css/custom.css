@@ -129,9 +129,10 @@
     top: 20px;
 }
 
+/* Search Bar */
 .customSearchBar {
   float: right !important;
-  width: 100px;
+  width: 85%;
   margin-top: 10px;
 	margin-right: 10px;
 	margin-bottom: 10px;
