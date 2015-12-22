@@ -74,7 +74,7 @@ function ContentModalCtrl($scope, $modal) {
                 //content block 1
                 //'<h4>Subheading</h4>',
                 //'<p>',
-                '<table class="tablePPTimeline NSGcenter" style="width: 400px;">',
+                '<table class="tablePPTimeline NSGcenter" style="width: 485px;">',
                 '<tbody>',
                 //'<div class="thPPTimeline">',
                 '<tr>',
