@@ -1,187 +1,410 @@
-angular.module('OrderCloud-ContentModal', []);
-
-angular.module('OrderCloud-ContentModal')
-    .directive('contentmodal', contentmodal)
-    .controller('ContentModalCtrl', ContentModalCtrl)
-;
-
-function contentmodal() {
-    var directive = {
-        restrict: 'E',
-        template: template,
-        controller: 'ContentModalCtrl'
-    };
-    return directive;
-
-    function template() {
-        return [
-            '<style>',
-            //this style is conditional based on nav placement and site css
-            'contentmodal a, contentmodal a:hover, contentmodal a:focus {color:#000000; font-size:15px; text-decoration:underline;}',
-            '</style>',
-            // update the size of the modal window within the open()
-            '<a ng-click="open(500)">',
-            // replace the *Open Modal* below with your link name
-            '<span class="fa fa-info-circle"></span> {{\'READ PRODUCTION SCHEDULE DETAILS\' | r | xlat}}',
-            '</a>'
-        ].join('');
-    }
+.white {
+    color: #FFFFFF;
 }
 
-ContentModalCtrl.$inject = ['$scope', '$modal'];
-function ContentModalCtrl($scope, $modal) {
+.NSGcenter {
+    text-align: center;
+}
 
-    $scope.animationsEnabled = true;
+/* Jumbor Header Home Page*/
+.jumboHeaderText {
+    text-align: center;
+    /*vertical-align: middle;*/
+    padding-top: 30px;
+    color: #FFFFFF;
+    /*position: relative;
+    top: 50%;
+    transform: translateY(-50%);*/
+}
 
-    $scope.open = function (size) {
+#vertAlignJumbo {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
 
-        var modalInstance = $modal.open({
-            animation: $scope.animationsEnabled,
-            backdrop: true,
-            backdropClick: true,
-            dialogFade: false,
-            keyboard: true,
-            size: size,
-            template: contentmodalopen,
-            controller: ContentModalOpenCtrl,
-            resolve: {
-                item: function () {
-                    //pass a scope variable into the modal content. in this case we are providing line item as an example for product use
-                    return $scope.LineItem;
-                }
-            }
-        });
+/* This counters the spacing issue on the product list page with <a> links */
+.aLinkSpacingFix p a {
+  padding: 0em !important;
+  display: inline !important;
+  text-decoration: none;
+}
 
-        function contentmodalopen() {
-            return [
-                '<style>',
-                '.modal-header {background-color:#f5f5f5;border-bottom: 1px solid #ccc; min-height: 36px; padding: 2px;}',
-                '.modal-header h3 { margin-top:0;}',
-                '.modal-header h5 { font-size:1.16em; font-weight:bold; padding:5px 10px; text-shadow: 0 1px 0 #ffffff;}',
-                '.modal-header a.close {margin:0;padding:0;position:absolute;top:8px;right:10px;font-size:1.5em;color:#000;}',
-                '.modal-body {width:100%; margin:0 auto; padding:10px 25px;}',
-                '</style>',
-                '<div class="modal-header" class="col-xs-12 row pull-right">',
-                //Optional title in top header
-                '<h5 class="modal-title text-primary">Purchase Power Production Schedule</h5>',
-                //Optional close (x) in top header
-                '<a class="pull-right close" ng-click="close()">',
-                '<i class="fa fa-times"></i>',
-                '</a>',
-                '</div>',
-                //'<div class="modal-body">',
-                //'<h3>Heading</h3>',
-                //content block 1
-                //'<h4>Subheading</h4>',
-                //'<p>',
-                '<br />',
-                '<br />',
-                '<table class="modal-body tablePPTimeline NSGcenter" style="width: 485px;">',
-                '<tbody>',
-                //'<div class="thPPTimeline">',
-                '<tr>',
-                  '<th class="thPPTimeline">Orders received within this time frame&nbsp;by Noon CT on&nbsp;final date:</th>',
-                  '<th class="thPPTimeline">Will ship&nbsp;no later than&nbsp;this date:</th>',
-                '</tr>',
-                //'</div>',
-                '<tr>',
-                  '<td class="tdPPTimeline">October 26th - November 16th</td>',
-                  '<td class="tdPPTimeline">December 11th</td>',
-                '</tr>',
-                '<tr>',
-                  '<td class="tdPPTimeline">November 16th - December 14th</td>',
-                  '<td class="tdPPTimeline">January 22nd</td>',
-                '</tr>',
-                '<tr>',
-                  '<td class="tdPPTimeline">December 14th - Januaray 11th</td>',
-                  '<td class="tdPPTimeline">February 5th</td>',
-                '</tr>',
-                '<tr>',
-                  '<td class="tdPPTimeline">January 11th - February 8th</td>',
-                  '<td class="tdPPTimeline">March 4th</td>',
-                '</tr>',
-                '<tr>',
-                  '<td class="tdPPTimeline">February 8th - March 14th</td>',
-                  '<td class="tdPPTimeline">April 8th</td>',
-                '</tr>',
-                '<tr>',
-                  '<td class="tdPPTimeline">March 14th - April 11th</td>',
-                  '<td class="tdPPTimeline">May 6th</td>',
-                '</tr>',
-                '<tr>',
-                  '<td class="tdPPTimeline">April 11th - May 9th</td>',
-                  '<td class="tdPPTimeline">June 3rd</td>',
-                '</tr>',
-                '<tr>',
-                  '<td class="tdPPTimeline">May 9th - June 6th</td>',
-                  '<td class="tdPPTimeline">July 1st</td>',
-                '</tr>',
-                '<tr>',
-                  '<td class="tdPPTimeline">June 6th - July 11th</td>',
-                  '<td class="tdPPTimeline">August 5th</td>',
-                '</tr>',
-                '<tr>',
-                  '<td class="tdPPTimeline">July 11th - August 8th</td>',
-                  '<td class="tdPPTimeline">September 2nd</td>',
-                '</tr>',
-                '<tr>',
-                  '<td class="tdPPTimeline">August 8th - September 6th</td>',
-                  '<td class="tdPPTimeline">September 30th</td>',
-                '</tr>',
-                '<tr>',
-                  '<td class="tdPPTimeline">September 6th - October 3rd</td>',
-                  '<td class="tdPPTimeline">October 28th</td>',
-                '</tr>',
-                '<tr>',
-                  '<td class="tdPPTimeline">October 3rd - October 24th</td>',
-                  '<td class="tdPPTimeline">November 18th</td>',
-                '</tr>',
-                '<tr>',
-                  '<td class="tdPPTimeline">October 24th - November 14th</td>',
-                  '<td class="tdPPTimeline">December 9th - In time for the Holidays</td>',
-                '</tr>',
-                '</tbody>',
-                '</table>',
-                //'</p>',
-                //content block 2
-                //'<h4>Subheading</h4>',
-                //'<p>',
-                //'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempus lacinia nisl, et hendrerit enim consequat posuere. Etiam ut interdum nisl, in ultricies arcu. ' +
-                //'In mattis ultrices velit, et tristique sem mattis nec. Nullam fermentum quis erat non dapibus. Aenean sodales est at aliquet bibendum. Suspendisse ultricies quam ' +
-                //'nec blandit tincidunt. Phasellus viverra est sit amet tortor semper facilisis. Vivamus vitae ipsum lacus. Proin pharetra, tellus in efficitur blandit, tellus nisl ' +
-                //'venenatis turpis, ut commodo sapien felis eget quam.',
-                //'</p>',
-                //'</div>',
-                //Optional footer
-                '<div class="modal-footer">',
-                '<div class="pull-left">',
-                '<a class="btn btn-default" ng-click="cancel()">Cancel</a>',
-                '</div>',
-                '<div class="pull-right">',
-                '<a target="_blank" class="btn btn-primary " ng-click="close()">Close</a>',
-                '</div>',
-                '</div>'
-            ].join('');
-        }
 
-        $scope.toggleAnimation = function () {
-            $scope.animationsEnabled = !$scope.animationsEnabled;
-        };
+.officialCNCS {
+	font-family:'Source Sans Pro', arial, serif;
+	font-size: 12pt;
+	font-style: italic;
+	text-align: left;
+	width: 85%;
+	/*margin-top: 5px;
+	margin-right: 5px;
+	margin-bottom: 15px;
+	margin-left: 10px;*/
+	padding-top: 5px;
+	padding-right: 5px;
+	padding-bottom: 15px;
+	padding-left: 10px;
+}
 
-    };
+/*This is used for the header when closed for holidays*/
+.NSGHoliday {
+	font-family:'Source Sans Pro', arial, serif;
+	font-size: 18pt;
+	font-style: italic;
+	font-weight: bold;
+	color: #FFFFFF;
+	width: 100%;
+	text-align: center;
+	padding-top: 5px;
+	padding-right: 5px;
+	padding-bottom: 15px;
+	padding-left: 10px;
+	/*text-shadow: 2px 2px 4px #A1A1A1;*/
+}
 
-    var ContentModalOpenCtrl = ['$scope', '$modalInstance', '$modal', function($scope, $modalInstance, $modal, item) {
+/*Used when we have tech difficulties*/
+.phoneDown {
+	font-family:'Source Sans Pro', arial, serif;
+	font-size: 17pt;
+	color: red;
+	font-style: italic;
+	font-weight: bold;
+	text-align: left;
+	width: 85%;
+	padding-top: 5px;
+	padding-right: 5px;
+	padding-bottom: 15px;
+	padding-left: 10px;
+	/*text-shadow: 2px 2px 4px #A1A1A1;*/
+}
 
-        $scope.item = item; // this is the item passed in from the ContentModalCtrl resolve
+/*Footer CSS*/
+.NSGfooter {
+	margin-right: 5em;
+	margin-left: 4em;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	clear: both;
+	/*background-color: #e9e9e9;*/
+	height: 200px;
+	padding-top: 5em;
+	padding-right: 3px;
+	padding-bottom: 3px;
+	padding-left: 5px;
+	/*background-image: url(Images/IB.png);
+	background-repeat: no-repeat;
+	background-position: 5px 5px;*/
+}
 
-        $scope.close = function () {
-            $modalInstance.close();
-        };
+.fleft {
+	margin-right: 0px;
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	float: left;
+}
 
-        $scope.cancel = function () {
-            $modalInstance.dismiss('cancel');
-        };
+.fright {
+	margin-right: 0em;
+	margin-left: 0em;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding: 0em;
+	float: right;
+}
+/*End Footer CSS*/
 
-    }];
+/* Shopping Cart Circle */
+.shoppingCartNavBar li a i:first-of-type{
+  border-radius: 50%;
+  border: 1px solid #fff;
+  text-align: center;
+  padding: 10px;
+  margin-top: -10px;
+}
 
+/* Product Image */
+.fixedImage {
+    position: fixed;
+    top: 2000px;
+    right: 1000px;
+}
+
+/* Search Bar */
+.customSearchBar {
+  float: right !important;
+  width: 65%;
+  margin-top: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+
+/*PP Item Timetable settings*/
+
+.tablePPTimeline {
+	border:2px;
+	border-style: solid;
+  border-color: ##0C2A3A;
+	border-collapse:collapse;
+	box-shadow: 5px 5px 10px 0px rgba(119, 119, 119, 0.3);
+	-moz-box-shadow: 5px 5px 10px 0px rgba(119, 119, 119, 0.3);
+	-webkit-box-shadow: 5px 5px 10px 0px rgba(119, 119, 119, 0.3);
+	background-color: ##359FD5;
+}
+
+.thPPTimeline {
+	border:2px;
+	border-style: solid;
+	border-color: ##0C2A3A;
+	border-collapse:collapse;
+	padding:5px;
+  text-align:center;
+}
+
+.tdPPTimeline {
+  font-family: arial,helvetica,sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+	border:2px;
+	border-style: solid;
+	border-color: ##0C2A3A;
+	border-collapse:collapse;
+	padding:5px;
+	text-align:center;
+}
+
+#fontProduct {
+	color: #000000;
+}
+
+#fontProgram {
+	font-size: 14px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #000000;
+	text-indent: 0px;
+	width: 100%;
+	margin-top: 8px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+}
+
+#footerFont {
+	font-size: 10px;
+}
+
+#mainbkg {
+	/*background-color: #e9e9e9;*/
+	margin-top: 0px;
+	margin-right: 20px;
+	margin-bottom: 0px;
+	margin-left: 15em;
+	padding-top: 1em;
+	padding-right: 0px;
+	padding-bottom: .25em;
+	padding-left: 3em;
+}
+
+#mainnav {
+	/*background-color: #136ca8;*/
+	margin-right: 5px;
+	margin-left: 0em;
+	margin-top: 0em;
+	margin-bottom: 0px;
+	text-align: left;
+	padding-top: 0em;
+	padding-right: 0em;
+	padding-bottom: 0em;
+	padding-left: 0em
+	/*background-image: ;
+	border-top-width: 4px;
+	border-top-style: solid;
+	border-top-color: #73a2c7;*/
+}
+
+/* Theme CSS Edits */
+.container .navbar-nav li.active a:hover {
+  background-color: ##359FD5;
+}
+.container .navbar-nav li.active a:focus {
+  background-color: ##359FD5;
+}
+.navbar-default .navbar-nav .open > a {
+  background-color: ##359FD5;
+}
+.navbar-default .navbar-nav .open > a:hover {
+  background-color: ##359FD5;
+}
+.navbar-default .navbar-nav .open > a:focus {
+  background-color: ##359FD5;
+}
+.navbar-nav li.dropdown li > a:hover {
+  background-color: ##359FD5;
+}
+.navbar-nav li.dropdown li > a:focus {
+  background-color: ##359FD5;
+}
+.navbar .container .navbar-nav li.active .fa-caret-down {
+  color: ##359FD5;
+}
+.navbar-nav li.dropdown li > a {
+  color: #333333;
+}
+.navbar-nav li.dropdown li > a:hover {
+  color: #FFFFFF;
+}
+.navbar .container .navbar-nav.pull-right li a i:first-of-type {
+  border-color: #FFFFFF;
+}
+.badge {
+  background-color: undefined;
+}
+.badge {
+  color: #FFFFFF;
+}
+.navbar-default {
+  background-color: #0069AA;
+}
+.container .navbar-nav li a {
+  color: #FFFFFF;
+}
+.container .navbar-nav li.active > a {
+  background-color: ##359FD5;
+}
+.container .navbar-nav li.active > a {
+  color: undefined;
+}
+.navbar-default, .dropdown-mega {
+  border-color: ;
+}
+body {
+  background-color: #F0F0F0;
+}
+body {
+  color: #333333;
+}
+.text-primary {
+  color: #0C2A3A;
+}
+.text-info {
+  color: #31708F;
+}
+body a {
+  color: #E04F4F;
+}
+.btn-primary {
+  background-color: #0C2A3A;
+}
+.btn-primary, .btn-primary:hover {
+  color: #FFFFFF;
+}
+.btn-primary {
+  border-color: #081B24;
+}
+.btn-primary:hover {
+  background-color: #051118;
+}
+.btn-default {
+  background-color: #FFFFFF;
+}
+.btn-default, .btn-default:hover {
+  color: #333333;
+}
+.btn-default {
+  border-color: #CCCCCC;
+}
+.btn-default:hover {
+  background-color: #EBEBEB;
+}
+.btn-info {
+  background-color: #5BC0DE;
+}
+.btn-info, .btn-info:hover {
+  color: #FFFFFF;
+}
+.btn-info {
+  border-color: #46B8DA;
+}
+.btn-info:hover {
+  background-color: #39B3D7;
+}
+.btn-success {
+  background-color: #5CB85C;
+}
+.btn-success, .btn-success:hover {
+  color: #FFFFFF;
+}
+.btn-success {
+  border-color: #4CAE4C;
+}
+.btn-success:hover {
+  background-color: #47A447;
+}
+.btn-warning {
+  background-color: #f0ad4e;
+}
+.btn-warning, .btn-warning:hover {
+  color: #FFFFFF;
+}
+.btn-warning {
+  border-color: #EEA236;
+}
+.btn-warning:hover {
+  background-color: #ED9C28;
+}
+.btn-danger {
+  background-color: #D9534F;
+}
+.btn-danger, .btn-danger:hover {
+  color: #FFFFFF;
+}
+.btn-danger {
+  border-color: #D43F3A;
+}
+.btn-danger:hover {
+  background-color: #D2322D;
+}
+.jumbotron {
+  background-color: #0069AA;
+}
+h2 .jumbotron {
+  color: #FFFFFF;
+}
+.panel-primary .panel-heading .panel-title {
+  background-color: #0C2A3A;
+}
+.panel-primary .panel-heading .panel-title {
+  color: #FFFFFF;
+}
+.panel-default .panel-heading .panel-title {
+  background-color: #F5F5F5;
+}
+.panel-default .panel-heading .panel-title {
+  color: #333333;
+}
+.panel {
+  background-color: #FFFFFF;
+}
+.panel-footer {
+  background-color: #F5F5F5;
+}
+.panel-category-list .well {
+  background-color: #FFFFFF;
+}
+.panel-category-list .well h5 {
+  color: #333333;
+}
+.panel-category-list .well {
+  border-color: #F0F0F0;
+}
+.panel-product-list .well {
+  background-color: #FFFFFF;
+}
+.panel-product-list .well {
+  color: #333333;
+}
+.panel-product-list .well {
+  border-color: #F0F0F0;
 }
