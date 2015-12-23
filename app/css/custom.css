@@ -6,6 +6,11 @@
     text-align: center;
 }
 
+.NSGcontent {
+  min-height: 100%;
+  margin-bottom: -200px; /* Equivalent to footer's height */
+}
+
 /* Jumbor Header Home Page*/
 .jumboHeaderText {
     text-align: center;
