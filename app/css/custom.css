@@ -113,14 +113,11 @@
 }
 
 .fright {
-	margin-right: 0em;
+  margin-right: 0em;
 	margin-left: 0em;
 	margin-top: 0px;
 	margin-bottom: 0px;
-  padding-top: 0em;
-	padding-right: 3px;
-	padding-bottom: 0px;
-	padding-left: 55px
+	padding: 0em;
 	float: right;
 }
 /*End Footer CSS*/
