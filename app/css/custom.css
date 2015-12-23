@@ -6,11 +6,6 @@
     text-align: center;
 }
 
-.NSGcontent {
-  min-height: 100%;
-  margin-bottom: -200px; /* Equivalent to footer's height */
-}
-
 /* Jumbor Header Home Page*/
 .jumboHeaderText {
     text-align: center;
@@ -93,8 +88,9 @@
 	/*clear: both;*/
 	background-color: #D4D4D4;
 	height: 200px;
-  position: relative;
-  z-index: 1;
+  width: 100%;
+  bottom: 0;
+  padding: 35px 0;
 	/*padding-top: 5em;
 	padding-right: 3px;
 	padding-bottom: 3px;
