@@ -1,417 +1,226 @@
-.white {
-    color: #FFFFFF;
-}
+<!doctype html>
+<html lang="en" ng-app="451order" ng-controller="Four51Ctrl">
+  <head>
+    <base href="/NSGCustom/"/>
+    <script>var four51IsAnonUser = false;</script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>NSG Custom</title>
+  	<!-- Meta links for SEO -->
+  	<!-- <meta name="description" content="National Service Gear is the official provider of volunteer clothing, gear, and recruitment items to the Corporation for National & Community Service and its programs. If you don't see what you're looking for, please contact Customer Service at 1-855-444-0847 or email us at service@nationalservicegear.org. We�ll work with you to find a custom product that meets the needs of your program and targeted audience! National Service Gear are The Volunteer Gear People." />
+  	<meta name="robots" content="index,follow" /> -->
+  	<!-- Favicon -->
+  	<link rel="shortcut icon" href="https://www.four51.com/Themes/Custom/cdde0792-3f36-497d-88eb-12c282cba5d2/NSG/images/favicon.ico" />
+  	<!-- CSS Stylesheets -->
+  	<link rel="stylesheet" href="css/bootstrap-451.css" data-group="source" />
+  	<link rel="stylesheet" href="css/editor.css" data-group="source" />
+  	<link rel="stylesheet" href="css/theme.css" data-group="source" />
+  	<link rel="stylesheet" href="css/custom.css" data-group="source" />
+    <link href='//fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css' />
+    <link href='//fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css' />
+    <link rel="stylesheet" href="css/animate.min.css" />
+    <!--[if lt IE 9]>
+    <div style="position:absolute; top:0; left:0; right:0; bottom:0; background-position:center center; background-size:cover; background-repeat:no-repeat;"></div>
+    <div style="margin:50px auto 0; max-width:600px; text-align: center; padding:20px; border:3px solid#f58220;font-family: Arial, Helvetica, sans-serif;">
+        <h1 style="color:#f58220; padding:20px;">This site uses advanced technology that requires a modern browser.</h1>
+        <p style="color:#000; font-size:16px;">We recommend that you update your browser to the current release of Internet Explorer, Firefox or Chrome. Beta versions of these browsers may work, but are not formally supported. <br/>
+            <a style="color:#f58220; font-size:16px;" target="_blank" href="http://windows.microsoft.com/en-us/internet-explorer/download-ie">Click here to find your upgrade link <i class="fa fa-external-link-square"></i>
+            </a>
+        </p>
+        <p style="color:#000;">
+            <small>
+                <em>*Site works best with most recent versions of <a style="color:#f58220;" target="_blank" href="http://windows.microsoft.com/en-us/internet-explorer/download-ie">Internet Explorer</a>, <a style="color:#f58220;" target="_blank" href="//www.mozilla.org/en-US/firefox/new/" target="_blank">FireFox</a> and <a style="color:#f58220;"href="//www.google.com/chrome/browser/" target="_blank">Chrome</a>
+                </em>
+            </small>
+        </p>
+    </div>
+    <!--<![endif]-->
+    <!-- Google Analytics Code -->
+		<!-- <script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-.NSGcenter {
-    text-align: center;
-}
+			ga('create', 'UA-64922121-2', 'auto');
+			ga('send', 'pageview');
+		</script> -->
+  </head>
+  <!--[if (gte IE 9)|!(IE)]><!-->
+  <body ng-cloak ng-class="ng-cloak">
+    <section>
+      <section ng-hide="Four51User.isAuthenticated() || isAnon" class="container">
+        <login />
+      </section>
+      <section ng-if="Four51User.isAuthenticated()" id="content">
+        <section class="hidden-print">
+          <navigation />
+        </section>
+        <section class="hidden-print">
+          <branding />
+        </section>
+        <section class="container-view">
+          <ng-view autoscroll />
+        </section>
+        <section class="hidden-print">
+          <copyright ng-if="!user.Permissions.contains('UnBrandedSite')" />
+        </section>
+      </section>
+    </section>
 
-/* Jumbor Header Home Page*/
-.jumboHeaderText {
-    text-align: center;
-    /*vertical-align: middle;*/
-    padding-top: 30px;
-    color: #FFFFFF;
-    /*position: relative;
-    top: 50%;
-    transform: translateY(-50%);*/
-}
+    <!--<script type="text/javascript" src="//dl1d2m8ri9v3j.cloudfront.net/releases/1.2.4/tracker.js" data-customer="bfec7bded14d43a7ace2697594e1369d"></script>-->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js" data-group="cdn"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js" data-group="cdn"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular-sanitize.min.js" data-group="cdn"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular-cookies.min.js" data-group="cdn"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular-animate.min.js" data-group="cdn"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular-resource.min.js" data-group="cdn"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular-route.min.js" data-group="cdn"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular-touch.min.js" data-group="cdn"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular-loader.min.js" data-group="cdn"></script>
 
-#vertAlignJumbo {
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-}
+    <script src="lib/store.js" data-group="resources"></script>
+    <script src="lib/angular_ui/ui-utils.min.js" data-group="resources"></script>
+    <script src="lib/angular_ui/ui-bootstrap-tpls-0.10.0.min.js" data-group="resources"></script>
+    <script src="lib/angular/plugins/headroom.min.js" data-group="resources"></script>
+    <script src="lib/angular/angular.headroom.min.js" data-group="resources"></script>
+    <script src="lib/angular/angular-ga-analytics.js" data-group="resources"></script>
+    <script src="lib/angular/plugins/Debouncer.js" data-group="resources"></script>
+    <script src="lib/angular/plugins/ngAutocomplete.js" data-group="resources"></script>
+    <script src="lib/oc/anonRouter.js" data-group="resources"></script>
 
-/* This counters the spacing issue on the product list page with <a> links */
-.aLinkSpacingFix p a {
-  padding: 0em !important;
-  display: inline !important;
-  text-decoration: none;
-}
+    <script src="//maps.googleapis.com/maps/api/js?libraries=places&sensor=false"></script>
 
+    <script src="js/app.js" data-group="source"></script>
+    <script src="js/four51consts.js" data-group="source"></script>
+    <script src="js/451.js" data-group="source"></script>
+    <script src="js/filters.js" data-group="source"></script>
+    <script src="js/config.js" data-group="source"></script>
+    <script src="js/routing.js" data-group="source"></script>
 
-.officialCNCS {
-	font-family:'Source Sans Pro', arial, serif;
-	font-size: 12pt;
-	font-style: italic;
-	text-align: left;
-	width: 85%;
-	/*margin-top: 5px;
-	margin-right: 5px;
-	margin-bottom: 15px;
-	margin-left: 10px;*/
-	padding-top: 5px;
-	padding-right: 5px;
-	padding-bottom: 15px;
-	padding-left: 10px;
-}
+    <script src="js/controllers/Four51Ctrl.js" data-group="source"></script>
+    <script src="js/controllers/categoryCtrl.js" data-group="source"></script>
+    <script src="js/controllers/errorCtrl.js" data-group="source"></script>
+    <script src="js/controllers/loginCtrl.js" data-group="source"></script>
+    <script src="js/controllers/orderSearchCtrl.js" data-group="source"></script>
+    <script src="js/controllers/orderHistoryViewCtrl.js" data-group="source"></script>
+    <script src="js/controllers/lineItemHistoryCtrl.js" data-group="source"></script>
+    <script src="js/controllers/navCtrl.js" data-group="source"></script>
+    <script src="js/controllers/productCtrl.js" data-group="source"></script>
+    <script src="js/controllers/productListCtrl.js" data-group="source"></script>
+    <script src="js/controllers/messageListCtrl.js" data-group="source"></script>
+    <script src="js/controllers/messageViewCtrl.js" data-group="source"></script>
+    <script src="js/controllers/favoriteOrderCtrl.js" data-group="source"></script>
+    <script src="js/controllers/userEditCtrl.js" data-group="source"></script>
+	  <script src="js/controllers/giftCardRedemptionCtrl.js" data-group="source"></script>
+    <script src="js/controllers/addressInputCtrl.js" data-group="source"></script>
+    <script src="js/controllers/addressListCtrl.js" data-group="source"></script>
+    <script src="js/controllers/addressViewCtrl.js" data-group="source"></script>
+    <script src="js/controllers/cartCtrl.js" data-group="source"></script>
+    <script src="js/controllers/checkOutViewCtrl.js" data-group="source"></script>
+    <script src="js/controllers/approvalInputCtrl.js" data-group="source"></script>
+  	<script src="js/controllers/specFormCtrl.js" data-group="source"></script>
+  	<script src="js/controllers/conditionsCtrl.js" data-group="source"></script>
+    <script src="js/controllers/reportsCtrl.js" data-group="source"></script>
+  	<script src="js/controllers/reportCtrl.js" data-group="source"></script>
+  	<script src="js/controllers/productSearchCtrl.js" data-group="source"></script>
+  	<script src="js/controllers/lineItemEditCtrl.js" data-group="source"></script>
+  	<script src="js/controllers/relatedProductsCtrl.js" data-group="source"></script>
+  	<script src="js/controllers/shortProductViewCtrl.js" data-group="source"></script>
+    <script src="js/controllers/securityCtrl.js" data-group="source"></script>
+    <script src="js/controllers/orderTypeSelectorCtrl.js" data-group="source"></script>
+    <script src="js/controllers/reportViewCtrl.js" data-group="source"></script>
+    <script src="js/controllers/kitCtrl.js" data-group="source"></script>
 
-/*This is used for the header when closed for holidays*/
-.NSGHoliday {
-	font-family:'Source Sans Pro', arial, serif;
-	font-size: 18pt;
-	font-style: italic;
-	font-weight: bold;
-	color: #FFFFFF;
-	width: 100%;
-	text-align: center;
-	padding-top: 5px;
-	padding-right: 5px;
-	padding-bottom: 15px;
-	padding-left: 10px;
-	/*text-shadow: 2px 2px 4px #A1A1A1;*/
-}
+    <script src="js/interceptors.js" data-group="source"></script>
+    <script src="js/services/errorService.js" data-group="source"></script>
+    <script src="js/services/securityService.js" data-group="source"></script>
+    <script src="js/services/userService.js" data-group="source"></script>
+	  <script src="js/services/productDisplayService.js" data-group="source"></script>
+    <script src="js/services/orderService.js" data-group="source"></script>
+    <script src="js/services/orderConfigService.js" data-group="source"></script>
+    <script src="js/services/orderSearchService.js" data-group="source"></script>
+    <script src="js/services/orderStatsService.js" data-group="source"></script>
+    <script src="js/services/productService.js" data-group="source"></script>
+	  <script src="js/services/variantService.js" data-group="source"></script>
+    <script src="js/services/categoryService.js" data-group="source"></script>
+    <script src="js/services/messageService.js" data-group="source"></script>
+	  <script src="js/services/messageListService.js" data-group="source"></script>
+    <script src="js/services/favoriteOrderService.js" data-group="source"></script>
+    <script src="js/services/accountsService.js" data-group="source"></script>
+    <script src="js/services/addressService.js" data-group="source"></script>
+	  <script src="js/services/addressListService.js" data-group="source"></script>
+    <script src="js/services/shipperService.js" data-group="source"></script>
+    <script src="js/services/couponService.js" data-group="source"></script>
+    <script src="js/services/giftCardService.js" data-group="source"></script>
+    <script src="js/services/savedCreditCardService.js" data-group="source"></script>
+    <script src="js/services/resourceService.js" data-group="source"></script>
+    <script src="js/services/reportsService.js" data-group="source"></script>
+    <script src="js/services/googleAnalytics.js" data-group="source"></script>
+    <script src="js/services/navService.js" data-group="source"></script>
+    <script src="js/services/whiteLabelService.js" data-group="source"></script>
+    <script src="js/services/XLATTables.js" data-group="source"></script>
+    <script src="js/services/XLATService.js" data-group="source"></script>
+    <script src="js/services/kitService.js" data-group="source"></script>
 
-/*Used when we have tech difficulties*/
-.phoneDown {
-	font-family:'Source Sans Pro', arial, serif;
-	font-size: 17pt;
-	color: red;
-	font-style: italic;
-	font-weight: bold;
-	text-align: left;
-	width: 85%;
-	padding-top: 5px;
-	padding-right: 5px;
-	padding-bottom: 15px;
-	padding-left: 10px;
-	/*text-shadow: 2px 2px 4px #A1A1A1;*/
-}
+    <script src="js/factories/fileReader.js" data-group="source"></script>
 
-/*Footer CSS*/
-.NSGfooter {
-	/*margin-right: 5em;
-	margin-left: 4em;
-	margin-top: 0px;
-	margin-bottom: 0px;*/
-	clear: both;
-	background-color: #D4D4D4;
-	height: 200px;
-  width: 100%;
-  bottom: 0;
-  padding: 35px 0;
-	/*padding-top: 5em;
-	padding-right: 3px;
-	padding-bottom: 3px;
-	padding-left: 5px;*/
-	/*background-image: url(Images/IB.png);
-	background-repeat: no-repeat;
-	background-position: 5px 5px;*/
-}
+    <script src="js/directives/match.js" data-group="source"></script>
+    <script src="js/directives/buttonredirect.js" data-group="source"></script>
+    <script src="js/directives/product.js" data-group="source"></script>
+	  <script src="js/directives/quantityfield.js" data-group="source"></script>
+    <script src="js/directives/paymentselection.js" data-group="source"></script>
+    <script src="js/directives/customtextfield.js" data-group="source"></script>
+	  <script src="js/directives/customselectionfield.js" data-group="source"></script>
+    <script src="js/directives/customcheckboxfield.js" data-group="source"></script>
+    <script src="js/directives/customdatefield.js" data-group="source"></script>
+    <script src="js/directives/customtimefield.js" data-group="source"></script>
+    <script src="js/directives/customphonefield.js" data-group="source"></script>
+    <script src="js/directives/customfilefield.js" data-group="source"></script>
+    <script src="js/directives/approvalrulelist.js" data-group="source"></script>
+    <script src="js/directives/tree.js" data-group="source"></script>
+    <script src="js/directives/addressinput.js" data-group="source"></script>
+    <script src="js/directives/reporting.js" data-group="source"></script>
+    <script src="js/directives/inlineerror.js" data-group="source"></script>
+    <script src="js/directives/nav.js" data-group="source"></script>
+    <script src="js/directives/branding.js" data-group="source"></script>
+    <script src="js/directives/login.js" data-group="source"></script>
+    <script src="js/directives/approval.js" data-group="source"></script>
+    <script src="js/directives/shortCartView.js" data-group="source"></script>
+    <script src="js/directives/loadingindicator.js" data-group="source"></script>
+    <script src="js/directives/alertShow.js" data-group="source"></script>
+    <script src="js/directives/giftcard.js" data-group="source"></script>
+    <script src="js/directives/copyright.js" data-group="source"></script>
+    <script src="js/directives/ordersummary.js" data-group="source"></script>
+    <script src="js/directives/orderdetails.js" data-group="source"></script>
+    <script src="js/directives/ordershipping.js" data-group="source"></script>
+    <script src="js/directives/orderbilling.js" data-group="source"></script>
+    <script src="js/directives/orderapprovals.js" data-group="source"></script>
+    <script src="js/directives/daterange.js" data-group="source"></script>
+    <script src="js/directives/printing.js" data-group="source"></script>
+	  <script src="js/directives/addToOrderSpecs.js" data-group="source"></script>
+    <script src="js/directives/imageonload.js" data-group="source"></script>
+    <script src="js/directives/ordertypeselector.js" data-group="source"></script>
+    <script src="js/directives/creditcard.js" data-group="source"></script>
+    <script src="js/directives/neworder.js" data-group="source"></script>
+    <script src="js/directives/orderbuttons.js" data-group="source"></script>
 
-.fleft {
-	margin-right: 0px;
-	margin-left: 0px;
-	margin-top: 0px;
-	margin-bottom: 0px;
-  padding-top: 0em;
-	padding-right: 3px;
-	padding-bottom: 0px;
-	padding-left: 55px;
-	float: left;
-}
+    <!-- Custom Solutions-->
+		<script src="lib/oc/productMatrix.js" data-group="resources"></script>
+		<script src="lib/oc/categoryCollapse.js" data-group="resources"></script>
+		<script src="lib/oc/ProductSearchInput.js" data-group="resources"></script>
+    <script src="lib/oc/contentModal.js" data-group="resources"></script>
+		<!-- <script src="lib/oc/productZoom.js" data-group="resources"></script> -->
 
-.fright {
-	margin-right: 0em;
-	margin-left: 0em;
-	margin-top: 0px;
-	margin-bottom: 0px;
-	padding: 0em;
-	float: right;
-}
-/*End Footer CSS*/
-
-/* Shopping Cart Circle */
-.shoppingCartNavBar li a i:first-of-type{
-  border-radius: 50%;
-  border: 1px solid #fff;
-  text-align: center;
-  padding: 10px;
-  margin-top: -10px;
-}
-
-/* Product Image */
-.fixedImage {
-    position: fixed;
-    top: 2000px;
-    right: 1000px;
-}
-
-/* Search Bar */
-.customSearchBar {
-  float: right !important;
-  width: 65%;
-  margin-top: 10px;
-	margin-right: 10px;
-	margin-bottom: 10px;
-}
-
-/*PP Item Timetable settings*/
-
-.tablePPTimeline {
-	border:2px;
-	border-style: solid;
-  border-color: ##0C2A3A;
-	border-collapse:collapse;
-	box-shadow: 5px 5px 10px 0px rgba(119, 119, 119, 0.3);
-	-moz-box-shadow: 5px 5px 10px 0px rgba(119, 119, 119, 0.3);
-	-webkit-box-shadow: 5px 5px 10px 0px rgba(119, 119, 119, 0.3);
-	background-color: ##359FD5;
-}
-
-.thPPTimeline {
-	border:2px;
-	border-style: solid;
-	border-color: ##0C2A3A;
-	border-collapse:collapse;
-	padding:5px;
-  text-align:center;
-}
-
-.tdPPTimeline {
-  font-family: arial,helvetica,sans-serif;
-  font-size: 14px;
-  font-weight: bold;
-	border:2px;
-	border-style: solid;
-	border-color: ##0C2A3A;
-	border-collapse:collapse;
-	padding:5px;
-	text-align:center;
-}
-
-#fontProduct {
-	color: #000000;
-}
-
-#fontProgram {
-	font-size: 14px;
-	font-weight: bold;
-	text-transform: uppercase;
-	color: #000000;
-	text-indent: 0px;
-	width: 100%;
-	margin-top: 8px;
-	margin-right: 0px;
-	margin-bottom: 0px;
-	margin-left: 0px;
-}
-
-#footerFont {
-	font-size: 10px;
-}
-
-#mainbkg {
-	/*background-color: #e9e9e9;*/
-	margin-top: 0px;
-	margin-right: 20px;
-	margin-bottom: 0px;
-	margin-left: 15em;
-	padding-top: 1em;
-	padding-right: 0px;
-	padding-bottom: .25em;
-	padding-left: 3em;
-}
-
-#mainnav {
-	/*background-color: #136ca8;*/
-	margin-right: 5px;
-	margin-left: 0em;
-	margin-top: 0em;
-	margin-bottom: 0px;
-	text-align: left;
-	padding-top: 0em;
-	padding-right: 0em;
-	padding-bottom: 0em;
-	padding-left: 0em
-	/*background-image: ;
-	border-top-width: 4px;
-	border-top-style: solid;
-	border-top-color: #73a2c7;*/
-}
-
-/* Theme CSS Edits */
-.container .navbar-nav li.active a:hover {
-  background-color: ##359FD5;
-}
-.container .navbar-nav li.active a:focus {
-  background-color: ##359FD5;
-}
-.navbar-default .navbar-nav .open > a {
-  background-color: ##359FD5;
-}
-.navbar-default .navbar-nav .open > a:hover {
-  background-color: ##359FD5;
-}
-.navbar-default .navbar-nav .open > a:focus {
-  background-color: ##359FD5;
-}
-.navbar-nav li.dropdown li > a:hover {
-  background-color: ##359FD5;
-}
-.navbar-nav li.dropdown li > a:focus {
-  background-color: ##359FD5;
-}
-.navbar .container .navbar-nav li.active .fa-caret-down {
-  color: ##359FD5;
-}
-.navbar-nav li.dropdown li > a {
-  color: #333333;
-}
-.navbar-nav li.dropdown li > a:hover {
-  color: #FFFFFF;
-}
-.navbar .container .navbar-nav.pull-right li a i:first-of-type {
-  border-color: #FFFFFF;
-}
-.badge {
-  background-color: undefined;
-}
-.badge {
-  color: #FFFFFF;
-}
-.navbar-default {
-  background-color: #0069AA;
-}
-.container .navbar-nav li a {
-  color: #FFFFFF;
-}
-.container .navbar-nav li.active > a {
-  background-color: ##359FD5;
-}
-.container .navbar-nav li.active > a {
-  color: undefined;
-}
-.navbar-default, .dropdown-mega {
-  border-color: ;
-}
-body {
-  background-color: #F0F0F0;
-}
-body {
-  color: #333333;
-}
-.text-primary {
-  color: #0C2A3A;
-}
-.text-info {
-  color: #31708F;
-}
-body a {
-  color: #E04F4F;
-}
-.btn-primary {
-  background-color: #0C2A3A;
-}
-.btn-primary, .btn-primary:hover {
-  color: #FFFFFF;
-}
-.btn-primary {
-  border-color: #081B24;
-}
-.btn-primary:hover {
-  background-color: #051118;
-}
-.btn-default {
-  background-color: #FFFFFF;
-}
-.btn-default, .btn-default:hover {
-  color: #333333;
-}
-.btn-default {
-  border-color: #CCCCCC;
-}
-.btn-default:hover {
-  background-color: #EBEBEB;
-}
-.btn-info {
-  background-color: #5BC0DE;
-}
-.btn-info, .btn-info:hover {
-  color: #FFFFFF;
-}
-.btn-info {
-  border-color: #46B8DA;
-}
-.btn-info:hover {
-  background-color: #39B3D7;
-}
-.btn-success {
-  background-color: #5CB85C;
-}
-.btn-success, .btn-success:hover {
-  color: #FFFFFF;
-}
-.btn-success {
-  border-color: #4CAE4C;
-}
-.btn-success:hover {
-  background-color: #47A447;
-}
-.btn-warning {
-  background-color: #f0ad4e;
-}
-.btn-warning, .btn-warning:hover {
-  color: #FFFFFF;
-}
-.btn-warning {
-  border-color: #EEA236;
-}
-.btn-warning:hover {
-  background-color: #ED9C28;
-}
-.btn-danger {
-  background-color: #D9534F;
-}
-.btn-danger, .btn-danger:hover {
-  color: #FFFFFF;
-}
-.btn-danger {
-  border-color: #D43F3A;
-}
-.btn-danger:hover {
-  background-color: #D2322D;
-}
-.jumbotron {
-  background-color: #0069AA;
-}
-h2 .jumbotron {
-  color: #FFFFFF;
-}
-.panel-primary .panel-heading .panel-title {
-  background-color: #0C2A3A;
-}
-.panel-primary .panel-heading .panel-title {
-  color: #FFFFFF;
-}
-.panel-default .panel-heading .panel-title {
-  background-color: #F5F5F5;
-}
-.panel-default .panel-heading .panel-title {
-  color: #333333;
-}
-.panel {
-  background-color: #FFFFFF;
-}
-.panel-footer {
-  background-color: #F5F5F5;
-}
-.panel-category-list .well {
-  background-color: #FFFFFF;
-}
-.panel-category-list .well h5 {
-  color: #333333;
-}
-.panel-category-list .well {
-  border-color: #F0F0F0;
-}
-.panel-product-list .well {
-  background-color: #FFFFFF;
-}
-.panel-product-list .well {
-  color: #333333;
-}
-.panel-product-list .well {
-  border-color: #F0F0F0;
-}
+    <!-- Footer -->
+		<footer class="NSGfooter">
+			<div class="fleft">
+				<a href="https://www.ibmilw.com/" target="_blank"><img src="https://www.four51.com/Themes/Custom/cdde0792-3f36-497d-88eb-12c282cba5d2/NSG/images/IB-AbilityOne.png" alt="National Service Gear is a registered trademark and global brand of INDUSTRIES for the BLIND, Inc. Industries for the Blind is an AbiltiyOne agency." width="100%" /></a>
+			</div><!-- END fleft -->
+      <div class="fright">
+				Contact Us: <a href="mailto:service@nationalservicegear.org?subject=I%20Want%20To%20Get%20Setup%20On%20Terms%20With%20National%20Service%20Gear!">service@nationalservicegear.org</a>
+			</div><!-- END fright -->
+		</footer><!-- END footer -->
+  </body>
+<!-- <![endif]-->
+</html>
