@@ -168,7 +168,7 @@
 	box-shadow: 5px 5px 10px 0px rgba(119, 119, 119, 0.3);
 	-moz-box-shadow: 5px 5px 10px 0px rgba(119, 119, 119, 0.3);
 	-webkit-box-shadow: 5px 5px 10px 0px rgba(119, 119, 119, 0.3);
-	background-color: ##359FD5;
+	background-color: #f78800;
 }
 
 .thPPTimeline {
@@ -278,28 +278,28 @@ footer .vertIcon {
 
 /* Theme CSS Edits */
 .container .navbar-nav li.active a:hover {
-  background-color: ##359FD5;
+  background-color: #f78800;
 }
 .container .navbar-nav li.active a:focus {
-  background-color: ##359FD5;
+  background-color: #f78800;
 }
 .navbar-default .navbar-nav .open > a {
-  background-color: ##359FD5;
+  background-color: #f78800;
 }
 .navbar-default .navbar-nav .open > a:hover {
-  background-color: ##359FD5;
+  background-color: #f78800;
 }
 .navbar-default .navbar-nav .open > a:focus {
-  background-color: ##359FD5;
+  background-color: #f78800;
 }
 .navbar-nav li.dropdown li > a:hover {
-  background-color: ##359FD5;
+  background-color: #f78800;
 }
 .navbar-nav li.dropdown li > a:focus {
-  background-color: ##359FD5;
+  background-color: #f78800;
 }
 .navbar .container .navbar-nav li.active .fa-caret-down {
-  color: ##359FD5;
+  color: #f78800;
 }
 .navbar-nav li.dropdown li > a {
   color: #333333;
@@ -323,7 +323,7 @@ footer .vertIcon {
   color: #FFFFFF;
 }
 .container .navbar-nav li.active > a {
-  background-color: ##359FD5;
+  background-color: #f78800;
 }
 .container .navbar-nav li.active > a {
   color: undefined;
