@@ -183,10 +183,6 @@
 	text-align:center;
 }
 
-footer .vertIcon {
-  padding-left: 5px;
-}
-
 @keyframes vertIcon {
   from {
     top: 0;
@@ -215,6 +211,10 @@ a.vertIcon:hover i:before {
   animation-duration: 300ms;
   -webkit-animation-timing-function: ease-in-out;
   animation-timing-function: ease-in-out;
+}
+
+footer .vertIcon {
+  padding-left: 5px;
 }
 
 #fontProduct {
