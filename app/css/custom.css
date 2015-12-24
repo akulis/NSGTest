@@ -204,7 +204,7 @@
   font-weight: 700;
 }
 
-/*.NSGicon {
+.NSGicon {
   display: inline-block;
   vertical-align: top;
   overflow: visible;
@@ -213,7 +213,7 @@
   height: 40px;
   font-size: 0;
   text-indent: -9999px;
-}*/
+}
 
 .icon-cube {
   position: relative;
