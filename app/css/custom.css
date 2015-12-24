@@ -279,28 +279,28 @@ footer .vertIcon {
 
 /* Theme CSS Edits */
 .container .navbar-nav li.active a:hover {
-  background-color: #f78800;
+  background-color: #ab7500;
 }
 .container .navbar-nav li.active a:focus {
-  background-color: #f78800;
+  background-color: #ab7500;
 }
 .navbar-default .navbar-nav .open > a {
-  background-color: #f78800;
+  background-color: #ab7500;
 }
 .navbar-default .navbar-nav .open > a:hover {
-  background-color: #f78800;
+  background-color: #ab7500;
 }
 .navbar-default .navbar-nav .open > a:focus {
-  background-color: #f78800;
+  background-color: #ab7500;
 }
 .navbar-nav li.dropdown li > a:hover {
-  background-color: #f78800;
+  background-color: #ab7500;
 }
 .navbar-nav li.dropdown li > a:focus {
-  background-color: #f78800;
+  background-color: #ab7500;
 }
 .navbar .container .navbar-nav li.active .fa-caret-down {
-  color: #f78800;
+  color: #ab7500;
 }
 .navbar-nav li.dropdown li > a {
   color: #333333;
@@ -324,7 +324,7 @@ footer .vertIcon {
   color: #FFFFFF;
 }
 .container .navbar-nav li.active > a {
-  background-color: #f78800;
+  background-color: #ab7500;
 }
 .container .navbar-nav li.active > a {
   color: undefined;
