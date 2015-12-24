@@ -79,18 +79,26 @@
 	/*text-shadow: 2px 2px 4px #A1A1A1;*/
 }
 
+.NSGcontactUs {
+   margin-bottom: 20px;
+   font-size: 16px;
+   font-weight: 200;
+   line-height: 1.4;
+}
+
 /*Footer CSS*/
 .NSGfooter {
 	/*margin-right: 5em;
 	margin-left: 4em;
 	margin-top: 0px;
 	margin-bottom: 0px;*/
+  margin-top: 25px;
 	clear: both;
 	background-color: #D4D4D4;
 	height: 200px;
   width: 100%;
   bottom: 0;
-  padding: 35px 0;
+  padding: 40px 0;
 	/*padding-top: 5em;
 	padding-right: 3px;
 	padding-bottom: 3px;
