@@ -86,12 +86,13 @@
 	margin-left: 4em;
 	margin-top: 0px;
 	margin-bottom: 0px;*/
-  margin-top: 0px;
+   font-size: 25pt;
+   margin-top: 0px;
 	clear: both;
-	background-color: #ababab;
+	background-color: #dedede;
 	height: 150px;
   width: 100%;
-  bottom: 0;   
+  bottom: 0;
   padding: 30px 0;
 	/*padding-top: 5em;
 	padding-right: 3px;
@@ -124,13 +125,12 @@
 }
 
 .socialFooter {
-   font-size: 25pt;
    margin-top: 0px;
    clear: both;
    background-color: #545454;
    height: 75px;
    width: 100%;
-   bottom: 0;   
+   bottom: 0;
    padding: 15px 25px 0px 0px;
 }
 
@@ -279,28 +279,28 @@ footer .vertIcon {
 
 /* Theme CSS Edits */
 .container .navbar-nav li.active a:hover {
-  background-color: #dedede;
+  background-color: #f78800;
 }
 .container .navbar-nav li.active a:focus {
-  background-color: #dedede;
+  background-color: #f78800;
 }
 .navbar-default .navbar-nav .open > a {
-  background-color: #dedede;
+  background-color: #f78800;
 }
 .navbar-default .navbar-nav .open > a:hover {
-  background-color: #dedede;
+  background-color: #f78800;
 }
 .navbar-default .navbar-nav .open > a:focus {
-  background-color: #dedede;
+  background-color: #f78800;
 }
 .navbar-nav li.dropdown li > a:hover {
-  background-color: #dedede;
+  background-color: #f78800;
 }
 .navbar-nav li.dropdown li > a:focus {
-  background-color: #dedede;
+  background-color: #f78800;
 }
 .navbar .container .navbar-nav li.active .fa-caret-down {
-  color: #dedede;
+  color: #f78800;
 }
 .navbar-nav li.dropdown li > a {
   color: #333333;
@@ -324,7 +324,7 @@ footer .vertIcon {
   color: #FFFFFF;
 }
 .container .navbar-nav li.active > a {
-  background-color: #dedede;
+  background-color: #f78800;
 }
 .container .navbar-nav li.active > a {
   color: undefined;
