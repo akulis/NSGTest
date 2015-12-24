@@ -325,11 +325,11 @@
 /* .icon-cube.rss::before,
 .icon-cube.rss::after {
   background-position: -384px 0;
-}
+} */
 
 .icon-cube.rss::after {
   background-color: #ee802f;
-} */
+}
 
 /* @keyframes vert-Icon {
   from {
