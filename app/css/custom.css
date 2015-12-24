@@ -205,9 +205,9 @@
 }
 
 .NSGicon {
-  display: block;
+  display: inline-block;
   vertical-align: top;
-  overflow: hidden;
+  overflow: visible;
   margin: 4px;
   width: 40px;
   height: 40px;
