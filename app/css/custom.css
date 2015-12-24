@@ -24,11 +24,11 @@
 }
 
 /* This counters the spacing issue on the product list page with <a> links */
-/*.aLinkSpacingFix p a {
+.aLinkSpacingFix p a {
   padding: 0em !important;
   display: inline !important;
   text-decoration: none;
-}*/
+}
 
 
 .officialCNCS {
@@ -231,6 +231,15 @@ a.vert-Icon i:before {
   top: 0;
 }
 a.vert-Icon:hover i:before {
+  -webkit-animation: vert-Icon;
+  animation: vert-Icon;
+  -webkit-animation-duration: 300ms;
+  animation-duration: 300ms;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+}
+
+.vert-Icon2 i:before {
   -webkit-animation: vert-Icon;
   animation: vert-Icon;
   -webkit-animation-duration: 300ms;
