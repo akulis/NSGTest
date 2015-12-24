@@ -193,7 +193,18 @@
 	text-align:center;
 }
 
-@keyframes vert-Icon {
+.NSGicon {
+  display: inline-block;
+  vertical-align: top;
+  overflow: hidden;
+  margin: 4px;
+  width: 96px;
+  height: 96px;
+  font-size: 0;
+  text-indent: -9999px;
+}
+
+/* @keyframes vert-Icon {
   from {
     top: 0;
   }
@@ -241,7 +252,7 @@ a.vert-Icon:hover i:before {
 
 footer .vert-Icon {
   padding-left: 5px;
-}
+} */
 
 #fontProduct {
 	color: #000000;
