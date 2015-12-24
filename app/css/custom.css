@@ -239,15 +239,6 @@ a.vert-Icon:hover i:before {
   animation-timing-function: ease-in-out;
 }
 
-.vert-Icon2 i:before {
-  -webkit-animation: vert-Icon;
-  animation: vert-Icon;
-  -webkit-animation-duration: 300ms;
-  animation-duration: 300ms;
-  -webkit-animation-timing-function: ease-in-out;
-  animation-timing-function: ease-in-out;
-}
-
 footer .vert-Icon {
   padding-left: 5px;
 }
