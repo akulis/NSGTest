@@ -86,12 +86,12 @@
 	margin-left: 4em;
 	margin-top: 0px;
 	margin-bottom: 0px;*/
-  margin-top: 25px;
+  margin-top: 0px;
 	clear: both;
 	background-color: #D4D4D4;
-	height: 100px;
+	height: 150px;
   width: 100%;
-  bottom: 0;
+  bottom: 0;   
   padding: 40px 0;
 	/*padding-top: 5em;
 	padding-right: 3px;
@@ -122,7 +122,16 @@
   padding-right: 25px;
 	float: right;
 }
-/*End Footer CSS*/
+
+.socialFooter {
+   margin-top: 0px;
+   clear: both;
+   background-color: #3A3A3A;
+   height: 75px;
+   width: 100%;
+   bottom: 0;   
+   padding: 0px 0;
+}
 
 /* Shopping Cart Circle */
 .shoppingCartNavBar li a i:first-of-type{
