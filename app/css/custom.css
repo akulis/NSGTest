@@ -332,7 +332,7 @@ footer .vertIcon {
   border-color: ;
 }
 body {
-  background-color: #F0F0F0;
+  background-color: f7f7f7;
 }
 body {
   color: #333333;
@@ -449,7 +449,7 @@ h2 .jumbotron {
   color: #333333;
 }
 .panel-category-list .well {
-  border-color: #F0F0F0;
+  border-color: f7f7f7;
 }
 .panel-product-list .well {
   background-color: #FFFFFF;
@@ -458,5 +458,5 @@ h2 .jumbotron {
   color: #333333;
 }
 .panel-product-list .well {
-  border-color: #F0F0F0;
+  border-color: f7f7f7;
 }
