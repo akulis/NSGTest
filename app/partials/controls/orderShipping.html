@@ -9,8 +9,17 @@
     <div class="panel-body" collapse="checkOutSection != 'shipping'" class="panel-body">
         <div>
             <shippingmessage />
-            Test
         </div>
+        <div class="panel panel-primary">
+      		<div class="panel-heading">
+      		  <h2 class="panel-title panel-primary">
+      		    {{'Free Freight on Orders over $300' | r | xlat}}
+      		  </h2>
+      		</div>
+      		<div class="panel-body">
+      		  <h4 class="NSGcenter">Please select "Free Freight over $300" from the drop down</h4>
+      		</div>
+      	</div>
         <div ng-show="shipaddressform || (shipaddresses.length == 0 && user.Permissions.contains('CreateShipToAddress'))">
             <addressinput address='shipaddress' user='user'></addressinput>
         </div>
