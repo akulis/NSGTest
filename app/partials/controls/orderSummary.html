@@ -24,9 +24,7 @@
             <span class="text-info">{{'Tax' | r | xlat}}</span>
             <span class="pull-right">{{currentOrder.TaxCost || 0 | culturecurrency}}</span>
         </p>
-        <div class="col-md-4 col-lg-3">
-            <giftcardredemption ng-if="user.Permissions.contains('ViewPromotions')" />
-        </div>
+        <giftcardredemption ng-if="user.Permissions.contains('ViewPromotions')" />
         <div ng-show="user.Permissions.contains('ViewPromotions')">
             <div ng-show="!currentOrder.Coupon">
                 <div class="form-group view-form-icon">
