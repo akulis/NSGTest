@@ -1,7 +1,3 @@
-File Override:
-fixedFooter.js
-
-
 angular.module('OrderCloud-FixedFooter', []);
 
 angular.module('OrderCloud-FixedFooter')
