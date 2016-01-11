@@ -60,7 +60,7 @@ function addtocartpreview() {
             '</div>',
             '<div class="row">',
             '<div ng-show="list.length > 0">',
-            '<p><em>Go back to the top to select new size, otherwise if done, click "Add List to Cart" below</em></p>',
+            '<p><em><strong>Go back to the top to select a new size, otherwise if done, click the "Add List to Cart" button below. Customization settings will not change.</strong></em></p>',
             '<loadingindicator ng-show="addListToCartIndicator" />',
             '<div class="panel panel-default">',
             '<div class="panel-heading">',
