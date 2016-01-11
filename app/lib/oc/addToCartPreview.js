@@ -347,7 +347,7 @@ function AddToCartPreview(User, Order) {
         var entryError = "";
         angular.forEach(list, function(i) {
             if (item.Variant.InteropID == i.Variant.InteropID) {
-                entryError = "<p>-Cannot Enter Same Variant Twice (Change Quantity Below)</p>"
+                entryError = "<p>-Cannot Enter Same Size Twice (Change Quantity Below)</p>"
             }
         });
         _then(success, entryError);
