@@ -149,8 +149,7 @@
 /* Product Image */
 .fixedImage {
     position: fixed;
-    top: 2000px;
-    right: 1000px;
+    padding: 1500px 500px 50px 80px;
 }
 
 /* Search Bar */
