@@ -1,571 +1,218 @@
-.white {
-    color: #FFFFFF;
-}
-
-.NSGcenter {
-    text-align: center;
-}
-
-/* Jumbor Header Home Page*/
-.jumboHeaderText {
-    text-align: center;
-    /*vertical-align: middle;*/
-    padding-top: 30px;
-    color: #FFFFFF;
-    /*position: relative;
-    top: 50%;
-    transform: translateY(-50%);*/
-}
-
-#vertAlignJumbo {
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-/* This counters the spacing issue on the product list page with <a> links */
-.aLinkSpacingFix p a {
-  padding: 0em !important;
-  display: inline !important;
-  text-decoration: none;
-}
-
-.officialCNCS {
-	font-family:'Source Sans Pro', arial, serif;
-	font-size: 12pt;
-	font-style: italic;
-	text-align: left;
-	width: 85%;
-	/*margin-top: 5px;
-	margin-right: 5px;
-	margin-bottom: 15px;
-	margin-left: 10px;*/
-	padding-top: 5px;
-	padding-right: 5px;
-	padding-bottom: 15px;
-	padding-left: 10px;
-}
-
-/*This is used for the header when closed for holidays*/
-.NSGHoliday {
-	font-family:'Source Sans Pro', arial, serif;
-	font-size: 25pt;
-	font-style: italic;
-	font-weight: bold;
-	color: #FFFFFF;
-	width: 100%;
-	text-align: center;
-	padding-top: 5px;
-	padding-right: 5px;
-	padding-bottom: 15px;
-	padding-left: 10px;
-	/*text-shadow: 2px 2px 4px #A1A1A1;*/
-}
-
-/*Used when we have tech difficulties*/
-.phoneDown {
-	font-family:'Source Sans Pro', arial, serif;
-	font-size: 17pt;
-	color: red;
-	font-style: italic;
-	font-weight: bold;
-	text-align: left;
-	width: 85%;
-	padding-top: 5px;
-	padding-right: 5px;
-	padding-bottom: 15px;
-	padding-left: 10px;
-	/*text-shadow: 2px 2px 4px #A1A1A1;*/
-}
-
-
-/*Footer CSS*/
-.NSGfooter {
-	/*margin-right: 5em;
-	margin-left: 4em;
-	margin-top: 0px;
-	margin-bottom: 0px;*/
-   font-size: 13pt;
-   margin-top: 0px;
-	clear: both;
-	background-color: #dedede;
-	height: 150px;
-  width: 100%;
-  bottom: 0;
-  padding: 30px 0;
-	/*padding-top: 5em;
-	padding-right: 3px;
-	padding-bottom: 3px;
-	padding-left: 5px;*/
-	/*background-image: url(Images/IB.png);
-	background-repeat: no-repeat;
-	background-position: 5px 5px;*/
-}
-
-.fleft {
-	margin-right: 0px;
-	margin-left: 0px;
-	margin-top: 0px;
-	margin-bottom: 0px;
-  padding-top: 0em;
-	padding-right: 3px;
-	padding-bottom: 0px;
-	padding-left: 55px;
-	float: left;
-}
-
-.fright {
-  margin-right: 0em;
-	margin-left: 0em;
-	margin-top: 0px;
-	margin-bottom: 0px;
-  padding-right: 25px;
-	float: right;
-}
-
-.vertIcon {
-  padding-left: 5px;
-}
-
-.socialFooter {
-   margin-top: 0px;
-   clear: both;
-   background-color: #545454;
-   height: 75px;
-   width: 100%;
-   bottom: 0;
-   padding: 15px 25px 0px 0px;
-}
-
-/* Shopping Cart Circle */
-.shoppingCartNavBar li a i:first-of-type{
-  border-radius: 50%;
-  border: 1px solid #fff;
-  text-align: center;
-  padding: 10px;
-  margin-top: -10px;
-}
-
-/* Product Image */
-.fixedImage {
-    position: fixed;
-    padding: 1500px 500px 50px 80px;
-}
-
-/* Search Bar */
-.customSearchBar {
-  float: right !important;
-  width: 65%;
-  margin-top: 10px;
-	margin-right: 10px;
-	margin-bottom: 10px;
-}
-
-/*PP Item Timetable settings*/
-
-.tablePPTimeline {
-	border:2px;
-	border-style: solid;
-  border-color: ##002A45;
-	border-collapse:collapse;
-	box-shadow: 5px 5px 10px 0px rgba(119, 119, 119, 0.3);
-	-moz-box-shadow: 5px 5px 10px 0px rgba(119, 119, 119, 0.3);
-	-webkit-box-shadow: 5px 5px 10px 0px rgba(119, 119, 119, 0.3);
-	background-color: #dedede;
-}
-
-.thPPTimeline {
-	border:2px;
-	border-style: solid;
-	border-color: ##002A45;
-	border-collapse:collapse;
-	padding:5px;
-  text-align:center;
-}
-
-.tdPPTimeline {
-  font-family: arial,helvetica,sans-serif;
-  font-size: 14px;
-  font-weight: bold;
-	border:2px;
-	border-style: solid;
-	border-color: ##002A45;
-	border-collapse:collapse;
-	padding:5px;
-	text-align:center;
-}
-
-/* Setting up Footer for special effects */
-/*.component {
-  text-align: center;
-}
-
-.component__title {
-  margin-bottom: 12px;
-  color: #fff;
-  font-size: 22px;
-  font-weight: 700;
-}
-
-.NSGicon {
-  display: inline-block;
-  vertical-align: top;
-  overflow: visible;
-  margin: 4px;
-  width: 40px;
-  height: 40px;
-  font-size: 0;
-  text-indent: -9999px;
-}
-
-.icon-cube {
-  position: relative;
-  -webkit-perspective: 800px;
-          perspective: 800px;
-  overflow: visible;
-}
-
-.icon-cube::before,
-.icon-cube::after {
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: url("../img/icons5.png");
-  background-image: url("../img/icons5.svg"), none;
-  content: "";
-  -webkit-transition: all 0.3s;
-          transition: all 0.3s;
-}
-
-.icon-cube::before {
-  z-index: 2;
-  background-color: #595959;
-}
-
-.icon-cube::after {
-  z-index: 1;
-  opacity: 0;
-  -webkit-transform: translateY(48px) rotateX(-90deg);
-          transform: translateY(48px) rotateX(-90deg);
-}
-
-.icon-cube:hover::before {
-  opacity: 0;
-  -webkit-transform: translateY(-48px) rotateX(90deg);
-          transform: translateY(-48px) rotateX(90deg);
-}
-
-.icon-cube:hover::after {
-  opacity: 1;
-  -webkit-transform: rotateX(0);
-          transform: rotateX(0);
-}
-*/
-/* facebook */
-/*.icon-cube.facebook::before,
-.icon-cube.facebook::after {
-   background-position: 0 0;
-}
-
-.icon-cube.facebook::after {
-  background-color: #3b5998;
-}
-*/
-/* twitter */
-/*.icon-cube.twitter::before,
-.icon-cube.twitter::after {
-  background-position: -96px 0;
-}
-
-.icon-cube.twitter::after {
-  background-color: #4099ff;
-}
-*/
-/* instagram */
-/*.icon-cube.instagram::before,
-.icon-cube.instagram::after {
-  background-position: -96px 0;
-}
-
-.icon-cube.instagram::after {
-  background-color: #125688;
-}
-*/
-/* linkedin */
-/*.icon-cube.linkedin::before,
-.icon-cube.linkedin::after {
-  background-position: -96px 0;
-}
-
-.icon-cube.linkedin::after {
-  background-color: #007bb5;
-}
-*/
-
-/* google plus */
-/* .icon-cube.googleplus::before,
-.icon-cube.googleplus::after {
-  background-position: -192px 0;
-}
-
-.icon-cube.googleplus::after {
-  background-color: #d34836;
-} */
-
-/* github */
-/* .icon-cube.github::before,
-.icon-cube.github::after {
-  background-position: -288px 0;
-}
-
-.icon-cube.github::after {
-  background-color: #333333;
-} */
-
-/* rss */
-/* .icon-cube.rss::before,
-.icon-cube.rss::after {
-  background-position: -384px 0;
-}
-
-.icon-cube.rss::after {
-  background-color: #ee802f;
-} */
-
-#fontProduct {
-	color: #000000;
-}
-
-#fontProgram {
-	font-size: 14px;
-	font-weight: bold;
-	text-transform: uppercase;
-	color: #000000;
-	text-indent: 0px;
-	width: 100%;
-	margin-top: 8px;
-	margin-right: 0px;
-	margin-bottom: 0px;
-	margin-left: 0px;
-}
-
-#footerFont {
-	font-size: 10px;
-}
-
-#mainbkg {
-	/*background-color: #e9e9e9;*/
-	margin-top: 0px;
-	margin-right: 20px;
-	margin-bottom: 0px;
-	margin-left: 15em;
-	padding-top: 1em;
-	padding-right: 0px;
-	padding-bottom: .25em;
-	padding-left: 3em;
-}
-
-#mainnav {
-	/*background-color: #136ca8;*/
-	margin-right: 5px;
-	margin-left: 0em;
-	margin-top: 0em;
-	margin-bottom: 0px;
-	text-align: left;
-	padding-top: 0em;
-	padding-right: 0em;
-	padding-bottom: 0em;
-	padding-left: 0em
-	/*background-image: ;
-	border-top-width: 4px;
-	border-top-style: solid;
-	border-top-color: #73a2c7;*/
-}
-
-/* Theme CSS Edits */
-.container .navbar-nav li.active a:hover {
-  background-color: #A8AB00;
-}
-.container .navbar-nav li.active a:focus {
-  background-color: #A8AB00;
-}
-.navbar-default .navbar-nav .open > a {
-  background-color: #A8AB00;
-}
-.navbar-default .navbar-nav .open > a:hover {
-  background-color: #A8AB00;
-}
-.navbar-default .navbar-nav .open > a:focus {
-  background-color: #A8AB00;
-}
-.navbar-nav li.dropdown li > a:hover {
-  background-color: #A8AB00;
-}
-.navbar-nav li.dropdown li > a:focus {
-  background-color: #A8AB00;
-}
-.navbar .container .navbar-nav li.active .fa-caret-down {
-  color: #A8AB00;
-}
-.navbar-nav li.dropdown li > a {
-  color: #333333;
-}
-.navbar-nav li.dropdown li > a:hover {
-  color: #FFFFFF;
-}
-.navbar .container .navbar-nav.pull-right li a i:first-of-type {
-  border-color: #FFFFFF;
-}
-.badge {
-  background-color: undefined;
-}
-.badge {
-  color: #FFFFFF;
-}
-.navbar-default {
-  background-color: #0069AA;
-}
-.container .navbar-nav li a {
-  color: #FFFFFF;
-}
-.container .navbar-nav li.active > a {
-  background-color: #A8AB00;
-}
-.container .navbar-nav li.active > a {
-  color: undefined;
-}
-.navbar-default, .dropdown-mega {
-  border-color: ;
-}
-body {
-  background-color: #F7F7F7;
-}
-body {
-  color: #333333;
-}
-.text-primary {
-  color: #002A45;
-}
-.text-info {
-  color: #31708F;
-}
-body a {
-  color: #E04F4F;
-}
-.btn-primary {
-  background-color: #002A45;
-}
-.btn-primary, .btn-primary:hover {
-  color: #FFFFFF;
-}
-.btn-primary {
-  border-color: #081B24;
-}
-.btn-primary:hover {
-  background-color: #051118;
-}
-.btn-default {
-  background-color: #FFFFFF;
-}
-.btn-default, .btn-default:hover {
-  color: #333333;
-}
-.btn-default {
-  border-color: #CCCCCC;
-}
-.btn-default:hover {
-  background-color: #EBEBEB;
-}
-.btn-info {
-  background-color: #5BC0DE;
-}
-.btn-info, .btn-info:hover {
-  color: #FFFFFF;
-}
-.btn-info {
-  border-color: #46B8DA;
-}
-.btn-info:hover {
-  background-color: #39B3D7;
-}
-.btn-success {
-  background-color: #5CB85C;
-}
-.btn-success, .btn-success:hover {
-  color: #FFFFFF;
-}
-.btn-success {
-  border-color: #4CAE4C;
-}
-.btn-success:hover {
-  background-color: #00AB41;
-}
-.btn-warning {
-  background-color: #f0ad4e;
-}
-.btn-warning, .btn-warning:hover {
-  color: #FFFFFF;
-}
-.btn-warning {
-  border-color: #EEA236;
-}
-.btn-warning:hover {
-  background-color: #ED9C28;
-}
-.btn-danger {
-  background-color: #D9534F;
-}
-.btn-danger, .btn-danger:hover {
-  color: #FFFFFF;
-}
-.btn-danger {
-  border-color: #D43F3A;
-}
-.btn-danger:hover {
-  background-color: #D2322D;
-}
-.jumbotron {
-  background-color: #0069AA;
-}
-h2 .jumbotron {
-  color: #FFFFFF;
-}
-.panel-primary .panel-heading .panel-title {
-  background-color: #002A45;
-}
-.panel-primary .panel-heading .panel-title {
-  color: #FFFFFF;
-}
-.panel-default .panel-heading .panel-title {
-  background-color: #F5F5F5;
-}
-.panel-default .panel-heading .panel-title {
-  color: #333333;
-}
-.panel {
-  background-color: #FFFFFF;
-}
-.panel-footer {
-  background-color: #F5F5F5;
-}
-.panel-category-list .well {
-  background-color: #FFFFFF;
-}
-.panel-category-list .well h5 {
-  color: #333333;
-}
-.panel-category-list .well {
-  border-color: #F7F7F7;
-}
-.panel-product-list .well {
-  background-color: #FFFFFF;
-}
-.panel-product-list .well {
-  color: #333333;
-}
-.panel-product-list .well {
-  border-color: #F7F7F7;
-}
+<section class="product-detail-default">
+	<loadingindicator ng-show="loadingIndicator" title="{{'Please wait while we fetch product information' | r | xlat}}" />
+	<!-- BREADCRUMB!-->
+	<productnav product="LineItem.Product" variant="LineItem.Variant" />
+	<!-- Add DISCLAIMER Here -->
+  <div class="panel panel-primary">
+    <div class="panel-heading">
+      <h2 class="panel-title panel-primary">
+        {{'Disclaimer' | r | xlat}}
+      </h2>
+    </div>
+    <div class="panel-body">
+      <h4 class="NSGcenter">This is a Custom item and will ship out in 10-20 business days. No returns accepted for this item unless defective. Defects must be made known to Customer Service within 5 business days of receipt of order. No exceptions. Any questions or concerns, don't hestiate to call Customer Service at 855.444.0847 or email us at <a href="mailto:service@nationalservicegear.org?subject=Custom%20Item%20Inquiry">service@nationalservicegear.org</a>.</h4>
+    </div>
+  </div>
+	<!-- PRODUCT IMAGE PANEL!-->
+	<div class="fixedImage">
+		<div class="col-md-4 col-collapse">
+			<div class="panel panel-default">
+				<div class="panel-body">
+					<loadingindicator ng-show="loadingImage && LineItem.Variant.IsMpowerVariant" />
+					<figure>
+						<img id="451_img_prod_lg" class="product-image-large img-responsive" ng-src="{{LineItem.Variant.PreviewUrl || LineItem.Variant.LargeImageUrl || LineItem.Product.LargeImageUrl}}" imageonload />
+					</figure>
+					<div class="empty" ng-hide="LineItem.Variant.PreviewUrl || LineItem.Variant.LargeImageUrl || LineItem.Product.LargeImageUrl">
+						<span class="fa empty"><i class="fa fa-camera"></i></span>
+					</div>
+				</div>
+				<div class="panel-footer" ng-show="LineItem.Product.Type=='VariableText' && LineItem.Variant">
+	                <span class="btn-group">
+	                    <button ng-if="currentOrder.Status != 'AwaitingApproval' && !EditingLineItem" class="btn btn-default" redirect="/product/{{LineItem.Product.InteropID}}/{{LineItem.Variant.InteropID}}/edit">
+		                    {{'Edit' | r | xlat}}
+	                    </button>
+		                <button ng-if="currentOrder.Status == 'AwaitingApproval' || EditingLineItem" class="btn btn-default" redirect="/product/{{LineItem.Product.InteropID}}/{{LineItem.Variant.InteropID}}/{{LineItemIndex}}/{{currentOrder.ID}}/edit">
+			                {{'Edit' | r | xlat}}
+		                </button>
+	                    <button class="btn btn-default" ng-if="currentOrder.Status != 'AwaitingApproval' && !EditingLineItem" ng-click="deleteVariant(LineItem.Variant, true)">
+		                    {{'Remove' | r | xlat}}
+	                    </button>
+	                    <button class="btn btn-default" ng-click="getPdf(LineItem.Variant.ProofUrl)">
+		                    {{('View' | r) + ' ' + ('PDF' | r) | xlat}}
+	                    </button>
+	                </span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="col-md-7 col-md-offset-1 col-collapse">
+		<!-- PRODUCT INFO!-->
+		<div class="row">
+			<div class="col-xs-12">
+				<h2 id="451qa_prod_name" ng-hide="LineItem.Variant.ExternalID">
+					{{LineItem.Product.Name}}
+				</h2>
+				<h2 ng-show="LineItem.Variant.ExternalID">
+					{{LineItem.Variant.ExternalID}}
+				</h2>
+				<!-- <h2 class="text-success" ng-show="LineItem.PriceSchedule.PriceBreaks.length == 1" ng-if="!(user.Permissions.contains('HidePricing'))">
+					{{LineItem.PriceSchedule.PriceBreaks[0].Price | culturecurrency}}
+				</h2> -->
+			</div>
+		</div>
+		<!-- PRODUCT DESCRIPTION PANEL! --->
+		<div>
+			<div class="panel panel-primary">
+				<div class="panel-heading">
+					<h3 class="panel-title panel-primary">
+						{{'Description' | r | xlat}}
+					</h3>
+				</div>
+				<div class="panel-body" id="451_area_prod_desc">
+					<h4 ng-show="LineItem.Product.ExternalID" class="text-info">
+						{{'Item #' | r | xlat}} {{LineItem.Product.ExternalID}}
+					</h4>
+					<p id="451qa_prod_desc" ng-bind-html="trustedDescription(LineItem.Product)" />
+					<p ng-show="LineItem.Variant.Description" ng-bind-html="trustedDescription(LineItem.Variant)" />
+				</div>
+				<!-- PRICE SCHEDULE PANEL! --->
+				<priceScheduleTable ng-if="!(user.Permissions.contains('HidePricing')) && LineItem.PriceSchedule.PriceBreaks.length > 1" ps='LineItem.PriceSchedule' p='LineItem.Product'/>
+			</div>
+		</div>
+		<!-- STATIC SPECS PANEL! -->
+		<staticspecstable ng-show="StaticSpecGroups && user.Permissions.contains('ViewNonCustomizableSpecs')" specgroups="StaticSpecGroups" length="LineItem.Product.StaticSpecLength"/>
+		<!-- ORDER PANEL! -->
+		<form name="addToOrderForm" novalidate="">
+			<div class="panel panel-default">
+				<div class="panel-heading" ng-if="allowAddToOrder">
+					<h3 class="panel-title">
+						{{'Order' | r | xlat}}
+					</h3>
+				</div>
+				<div class="panel-body">
+					<div class="alert alert-danger" ng-show="(!allowAddToOrder && !canCreateVariant && (!allowAddFromVariantList && (LineItem.Product.Variants.length == 0 || LineItem.Variant)))">
+						<p>
+							<i class="fa fa-ban" />
+							{{'Your current order does not allow this product to be added to your cart' | r | xlat}}
+						</p>
+					</div>
+					<!-- VARIANT LIST! -->
+					<div ng-if="!LineItem.Variant">
+						<div class="row">
+							<div class="panel-title col-xs-9" ng-show="(allowAddToOrder && LineItem.Product.Variants.length > 0) || canCreateVariant">
+								<h4 class="text-info">
+									{{('Product' | r) + ' ' + ('Variants' | r) | xlat}}
+								</h4>
+							</div>
+							<div class="col-xs-3" ng-show="canCreateVariant">
+								<button type="button" ng-show="!LineItem.Variant" class="btn btn-info pull-right" redirect="/product/{{LineItem.Product.InteropID}}/new/edit" tabindex="-1">
+									{{'Create New' | r | xlat}}
+								</button>
+							</div>
+						</div>
+						<div class="view-form-icon" ng-if="LineItem.Product.VariantCount > settings.pageSize || searchTerm">
+							<div>
+								<div class="input-group">
+									<input ng-model="searchTerm" type="text" class="form-control" placeholder="{{'Search' | r | xlat}}" />
+									<i class="fa fa-search"></i>
+									<div class="input-group-btn">
+										<button type="button" class="btn btn-default" ng-click="searchVariants(searchTerm)">{{'Search' | r | xlat}}</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="product-variants">
+							<ul id="451qa_list_variants">
+								<loadingindicator ng-show="searchIndicator" />
+								<li ng-repeat="v in LineItem.Product.Variants | paginate:(settings.currentPage-1) * settings.pageSize | limitTo:settings.pageSize">
+									<div class="row">
+										<a ng-class="{'col-sm-6': allowAddFromVariantList, 'col-sm-11': !allowAddFromVariantList }" href=#/product/{{LineItem.Product.InteropID}}/{{v.InteropID}}>
+											<h5>
+												<strong>{{v.ExternalID}}</strong>
+											</h5>
+											<p ng-show="v.Description" ng-bind-html="trustedDescription(v)" />
+											<p ng-show="LineItem.Product.DisplayInventory && LineItem.Product.IsVariantLevelInventory">
+												{{'Quantity Available' | r | xlat}}: {{v.QuantityAvailable}}
+											</p>
+										</a>
+										<div class="col-sm-2" ng-show="allowAddFromVariantList && !(user.Permissions.contains('HidePricing'))">
+											<div class="quantity-total-variants text-center" ng-show="variantLineItems[v.InteropID].LineTotal > 0">
+												<small><span class="text-info">{{'Total' | r | xlat}}</span><br /><span class=" text-success">{{variantLineItems[v.InteropID].LineTotal | culturecurrency}}</span></small>
+											</div>
+										</div>
+										<div class="col-sm-3 view-form-icon" ng-show="allowAddFromVariantList">
+											<quantityfield required="false" calculated="calcVariantLineItems" lineitem="variantLineItems[v.InteropID]" class="quantity" />
+										</div>
+										<div class="col-sm-1" ng-show="v.IsMpowerVariant">
+											<button type="button" ng-click="deleteVariant(v, false)" class="btn btn-default btn-block">
+												<i class="fa fa-trash-o text-warning"></i> <span class="visible-xs text-warning">{{'Delete' | r | xlat}}</span>
+											</button>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div ng-show="LineItem.Product.VariantCount > settings.pageSize">
+							<pagination ng-change="paged()" ng-model="settings.currentPage" page="settings.currentPage" max-size="8" rotate="false" boundary-links="true" total-items="LineItem.Product.VariantCount"
+							            items-per-page="settings.pageSize" direction-links="true" previous-text="{{'Previous' | xlat}}" next-text="{{'Next' | xlat}}" first-text="{{'First' | xlat}}" last-text="{{'Last' | xlat}}"></pagination>
+						</div>
+					</div>
+					<ordertypeselector ng-show="(canAddToStandardOrder && canAddToReplenishmentOrder && !currentOrder.ID)"></ordertypeselector>
+					<addtoorderspecs ng-show="allowAddToOrder"></addtoorderspecs>
+					<div class="form-group" ng-show="allowAddToOrder">
+						<p ng-show="LineItem.Product.DisplayInventory && (LineItem.Variant || LineItem.Product.Variants.length == 0)">
+							<span class="text-info">{{'Quantity Available' | r | xlat}}</span> {{inventoryDisplay(LineItem.Product, LineItem.Variant)}}
+						</p>
+						<p ng-show="LineItem.PriceSchedule.MinQuantity > 1 && !LineItem.PriceSchedule.RestrictedQuantity">
+							<span class="text-info">{{'Minimum Quantity' | r | xlat}}</span> {{LineItem.PriceSchedule.MinQuantity}}
+						</p>
+						<p ng-show="LineItem.PriceSchedule.MaxQuantity && !LineItem.PriceSchedule.RestrictedQuantity">
+							<span class="text-info">{{'Maximum Quantity' | r | xlat}}</span> {{LineItem.PriceSchedule.MaxQuantity}}
+						</p>
+						<div class="view-form-icon" ng-if="!allowAddFromVariantList">
+							<div>
+								<label ng-class="{required: !allowAddFromVariantList}" ng-hide="allowAddFromVariantList">{{('Order' | r) + ' ' + ('Quantity' | r) | xlat}}</label>
+								<quantityfield required="true" lineitem="LineItem" class="quantity" />
+							</div>
+						</div>
+						<button class="btn btn-success btn-block btn-lg" type="button" id="451_btn_orderadd" ng-click="addToOrder()">
+							<loadingindicator ng-show="addToOrderIndicator" />
+							<i ng-show="lineItemErrors.length > 0" class="fa fa-warning"></i>
+							{{addToOrderText | r | xlat}}
+                            <span id="451qa_lineitem_total" class="badge" ng-if="!(user.Permissions.contains('HidePricing')) && (LineItem.LineTotal || variantLineItemsOrderTotal) > 0">
+                                {{(LineItem.LineTotal || variantLineItemsOrderTotal) | culturecurrency}}
+                            </span>
+						</button>
+					</div>
+				</div>
+			</div>
+		</form>
+		<!-- RELATED PRODUCTS! -->
+		<relatedproducts ng-if="LineItem.Product.RelatedProductsGroupID" relatedgroupid="LineItem.Product.RelatedProductsGroupID" />
+	</div>
+	<!-- ERROR MESSAGING! -->
+	<div class="navbar-fixed-bottom">
+		<div class="view-error-message" ng-show="showAddToCartErrors && lineItemErrors.length > 0">
+			<ul class="alert-warning">
+				<li class="text-center">
+                    <span class="badge">
+                        <i class="fa fa-exclamation-circle fa-inverse"></i>
+                        {{lineItemErrors.length}}
+                    </span>
+				</li>
+				<li class="text-center">
+					<ul ng-class="{'one': errorSection == 'open', 'two': errorSection == '' }">
+						<li class="alert-warning" ng-repeat="e in lineItemErrors">{{e | xlat}}</li>
+						<li class="alert-warning" ng-show="variantLineItems[v.InteropID].qtyError">{{variantLineItems[v.InteropID].qtyError}}</li>
+					</ul>
+				</li>
+				<li class="text-center">
+					<a ng-show="lineItemErrors.length > 1">
+						<i class="fa fa-caret-down" ng-click="errorSection = 'open'" ng-hide="errorSection == 'open'"></i>
+						<i class="fa fa-caret-up" ng-click="errorSection = ''" ng-show="errorSection == 'open'"></i>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</section>
