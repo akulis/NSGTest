@@ -53,7 +53,7 @@ function addtocartpreview() {
             '<i ng-show="addToOrderForm.$invalid" class="fa fa-warning"></i>',
             '<span>Add to List</span>',
             '</button>',
-            '<p><em><a href="451_list_vspec">Click here to go back to the top to continue with new size.</a>'
+            '<p><em><a href="#customToTop">Click here to go back to the top to continue with new size.</a>'
             '<div>',
             '<p ng-if="lineitem.Product.MinTotalQty"><span class="text-info">Minimum Total Order Quantity: </span>{{lineitem.Product.MinTotalQty}}</p>',
             '<p ng-if="lineitem.Product.MaxTotalQty"><span class="text-info">Maximum Total Order Quantity: </span>{{lineitem.Product.MaxTotalQty}}</p>',
