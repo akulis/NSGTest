@@ -132,7 +132,7 @@
   color: red !important;
 }
 
-.vertIcon:hover a {
+.vertIcon a:hover {
   color: green !important;
 }
 
