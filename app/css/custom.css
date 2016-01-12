@@ -133,13 +133,13 @@
   color: red;
 }
 
-.iconTrans a:hover {
-  color: green;
-}
-
-/*.iconTrans:hover {
+/*.iconTrans a:hover {
   color: green;
 }*/
+
+.iconTrans:hover {
+  color: green;
+}
 
 .vertIcon {
     padding-left: 5px;
