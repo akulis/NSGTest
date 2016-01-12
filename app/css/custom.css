@@ -127,8 +127,8 @@
     padding: 10px 25px 0px 0px;
 }
 
-.vertIcon {
-  background-color: #E04F4F; /*D9534F*/
+/*.vertIcon {
+  background-color: #E04F4F;
 }
 .vertIcon, .vertIcon:hover {
   color: #FFFFFF;
@@ -138,19 +138,19 @@
 }
 .vertIcon:hover {
   background-color: #2B2B2B;
-}
+} */
 
-/*.vertIcon {
+.vertIcon {
     padding-left: 5px;
 }
 
 .vertIcon a a:focus{
-    background-color: #E04F4F;
+    color: #E04F4F;
 }
 
 .vertIcon a:hover {
-  background-color: #2B2B2B;
-}*/
+    color: #2B2B2B;
+}
 
 * {
 	margin: 0;
