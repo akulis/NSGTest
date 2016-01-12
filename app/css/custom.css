@@ -120,11 +120,15 @@
 .socialFooter {
     margin-top: 0px;
     clear: both;
-    background-color: #545454;
+    /*background-color: #545454;*/
     height: 60px;
     width: 100%;
     bottom: 0;
     padding: 10px 25px 0px 0px;
+}
+
+.socialFooter:hover {
+  background-color: #545454;
 }
 
 * {
@@ -166,7 +170,7 @@
     padding-left: 25px;
     float: left;
     width: 100%;
-    max-width: 275px;   
+    max-width: 225px;
 }
 
 .fright {
