@@ -128,7 +128,7 @@
 }
 
 .socialFooter > .text-right > .iconTrans {
-    transition: all 1s ease 0s; 
+    /*transition: all 1s ease 0s; */
     color: black;
 }
 
@@ -136,7 +136,17 @@
     color: green;
 }*/
 
-.iconTrans:hover {
+.iconTrans,
+.iconTrans:hover,
+.iconTrans:focus {
+  -webkit-transition: all ease-in-out 0.5s;
+  -moz-transition: all ease-in-out 0.5s;
+  -ms-transition: all ease-in-out 0.5s;
+  -o-transition: all ease-in-out 0.5s;
+  transition: all ease-in-out 0.5s;
+}
+
+.socialFooter > .text-right > .iconTrans:hover {
     color: #2B2B2B;
 }
 
