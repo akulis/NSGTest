@@ -125,19 +125,18 @@
     width: 100%;
     bottom: 0;
     padding: 10px 25px 0px 0px;
-    text-decoration: none !important;
 }
 
-.iconTrans a {
+.socialFooter > .text-right > .iconTrans {
     transition: all 0.3s ease 0s; 
-    color: red;
+    color: black;
 }
 
 /*.iconTrans a:hover {
     color: green;
 }*/
 
-.iconTrans:hover {
+.socialFooter > .text-right > .iconTrans:hover {
   color: green;
 }
 
