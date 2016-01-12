@@ -128,16 +128,16 @@
 }
 
 .vertIcon {
-  background-color: #E04F4F !important;; /*D9534F*/
+  background-color: #E04F4F; /*D9534F*/
 }
 .vertIcon, .vertIcon:hover {
-  color: #FFFFFF !important;;
+  color: #FFFFFF;
 }
 .vertIcon {
-  border-color: #D43F3A !important;;
+  border-color: #D43F3A;
 }
-.vertIcon {
-  background-color: #2B2B2B !important;;
+.vertIcon:hover {
+  background-color: #2B2B2B;
 }
 
 /*.vertIcon {
