@@ -214,7 +214,7 @@
     font-size: 1.8vw;
 }
 
-.visible-xxs {
+/* .visible-xxs {
   display: none !important;
 }
 
@@ -235,7 +235,7 @@
 }
 .nav.visible-xxs {
   margin-bottom: 10px;
-}
+} */
 
 .socialFooter {
     margin-top: 0px;
