@@ -131,13 +131,13 @@
     padding-left: 5px;
 }
 
-/*.vertIcon a {
+.vertIcon a {
     background-color: #E04F4F;
 }
 
 .vertIcon:hover {
-  background-color: #545454;
-} */
+  background-color: #2B2B2B;
+}
 
 * {
 	margin: 0;
