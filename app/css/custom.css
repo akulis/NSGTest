@@ -135,7 +135,7 @@
     background-color: #E04F4F;
 }
 
-.vertIcon:hover {
+.vertIcon a:hover {
   background-color: #2B2B2B;
 }
 
