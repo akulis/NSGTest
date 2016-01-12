@@ -164,9 +164,10 @@
     padding-top: 0em;
     padding-right: 3px;
     padding-bottom: 0px;
-    padding-left: 55px;
+    padding-left: 25px;
     float: left;
     width: 100%;
+    max-width: 200px;   
 }
 
 .fright {
