@@ -120,20 +120,24 @@
 .socialFooter {
     margin-top: 0px;
     clear: both;
-    /*background-color: #545454;*/
+    background-color: #545454;
     height: 60px;
     width: 100%;
     bottom: 0;
     padding: 10px 25px 0px 0px;
 }
 
-.socialFooter a {
+.vertIcon {
+    padding-left: 5px;
+}
+
+/*.vertIcon a {
     background-color: #E04F4F;
 }
 
-.socialFooter:hover {
+.vertIcon:hover {
   background-color: #545454;
-}
+} */
 
 * {
 	margin: 0;
@@ -194,10 +198,6 @@
     padding-right: 10px;
     float: right;
     font-size: 2vw;
-}
-
-.vertIcon {
-    padding-left: 5px;
 }
 
 /* Shopping Cart Circle */
