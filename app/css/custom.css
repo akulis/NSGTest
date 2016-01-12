@@ -25,9 +25,9 @@
 
 /* This counters the spacing issue on the product list page with <a> links */
 .aLinkSpacingFix p a {
-  padding: 0em !important;
-  display: inline !important;
-  text-decoration: none;
+    padding: 0em !important;
+    display: inline !important;
+    text-decoration: none;
 }
 
 .officialCNCS {
@@ -91,7 +91,7 @@
     height: 150px;
     width: 100%;
     bottom: 0;
-    padding: 30px 0;
+    padding: 30px 0px;
     /*padding-top: 5em;
     padding-right: 3px;
     padding-bottom: 3px;
@@ -103,13 +103,13 @@
 
 .NSGSmallFooter {
 	font-size: 2vw;
-    margin-top: 20px;
+    margin-top: 0px;
 	clear: both;
 	background-color: #dedede;
 	height: 150px;
     width: 100%;
     bottom: 0;
-    padding: 30px 0px 0px 0px;
+    padding: 30px 0px;
 	/*padding-top: 5em;
 	padding-right: 3px;
 	padding-bottom: 3px;
@@ -146,37 +146,47 @@
     font-size: 4vw;
 }
 .fleft {
-	margin-right: 0px;
-	margin-left: 0px;
-	margin-top: 0px;
-	margin-bottom: 0px;
-  padding-top: 0em;
-	padding-right: 3px;
-	padding-bottom: 0px;
-	padding-left: 55px;
-	float: left;
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 0em;
+    padding-right: 3px;
+    padding-bottom: 0px;
+    padding-left: 55px;
+    float: left;
 }
 
 .fright {
-  margin-right: 0em;
-	margin-left: 0em;
-	margin-top: 0px;
-	margin-bottom: 0px;
-  padding-right: 25px;
-	float: right;
+    margin-right: 0em;
+    margin-left: 0em;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-right: 25px;
+    float: right;
+}
+
+.fSmallRight {
+    margin-right: 0em;
+    margin-left: 0em;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-right: 10px;
+    float: right;
+    font-size: 2vw;
 }
 
 .vertIcon {
-  padding-left: 5px;
+    padding-left: 5px;
 }
 
 /* Shopping Cart Circle */
 .shoppingCartNavBar li a i:first-of-type{
-  border-radius: 50%;
-  border: 1px solid #fff;
-  text-align: center;
-  padding: 10px;
-  margin-top: -10px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    text-align: center;
+    padding: 10px;
+    margin-top: -10px;
 }
 
 /* Product Image */
@@ -187,24 +197,24 @@
 
 /* Search Bar */
 .customSearchBar {
-  float: right !important;
-  width: 65%;
-  margin-top: 10px;
-	margin-right: 10px;
-	margin-bottom: 10px;
+    float: right !important;
+    width: 65%;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
 }
 
 /*PP Item Timetable settings*/
 
 .tablePPTimeline {
-	border:2px;
-	border-style: solid;
-  border-color: ##002A45;
-	border-collapse:collapse;
-	box-shadow: 5px 5px 10px 0px rgba(119, 119, 119, 0.3);
-	-moz-box-shadow: 5px 5px 10px 0px rgba(119, 119, 119, 0.3);
-	-webkit-box-shadow: 5px 5px 10px 0px rgba(119, 119, 119, 0.3);
-	background-color: #dedede;
+    border:2px;
+    border-style: solid;
+    border-color: ##002A45;
+    border-collapse:collapse;
+    box-shadow: 5px 5px 10px 0px rgba(119, 119, 119, 0.3);
+    -moz-box-shadow: 5px 5px 10px 0px rgba(119, 119, 119, 0.3);
+    -webkit-box-shadow: 5px 5px 10px 0px rgba(119, 119, 119, 0.3);
+    background-color: #dedede;
 }
 
 .thPPTimeline {
