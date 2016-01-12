@@ -145,7 +145,7 @@
 }
 
 .vertIcon a a:focus{
-    color: #E04F4F;
+    color: #E04F4F !important;
 }
 
 .vertIcon a:hover {
