@@ -128,16 +128,12 @@
 }
 
 .vertIcon a {
-    text-decoration: none !important;
-}
-
-.vertIcon a {
   transition: background-color 0.5s ease;
-  color: red;
+  color: red !important;
 }
 
 .vertIcon:hover a {
-  color: green;
+  color: green !important;
 }
 
 /*.vertIcon {
