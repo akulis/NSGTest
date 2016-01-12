@@ -128,7 +128,7 @@
 }
 
 .socialFooter > .text-right > .iconTrans {
-    transition: all 0.3s ease 0s; 
+    transition: all 1s ease 0s; 
     color: black;
 }
 
