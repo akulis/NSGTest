@@ -129,10 +129,10 @@
 
 .vertIcon a{
   transition: background-color 0.5s ease;
-  background-color: red;
+  color: red;
 }
 .vertIcon:hover a{
-  background-color: green;
+  color: green;
 }
 
 /*.vertIcon {
