@@ -143,7 +143,7 @@
 }
 
 .socialFooter > .text-right > .iconTrans:hover {
-    color: #A8AB00;
+    color: #A8AB00 !important; /* 2B2B2B */
 }
 
 .vertIcon {
