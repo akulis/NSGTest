@@ -127,20 +127,15 @@
     padding: 10px 25px 0px 0px;
 }
 
-/*.vertIcon {
-  background-color: #E04F4F;
-}
-.vertIcon, .vertIcon:hover {
-  color: #FFFFFF;
-}
 .vertIcon {
-  border-color: #D43F3A;
+  transition: background-color 0.5s ease;
+  background-color: red;
 }
 .vertIcon:hover {
-  background-color: #2B2B2B;
-} */
+  background-color: green;
+}
 
-.vertIcon {
+/*.vertIcon {
     padding-left: 5px;
 }
 
@@ -150,7 +145,7 @@
 
 .vertIcon a:hover {
     color: #2B2B2B;
-}
+}*/
 
 * {
 	margin: 0;
