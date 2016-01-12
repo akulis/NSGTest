@@ -585,7 +585,7 @@ body a {
   color: #FFFFFF;
 }
 .btn-danger {
-  border-color: #D43F3A;
+  border-color: #E04F4F; /*D43F3A*/
 }
 .btn-danger:hover {
   background-color: #D2322D;
