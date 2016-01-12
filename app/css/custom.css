@@ -78,7 +78,6 @@
 	/*text-shadow: 2px 2px 4px #A1A1A1;*/
 }
 
-
 /*Footer CSS*/
 .NSGfooter {
 	/*margin-right: 5em;
@@ -100,6 +99,29 @@
 	/*background-image: url(Images/IB.png);
 	background-repeat: no-repeat;
 	background-position: 5px 5px;*/
+}
+
+.socialFooter {
+   margin-top: 0px;
+   clear: both;
+   background-color: #545454;
+   height: 75px;
+   width: 100%;
+   bottom: 0;
+   padding: 15px 25px 0px 0px;
+}
+
+* {
+	margin: 0;
+}
+
+.flushFooter, .push {
+    height: 225px; /* .push must be the same height as .footer */
+}
+
+.NSGwrapper {
+    min-height: 100%;
+	margin: 0 auto -155px; /* the bottom margin is the negative value of the footer's height */
 }
 
 .fleft {
@@ -125,16 +147,6 @@
 
 .vertIcon {
   padding-left: 5px;
-}
-
-.socialFooter {
-   margin-top: 0px;
-   clear: both;
-   background-color: #545454;
-   height: 75px;
-   width: 100%;
-   bottom: 0;
-   padding: 15px 25px 0px 0px;
 }
 
 /* Shopping Cart Circle */
