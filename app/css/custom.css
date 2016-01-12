@@ -127,15 +127,7 @@
     padding: 10px 25px 0px 0px;
 }
 
-.socialFooter > .text-right > .iconTrans {
-    /*transition: all 1s ease 0s; */
-    color: black;
-}
-
-/*.iconTrans a:hover {
-    color: green;
-}*/
-
+/* Use this to transition icons */
 .iconTrans,
 .iconTrans:hover,
 .iconTrans:focus {
@@ -146,6 +138,10 @@
   transition: all ease-in-out 0.5s;
 }
 
+.socialFooter > .text-right > .iconTrans {
+    color: #E04F4F;
+}
+
 .socialFooter > .text-right > .iconTrans:hover {
     color: #2B2B2B;
 }
@@ -153,14 +149,6 @@
 .vertIcon {
     padding-left: 5px;
 }
-
-/*.vertIcon a a:focus{
-    color: #E04F4F !important;
-}
-
-.vertIcon a:hover {
-    color: #2B2B2B;
-}*/
 
 * {
 	margin: 0;
