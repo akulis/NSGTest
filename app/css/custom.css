@@ -124,6 +124,9 @@
 	margin: 0 auto -210px; /* the bottom margin is the negative value of the footer's height */
 }
 
+.contactFooterText {
+    font-size: 4vw;
+}
 .fleft {
 	margin-right: 0px;
 	margin-left: 0px;
