@@ -165,6 +165,19 @@
     padding-bottom: 0px;
     padding-left: 25px;
     float: left;
+    width: 100%;   
+}
+
+.fXSLeft {
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 0em;
+    padding-right: 3px;
+    padding-bottom: 0px;
+    padding-left: 25px;
+    float: left;
     width: 100%;
     max-width: 300px;   
 }
@@ -185,6 +198,17 @@
     margin-bottom: 0px;
     padding-right: 10px;
     float: right;
+    font-size: 2vw;
+}
+
+.fXSRight {
+    margin-right: 0em;
+    margin-left: 0em;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-right: 10px;
+    /*float: right;*/
+    text-align: center;
     font-size: 2vw;
 }
 
