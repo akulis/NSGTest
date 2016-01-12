@@ -84,8 +84,7 @@
     margin-left: 4em;
     margin-top: 0px;
     margin-bottom: 0px;*/
-    /*font-size: 13pt;*/
-    font-size: 4vw;
+    font-size: 13pt;
     margin-top: 0px;
     clear: both;
     background-color: #dedede;
@@ -94,17 +93,17 @@
     bottom: 0;
     padding: 30px 0;
     /*padding-top: 5em;
-	padding-right: 3px;
-	padding-bottom: 3px;
-	padding-left: 5px;*/
-	/*background-image: url(Images/IB.png);
-	background-repeat: no-repeat;
-	background-position: 5px 5px;*/
+    padding-right: 3px;
+    padding-bottom: 3px;
+    padding-left: 5px;*/
+    /*background-image: url(Images/IB.png);
+    background-repeat: no-repeat;
+    background-position: 5px 5px;*/
 }
 
 .NSGSmallFooter {
-	font-size: 4vw;
-    margin-top: 0px;
+	font-size: 1vw;
+    margin-top: 20px;
 	clear: both;
 	background-color: #dedede;
 	height: 150px;
