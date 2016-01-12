@@ -101,14 +101,32 @@
 	background-position: 5px 5px;*/
 }
 
+.NSGSmallFooter {
+	font-size: 4vw;
+    margin-top: 0px;
+	clear: both;
+	background-color: #dedede;
+	height: 150px;
+    width: 100%;
+    bottom: 0;
+    padding: 30px 0;
+	/*padding-top: 5em;
+	padding-right: 3px;
+	padding-bottom: 3px;
+	padding-left: 5px;*/
+	/*background-image: url(Images/IB.png);
+	background-repeat: no-repeat;
+	background-position: 5px 5px;*/
+}
+
 .socialFooter {
-   margin-top: 0px;
-   clear: both;
-   background-color: #545454;
-   height: 60px;
-   width: 100%;
-   bottom: 0;
-   padding: 10px 25px 0px 0px;
+    margin-top: 0px;
+    clear: both;
+    background-color: #545454;
+    height: 60px;
+    width: 100%;
+    bottom: 0;
+    padding: 10px 25px 0px 0px;
 }
 
 * {
