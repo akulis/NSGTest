@@ -128,12 +128,16 @@
 }
 
 .iconTrans a {
-  transition: background-color 0.5s ease;
+  transition: color 0.5s ease;
   color: red !important;
 }
 
 .iconTrans a:hover {
   color: green !important;
+}
+
+.iconTrans:hover {
+  color: green;
 }
 
 .vertIcon {
