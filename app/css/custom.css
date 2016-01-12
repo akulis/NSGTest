@@ -131,7 +131,7 @@
     padding-left: 5px;
 }
 
-.vertIcon a {
+.vertIcon a a:focus{
     background-color: #E04F4F;
 }
 
