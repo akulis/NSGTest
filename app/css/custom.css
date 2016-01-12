@@ -105,10 +105,10 @@
    margin-top: 0px;
    clear: both;
    background-color: #545454;
-   height: 75px;
+   height: 60px;
    width: 100%;
    bottom: 0;
-   padding: 15px 25px 0px 0px;
+   padding: 10px 25px 0px 0px;
 }
 
 * {
@@ -116,12 +116,12 @@
 }
 
 .flushFooter, .push {
-    height: 225px; /* .push must be the same height as .footer */
+    height: 210px; /* .push must be the same height as .footer */
 }
 
 .NSGwrapper {
     min-height: 100%;
-	margin: 0 auto -155px; /* the bottom margin is the negative value of the footer's height */
+	margin: 0 auto -210px; /* the bottom margin is the negative value of the footer's height */
 }
 
 .fleft {
