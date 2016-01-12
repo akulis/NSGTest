@@ -127,7 +127,20 @@
     padding: 10px 25px 0px 0px;
 }
 
-.vertIcon {
+.iconHover {
+  background-color: #E04F4F; /*D9534F*/
+}
+.iconHover, .iconHover:hover {
+  color: #FFFFFF;
+}
+.iconHover {
+  border-color: #D43F3A;
+}
+.iconHover {
+  background-color: #2B2B2B;
+}
+
+/*.vertIcon {
     padding-left: 5px;
 }
 
@@ -137,7 +150,7 @@
 
 .vertIcon a:hover {
   background-color: #2B2B2B;
-}
+}*/
 
 * {
 	margin: 0;
@@ -579,13 +592,13 @@ body a {
   background-color: #ED9C28;
 }
 .btn-danger {
-  background-color: #D9534F;
+  background-color: #E04F4F; /*D9534F*/
 }
 .btn-danger, .btn-danger:hover {
   color: #FFFFFF;
 }
 .btn-danger {
-  border-color: #E04F4F; /*D43F3A*/
+  border-color: #D43F3A;
 }
 .btn-danger:hover {
   background-color: #D2322D;
