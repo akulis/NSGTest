@@ -142,6 +142,15 @@
     color: #E04F4F;
 }
 
+.socialFooter > .text-right > .iconTwitter:hover {
+    color: #00ACED !important; /* 2B2B2B */
+}
+.socialFooter > .text-right > .iconTrans:hover {
+    color: #A8AB00 !important; /* 2B2B2B */
+}
+.socialFooter > .text-right > .iconTrans:hover {
+    color: #A8AB00 !important; /* 2B2B2B */
+}
 .socialFooter > .text-right > .iconTrans:hover {
     color: #A8AB00 !important; /* 2B2B2B */
 }
