@@ -7,7 +7,7 @@ html {
 }
 body {
   margin: 0;
-  height: 100%;
+  height: 100%; /* Added this to make sticky footer - ak */
 }
 
 article,
@@ -5878,12 +5878,32 @@ ul:after,
 @-ms-viewport {
   width: device-width;
 }
+.visible-xxs,
 .visible-xs,
 .visible-sm,
 .visible-md,
 .visible-lg {
   display: none !important;
 }
+
+/* Updated the min-width to work with .visible-xxs -ak */
+
+@media (max-width: 719px) {
+  .visible-xxs {
+    display: block !important;
+  }
+  table.visible-xxs {
+    display: table;
+  }
+  tr.visible-xxs {
+    display: table-row !important;
+  }
+  th.visible-xxs,
+  td.visible-xxs {
+    display: table-cell !important;
+  }
+}
+
 @media (min-width: 720px) and (max-width: 767px) {
   .visible-xs {
     display: block !important;
@@ -6396,7 +6416,7 @@ button::-moz-focus-inner {
   padding: 20px 10px;
 }
 
-/* Remove Border Radius and Border for Shopping Cart Icon, Add to Custom CSS for Shopping Cart Only. This is to avoid having circles around social media icons */
+/* Remove Border Radius and Border for Shopping Cart Icon, Add to Custom CSS for Shopping Cart Only. This is to avoid having circles around social media icons -ak */
 .navbar .container .navbar-nav.pull-right li a i:first-of-type,
 .navbar .container-view .navbar-nav.pull-right li a i:first-of-type {
   /*border-radius: 50%;
@@ -6487,7 +6507,7 @@ button::-moz-focus-inner {
   padding: 15px;
   cursor: pointer;
 }
-.nav.visible-sm.visible-xs {
+.nav.visible-sm.visible-xs.visible-xxs {
   margin-bottom: 10px;
 }
 .navbar .nav a {
@@ -8091,7 +8111,7 @@ select.ng-invalid:invalid:invalid:focus {
   display: none;
 }
 
-/* Adjust Product List Link Here */
+/* Adjust Product List Link Here - ak*/
 .panel-product-list ul li a {
   padding: .75em;
   display: block;
