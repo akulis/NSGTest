@@ -127,17 +127,17 @@
     padding: 10px 25px 0px 0px;
 }
 
-.iconHover {
-  background-color: #E04F4F; /*D9534F*/
+.vertIcon {
+  background-color: #E04F4F !important;; /*D9534F*/
 }
-.iconHover, .iconHover:hover {
-  color: #FFFFFF;
+.vertIcon, .vertIcon:hover {
+  color: #FFFFFF !important;;
 }
-.iconHover {
-  border-color: #D43F3A;
+.vertIcon {
+  border-color: #D43F3A !important;;
 }
-.iconHover {
-  background-color: #2B2B2B;
+.vertIcon {
+  background-color: #2B2B2B !important;;
 }
 
 /*.vertIcon {
