@@ -103,7 +103,7 @@
 
 .NSGSmallFooter {
 	margin-top: 0px;
-	/*clear: both;*/
+	clear: both;
 	background-color: #dedede;
 	height: 150px;
     bottom: 0;
@@ -196,7 +196,7 @@
     margin-left: 0em;
     margin-top: 0px;
     margin-bottom: 0px;
-    padding-right: 10px;
+    padding-right: 25px;
     float: right;
     font-size: 2vw;
 }
