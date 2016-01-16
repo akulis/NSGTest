@@ -78,6 +78,11 @@
 	/*text-shadow: 2px 2px 4px #A1A1A1;*/
 }
 
+.prod-desc-par ul {
+    list-style-type: disc;
+    margin-left:10px;
+}
+
 /*Footer CSS*/
 
 * {
