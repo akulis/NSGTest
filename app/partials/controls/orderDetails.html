@@ -40,9 +40,9 @@
                 <hr />
                 <div ng-repeat="field in currentOrder.OrderFields">
                     <customtextfield customfield="field" ng-if="field.ControlType == 'Text'" ng-required="field.IsRequired" />
-                    <p>test</p>
                     <customselectionfield customfield="field" ng-if="field.ControlType == 'Selection'" ng-required="field.IsRequired" />
                 </div>
+                <p>test</p>
             </div>
         </form>
     </div>
