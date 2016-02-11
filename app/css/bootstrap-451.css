@@ -232,9 +232,6 @@ th {
   }
   .navbar {
     display: none;
-    -webkit-box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.42);
-    -moz-box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.42);
-    box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.42);
   }
   .table td,
   .table th {
