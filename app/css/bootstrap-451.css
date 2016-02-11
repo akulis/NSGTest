@@ -6540,7 +6540,8 @@ button::-moz-focus-inner {
   float: none;
 }
 .jumbotron {
-  margin: 45px 5px -45px;
+  margin: 45px 0px -45px;
+  /* margin: 45px 5px -45px; */
   display: none;
 }
 .jumbotron.active {
