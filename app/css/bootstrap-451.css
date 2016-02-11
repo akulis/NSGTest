@@ -3673,7 +3673,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   /*margin-left: 50px;
   margin-right: 50px;*/
   margin-bottom: 0;
-  border: 1px solid transparent;
+  /*border: 0px solid transparent;*/
 }
 @media (min-width: 768px) {
   .navbar {
