@@ -4,11 +4,11 @@
 
     .NSGcenter {
         text-align: center;
-        display: inline-block;
     }
 
     .NSGNavBar {
         padding: 15px 10px 0px 10px;
+        display: inline-block;
         /*text-align: center;*/
     }
 
