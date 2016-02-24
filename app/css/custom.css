@@ -13,8 +13,7 @@
 
     #NSGCircleNavBar {
         display: inline;
-        float: left;
-        margin-bottom: 50px;
+        float: left;margin-bottom: 50px;
     }
 
     #NSGFontNavBar {
