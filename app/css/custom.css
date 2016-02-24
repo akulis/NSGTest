@@ -17,6 +17,10 @@
         vertical-align: middle;
     }
 
+    .NSGMiddle {
+        vertical-align: middle;
+    }
+
     #NSGFontNavBar {
         clear: none;
         display: inline;
