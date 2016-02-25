@@ -75,8 +75,8 @@
 
     .NSGCategoryTitle {
         color: #0B3648;
-        font-size: 15pt;
-    	font-style: bold;
+        font-size: 10pt;
+    	font-style: italic;;
         /* offset-x | offset-y | blur-radius | color */
         text-shadow: 5px 5px 10px #000000;
     }
