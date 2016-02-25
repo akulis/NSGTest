@@ -8,7 +8,7 @@
                     <!-- <a ng-href="catalog/{{c.InteropID}}"> -->
                     <a ng-href="{{c.InteropID == 'asi' ? 'asi' : 'catalog'}}/{{c.InteropID}}">
                         <figure ng-show="c.Image.URL">
-                            <img class="img-responsive sm-hidden xs-hidden xxs-hidden NSGCategoryButton" ng-src="{{c.Image.URL}}"/>
+                            <img class="img-responsive hidden-sm hidden-xs hidden-xxs NSGCategoryButton" ng-src="{{c.Image.URL}}"/>
                         </figure>
                         <!-- div class="empty" ng-show="!c.Image.URL">
                             <span class="fa empty"><i class="fa fa-camera"></i></span>
