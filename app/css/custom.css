@@ -68,15 +68,15 @@
     }
 
     .NSGCategoryButton {
-        margin: 0px 25px 25px 25px;
-        -webkit-box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.42);
+        margin: 0px 25px 30px 25px;
+        /*-webkit-box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.42);
         -moz-box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.42);
-        box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.42);
+        box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.42);*/
     }
 
-    .NSGCategoryButton:hover {
-        margin: 0px 25px 25px 25px;
-    }
+    /*.NSGCategoryButton:hover {
+        margin: 0px 25px 30px 25px;
+    }*/
 
     /*.NSGCategoryButtonPadding {
         padding: 0px 25px 25px 25px;
@@ -88,7 +88,7 @@
 
     .NSGCategoryTitle {
         color: #0B3648;
-        font-size: 13pt;
+        font-size: 12pt;
     	font-style: bold;
         /* offset-x | offset-y | blur-radius | color */
         /*text-shadow: 2px 2px 5px #000000;*/
