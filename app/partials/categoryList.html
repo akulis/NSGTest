@@ -7,7 +7,7 @@
                 <div>
                     <!-- <a ng-href="catalog/{{c.InteropID}}"> -->
                     <a ng-href="{{c.InteropID == 'asi' ? 'asi' : 'catalog'}}/{{c.InteropID}}">
-                        <figure ng-show="c.Image.URL">
+                        <figure class=" xs-hidden xxs-hidden " ng-show="c.Image.URL">
                             <img class="img-responsive" ng-src="{{c.Image.URL}}"/>
                         </figure>
                         <!-- div class="empty" ng-show="!c.Image.URL">
