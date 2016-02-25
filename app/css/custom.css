@@ -68,17 +68,26 @@
     }
 
     .NSGCategoryButton {
+        padding: 0px 25px 25px 25px;
         -webkit-box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.42);
         -moz-box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.42);
         box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.42);
     }
 
+    .NSGCategoryButton:hover {
+        padding: 0px 25px 25px 25px;
+    }
+
     .NSGCategoryTitle {
         color: #0B3648;
         font-size: 10pt;
-    	font-style: italic;;
+    	font-style: bold;
         /* offset-x | offset-y | blur-radius | color */
-        text-shadow: 5px 5px 10px #000000;
+        text-shadow: 2px 2px 5px #000000;
+    }
+
+    .NSGCategoryTitle:hover {
+        color: #E04F4F;
     }
 
     .officialCNCS {
