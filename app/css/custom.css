@@ -83,6 +83,11 @@
         height: 50px;
     }
 
+    .NSGNavbarIconContainer { 
+        max-width: 100%;
+        height: auto;
+    }
+
 
     /*.NSGCategoryButton:hover {
         margin: 0px 25px 30px 25px;
