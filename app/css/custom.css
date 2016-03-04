@@ -28,9 +28,10 @@
     .jumboHeaderText {
         text-align: center;
         /*vertical-align: middle;*/
-        padding-top: 5px;
-        color: #FFFFFF;
-        /*position: relative;
+        /*padding-top: 5px;*/
+        margin-bottom: 25px;
+        /*color: #FFFFFF;
+        position: relative;
         top: 50%;
         transform: translateY(-50%);*/
     }
