@@ -29,7 +29,7 @@
         text-align: center;
         /*vertical-align: middle;*/
         /*padding-top: 5px;*/
-        margin-bottom: 25px;
+        /*margin-bottom: 25px;*/
         /*color: #FFFFFF;
         position: relative;
         top: 50%;
@@ -37,6 +37,8 @@
     }*/
     
     .jumboHeaderText {
+        /*display: block;
+        position: relative;*/
         -webkit-transform-style: preserve-3d;
         -moz-transform-style: preserve-3d;
         transform-style: preserve-3d;
