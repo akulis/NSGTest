@@ -600,8 +600,9 @@
     h2 .jumbotron {
       color: #FFFFFF;
     }
+    
     .panel-primary .panel-heading .panel-title {
-      background-color: #99C24D
+      background-color: #99C24D;
     }
     .panel-primary .panel-heading .panel-title {
       color: #FFFFFF;
@@ -611,6 +612,14 @@
     }
     .panel-announcement .panel-heading .panel-title {
       color: #FFFFFF;
+    }
+    .panel-announcement {
+        margin-bottom: 20px;
+        background-color: #ffffff;
+        border: 1px solid transparent;
+        border-radius: 0;
+        -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
     }
     .panel-default .panel-heading .panel-title {
       background-color: #F5F5F5;
