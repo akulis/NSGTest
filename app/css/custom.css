@@ -600,59 +600,18 @@
     h2 .jumbotron {
       color: #FFFFFF;
     }
-    .panel-announcement .panel-heading-announcement .panel-title-announcement {
-      background-color: #F18F01;
-    }
-    .panel-announcement .panel-heading-announcement .panel-title-announcement {
-      color: #FFFFFF;
-    }
-    .panel-announcement-main {
-      margin-bottom: 20px;
-      background-color: #ffffff;
-      border: 1px solid transparent;
-      border-radius: 0;
-      -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
-      box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
-    }
-    .panel-heading-announcement {
-      padding: 10px 15px;
-      border-bottom: 1px solid transparent;
-      border-top-right-radius: -1;
-      border-top-left-radius: -1;
-    }
-    .panel-title-announcement {
-      margin-top: 0;
-      margin-bottom: 0;
-      font-size: 16px;
-      color: inherit;
-    }
-    
-
-
-
-
-
-    
     .panel-primary .panel-heading .panel-title {
-      background-color: #99C24D;
+      background-color: #F18F01; /*002A45*/
     }
     .panel-primary .panel-heading .panel-title {
       color: #FFFFFF;
     }
     .panel-default .panel-heading .panel-title {
-      background-color: #F5F5F5;
+      background-color: #99C24D;
     }
     .panel-default .panel-heading .panel-title {
       color: #333333;
     }
-    /*.panel-announcement-override {
-        margin-bottom: 20px;
-        background-color: #ffffff;
-        border: 1px solid transparent;
-        border-radius: 0;
-        -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
-        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
-    }*/
     .panel {
       background-color: #FFFFFF;
     }
