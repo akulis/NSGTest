@@ -343,6 +343,12 @@
         font-size: 4vw;
     }
 
+    /*Gives items a list style*/
+    .prod-desc-list-style ul {
+    list-style-type: circle;
+    margin-left:10px;
+    }
+
 
     /* Shopping Cart Circle */
     .shoppingCartNavBar li a i:first-of-type{
@@ -601,7 +607,7 @@
       color: #FFFFFF;
     }
     .panel-primary .panel-heading .panel-title {
-      background-color: #99C24D; /*002A45*/
+      background-color: #F18F01; /*002A45*/
     }
     .panel-primary .panel-heading .panel-title {
       color: #FFFFFF;
