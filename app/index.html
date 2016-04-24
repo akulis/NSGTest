@@ -1,17 +1,21 @@
 <!doctype html>
 <html lang="en" ng-app="451order" ng-controller="Four51Ctrl">
     <head>
+        <!-- Set sub-folder here if different than base -->
         <base href="/nsgtest/"/>
+        <!-- Set four51IsAnonUser to true if anonymous or false if password is needed -->
         <script>var four51IsAnonUser = false;</script>
+        <!-- Meta tags -->
         <meta name="fragment" content="!">
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-        <title>National Service Gear - The Volunteer Gear People</title>
-        <!-- Meta links for SEO -->
-        <meta name="description" content="Outfit your Volunteers! Official provider of gear to the Corporation for National & Community Service & the AmeriCorps programs. Free Ship orders over $300." />
+        <!-- Set search description here, NO KEYWORDS, this is what shows up in Google. Make no longer than 150-160 characters. -->
+        <meta name="description" content="Volunteer & Service Gear - Official provider of AmeriCorps gear to the Corporation for National & Community Service. Free Shipping on all orders over $300." />
         <!-- <meta name="robots" content="index,follow" /> -->
+        <!-- Set Window/Tab title here -->
+        <title>National Service Gear - The Volunteer Gear People</title>
         <!-- Favicon -->
-        <link rel="shortcut icon" href="https://www.four51.com/Themes/Custom/cdde0792-3f36-497d-88eb-12c282cba5d2/NSG/images/favicon.ico" />
+        <link rel="shortcut icon" href="images/favicon.ico" />
         <!-- CSS Stylesheets -->
         <link rel="stylesheet" href="css/bootstrap-451.css" data-group="source" />
         <link rel="stylesheet" href="css/editor.css" data-group="source" />
@@ -129,6 +133,8 @@
         <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular-route.min.js" data-group="cdn"></script>
         <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular-touch.min.js" data-group="cdn"></script>
         <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular-loader.min.js" data-group="cdn"></script>
+        <script src="//cdn.ckeditor.com/4.4.7/basic/ckeditor.js" data-group="cdn"></script>
+
         <script src="lib/store.js" data-group="resources"></script>
         <script src="lib/angular_ui/ui-utils.min.js" data-group="resources"></script>
         <script src="lib/angular_ui/ui-bootstrap-tpls-0.10.0.min.js" data-group="resources"></script>
@@ -138,13 +144,17 @@
         <script src="lib/angular/plugins/Debouncer.js" data-group="resources"></script>
         <script src="lib/angular/plugins/ngAutocomplete.js" data-group="resources"></script>
         <script src="lib/oc/anonRouter.js" data-group="resources"></script>
+        <script src="lib/oc/ordercloud-specforms.js" data-group="resources"></script>
+
         <script src="//maps.googleapis.com/maps/api/js?libraries=places&sensor=false"></script>
+
         <script src="js/app.js" data-group="source"></script>
         <script src="js/four51consts.js" data-group="source"></script>
         <script src="js/451.js" data-group="source"></script>
         <script src="js/filters.js" data-group="source"></script>
         <script src="js/config.js" data-group="source"></script>
         <script src="js/routing.js" data-group="source"></script>
+
         <script src="js/controllers/Four51Ctrl.js" data-group="source"></script>
         <script src="js/controllers/categoryCtrl.js" data-group="source"></script>
         <script src="js/controllers/errorCtrl.js" data-group="source"></script>
@@ -178,6 +188,7 @@
         <script src="js/controllers/orderTypeSelectorCtrl.js" data-group="source"></script>
         <script src="js/controllers/reportViewCtrl.js" data-group="source"></script>
         <script src="js/controllers/kitCtrl.js" data-group="source"></script>
+
         <script src="js/interceptors.js" data-group="source"></script>
         <script src="js/services/errorService.js" data-group="source"></script>
         <script src="js/services/securityService.js" data-group="source"></script>
@@ -208,7 +219,9 @@
         <script src="js/services/XLATTables.js" data-group="source"></script>
         <script src="js/services/XLATService.js" data-group="source"></script>
         <script src="js/services/kitService.js" data-group="source"></script>
+
         <script src="js/factories/fileReader.js" data-group="source"></script>
+
         <script src="js/directives/match.js" data-group="source"></script>
         <script src="js/directives/buttonredirect.js" data-group="source"></script>
         <script src="js/directives/product.js" data-group="source"></script>
@@ -228,6 +241,7 @@
         <script src="js/directives/inlineerror.js" data-group="source"></script>
         <script src="js/directives/nav.js" data-group="source"></script>
         <script src="js/directives/branding.js" data-group="source"></script>
+        <script src="js/directives/brandingAC.js" data-group="source"></script>
         <script src="js/directives/login.js" data-group="source"></script>
         <script src="js/directives/approval.js" data-group="source"></script>
         <script src="js/directives/shortCartView.js" data-group="source"></script>
@@ -256,9 +270,7 @@
         <script src="lib/oc/contentModal.js" data-group="resources"></script>
         <script src="lib/oc/carousel.js" data-group="resources"></script>
         <script src="lib/oc/addToCartPreview.js" data-group="resources"></script>
-        <script src="lib/oc/ordercloud-specforms.js" data-group="resources"></script>
-        <script src="//cdn.ckeditor.com/4.4.7/basic/ckeditor.js" data-group="cdn"></script>
-        <!-- <script src="lib/oc/productZoom.js" data-group="resources"></script> -->
+        <script src="lib/oc/productZoom.js" data-group="resources"></script>
     </body>
     <!-- <![endif]-->
 </html>
