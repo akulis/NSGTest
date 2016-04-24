@@ -83,6 +83,10 @@
         height: 50px;
     }
 
+    .panel-product-list ul li a h5 {
+        height: 50px;
+    }
+
     .NSGNavbarIconContainer {
         max-width: 100%;
         height: auto;
