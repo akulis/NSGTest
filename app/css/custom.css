@@ -84,8 +84,8 @@
     }
 
     .panel-product-list ul li h3 {
-        font-size: 2vw;
-        font-size: 1.1vmin;
+        font-size: 1.8vmin;
+        font-size: 1.1vmax;
         /* height: 400px; */
     }
 
