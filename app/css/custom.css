@@ -83,8 +83,9 @@
         height: 50px;
     }
 
-    .panel-product-list ul li {
-        height: 400px;
+    .panel-product-list ul li h3 {
+        font-size: 10px; 
+        /* height: 400px; */
     }
 
     .NSGNavbarIconContainer {
