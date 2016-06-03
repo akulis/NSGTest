@@ -92,6 +92,10 @@
     font-size: 15px;
 }
 
+.shoppingCartIndicator ul li a {
+    color: #FFFFFF;
+}
+
 .NSGNavbarIconContainer {
     max-width: 100%;
     height: auto;
@@ -354,8 +358,8 @@
 
 /*Gives items a list style*/
 .prod-desc-list-style ul {
-list-style-type: circle;
-margin-left:25px;
+    list-style-type: circle;
+    margin-left:25px;
 }
 
 
@@ -504,6 +508,7 @@ margin-left:25px;
 .badge {
   background-color: undefined;
 }
+/* Change Shopping Cart Indicator Number Color */
 .badge {
   color: #FFFFFF;
 }
