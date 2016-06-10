@@ -6,9 +6,7 @@
     text-align: center;
 }
 
-.thumbnail img {
-    max-height: 55px;
-}
+
 
 /* These will line up from left if needed
 #NSGCircleNavBar {
@@ -647,14 +645,24 @@ h2 .jumbotron {
 .panel-category-list .well {
   border-color: #F7F7F7;
 }
-.panel-product-list .well {
-  background-color: #FFFFFF;
+/* Adjust product list border/backgrounds $ak */
+.panel-product-list {
+    border-radius: 0px;
+    border-color: transparent;
 }
 .panel-product-list .well {
+  background-color: transparent;
+}
+.panel-product-list .aLinkSpacingFix {
   color: #333333;
 }
 .panel-product-list .well {
-  border-color: #F7F7F7;
+  border-color: transparent;
+}/*Changes size of images on category page*/
+.thumbnail img {
+  max-height: 100px; /*must match smallest size of thumbnail image*/
+  max-width: 100%;
+  margin: 0 auto 15px;
 }
 
 /* Float Shadow */
