@@ -265,12 +265,12 @@ four51.app.directive('productmatrixold', function() {
            "    <div class=\"alert alert-danger\" style=\"margin-top:20px;\" ng-show=\"qtyError\" ng-bind-html=\"qtyError\"></div>" +
            "    <button class=\"btn btn-success btn-block btn-lg\" type=\"button\" id=\"451_btn_orderadd\" ng-disabled=\"qtyError\" ng-click=\"addVariantsToOrder()\"><loadingindicator ng-show=\"addToOrderIndicator\" /><i ng-show=\"lineItemErrors.length > 0\" class=\"fa fa-warning\"></i>{{addToOrderText | r}}</button>" +
            "</div>",
-       controller: 'ProductMatrixCtrl'
+       controller: 'ProductMatrixOldCtrl'
    }
    return obj;
 });
 
-four51.app.controller('ProductMatrixCtrl', ['$scope', '$routeParams', '$route', '$location', '$451', 'Product', 'ProductDisplayService', 'Order', 'Variant', 'User', 'ProductMatrixOld',
+four51.app.controller('ProductMatrixOldCtrl', ['$scope', '$routeParams', '$route', '$location', '$451', 'Product', 'ProductDisplayService', 'Order', 'Variant', 'User', 'ProductMatrixOld',
    function ($scope, $routeParams, $route, $location, $451, Product, ProductDisplayService, Order, Variant, User, ProductMatrixOld) {
        $scope.addToOrderText = "Add To Cart";
        $scope.displayOnOrder = true;
