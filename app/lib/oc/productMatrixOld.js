@@ -270,8 +270,8 @@ four51.app.directive('productmatrixold', function() {
    return obj;
 });
 
-four51.app.controller('ProductMatrixCtrl', ['$scope', '$routeParams', '$route', '$location', '$451', 'Product', 'ProductDisplayService', 'Order', 'Variant', 'User', 'ProductMatrix',
-   function ($scope, $routeParams, $route, $location, $451, Product, ProductDisplayService, Order, Variant, User, ProductMatrix) {
+four51.app.controller('ProductMatrixCtrl', ['$scope', '$routeParams', '$route', '$location', '$451', 'Product', 'ProductDisplayService', 'Order', 'Variant', 'User', 'ProductMatrixOld',
+   function ($scope, $routeParams, $route, $location, $451, Product, ProductDisplayService, Order, Variant, User, ProductMatrixOld) {
        $scope.addToOrderText = "Add To Cart";
        $scope.displayOnOrder = true;
 
@@ -281,10 +281,10 @@ four51.app.controller('ProductMatrixCtrl', ['$scope', '$routeParams', '$route', 
        function init(searchTerm) {
            ProductDisplayService.getProductAndVariant($routeParams.productInteropID, $routeParams.variantInteropID, function (data) {
                $scope.product = data.product;
-               ProductMatrix.getMinMaxTotalQty($scope.product);
+               ProductMatrixOld.getMinMaxTotalQty($scope.product);
                if ($scope.product.IsVBOSS) {
                    $scope.matrixLoadingIndicator = true;
-                   ProductMatrix.build($scope.product, $scope.currentOrder, function(matrix, specCount, spec1Name, spec2Name) {
+                   ProductMatrixOld.build($scope.product, $scope.currentOrder, function(matrix, specCount, spec1Name, spec2Name) {
                        $scope.specCount = specCount;
                        $scope.spec1Name = spec1Name;
                        $scope.spec2Name = spec2Name;
@@ -313,7 +313,7 @@ four51.app.controller('ProductMatrixCtrl', ['$scope', '$routeParams', '$route', 
 
        $scope.qtyChanged = function() {
            $scope.qtyError = "";
-           ProductMatrix.validateQuantity($scope.comboVariants, $scope.product, function(message) {
+           ProductMatrixOld.validateQuantity($scope.comboVariants, $scope.product, function(message) {
                $scope.qtyError = message;
            });
        };
@@ -323,7 +323,7 @@ four51.app.controller('ProductMatrixCtrl', ['$scope', '$routeParams', '$route', 
                $scope.currentOrder = {};
                $scope.currentOrder.LineItems = [];
            }
-           ProductMatrix.addToOrder($scope.comboVariants, $scope.product, $scope.$parent.LineItem.Specs, function(lineItems) {
+           ProductMatrixOld.addToOrder($scope.comboVariants, $scope.product, $scope.$parent.LineItem.Specs, function(lineItems) {
                $scope.addToOrderIndicator = true;
                angular.forEach(lineItems, function(li) {
                    $scope.currentOrder.LineItems.push(li);
