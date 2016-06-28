@@ -1,4 +1,4 @@
-four51.app.factory('ProductMatrixOld', ['$resource', '$451', 'Variant', function($resource, $451, Variant) {
+four51.app.factory('ProMatrixOld', ['$resource', '$451', 'Variant', function($resource, $451, Variant) {
    function _then(fn, data, count, s1, s2) {
        if (angular.isFunction(fn))
            fn(data, count, s1, s2);
@@ -216,7 +216,7 @@ four51.app.factory('ProductMatrixOld', ['$resource', '$451', 'Variant', function
 }]);
 
 
-four51.app.directive('productmatrixold', function() {
+four51.app.directive('promatrixold', function() {
    var obj = {
        restrict: 'E',
        scope: {
@@ -265,13 +265,13 @@ four51.app.directive('productmatrixold', function() {
            "    <div class=\"alert alert-danger\" style=\"margin-top:20px;\" ng-show=\"qtyError\" ng-bind-html=\"qtyError\"></div>" +
            "    <button class=\"btn btn-success btn-block btn-lg\" type=\"button\" id=\"451_btn_orderadd\" ng-disabled=\"qtyError\" ng-click=\"addVariantsToOrder()\"><loadingindicator ng-show=\"addToOrderIndicator\" /><i ng-show=\"lineItemErrors.length > 0\" class=\"fa fa-warning\"></i>{{addToOrderText | r}}</button>" +
            "</div>",
-       controller: 'ProductMatrixOldCtrl'
+       controller: 'ProMatrixOldOldCtrl'
    }
    return obj;
 });
 
-four51.app.controller('ProductMatrixOldCtrl', ['$scope', '$routeParams', '$route', '$location', '$451', 'Product', 'ProductDisplayService', 'Order', 'Variant', 'User', 'ProductMatrixOld',
-   function ($scope, $routeParams, $route, $location, $451, Product, ProductDisplayService, Order, Variant, User, ProductMatrixOld) {
+four51.app.controller('ProMatrixOldCtrl', ['$scope', '$routeParams', '$route', '$location', '$451', 'Product', 'ProductDisplayService', 'Order', 'Variant', 'User', 'ProMatrixOld',
+   function ($scope, $routeParams, $route, $location, $451, Product, ProductDisplayService, Order, Variant, User, ProMatrixOld) {
        $scope.addToOrderText = "Add To Cart";
        $scope.displayOnOrder = true;
 
@@ -281,10 +281,10 @@ four51.app.controller('ProductMatrixOldCtrl', ['$scope', '$routeParams', '$route
        function init(searchTerm) {
            ProductDisplayService.getProductAndVariant($routeParams.productInteropID, $routeParams.variantInteropID, function (data) {
                $scope.product = data.product;
-               ProductMatrixOld.getMinMaxTotalQty($scope.product);
+               ProMatrixOld.getMinMaxTotalQty($scope.product);
                if ($scope.product.IsVBOSS) {
                    $scope.matrixLoadingIndicator = true;
-                   ProductMatrixOld.build($scope.product, $scope.currentOrder, function(matrix, specCount, spec1Name, spec2Name) {
+                   ProMatrixOld.build($scope.product, $scope.currentOrder, function(matrix, specCount, spec1Name, spec2Name) {
                        $scope.specCount = specCount;
                        $scope.spec1Name = spec1Name;
                        $scope.spec2Name = spec2Name;
@@ -313,7 +313,7 @@ four51.app.controller('ProductMatrixOldCtrl', ['$scope', '$routeParams', '$route
 
        $scope.qtyChanged = function() {
            $scope.qtyError = "";
-           ProductMatrixOld.validateQuantity($scope.comboVariants, $scope.product, function(message) {
+           ProMatrixOld.validateQuantity($scope.comboVariants, $scope.product, function(message) {
                $scope.qtyError = message;
            });
        };
@@ -323,7 +323,7 @@ four51.app.controller('ProductMatrixOldCtrl', ['$scope', '$routeParams', '$route
                $scope.currentOrder = {};
                $scope.currentOrder.LineItems = [];
            }
-           ProductMatrixOld.addToOrder($scope.comboVariants, $scope.product, $scope.$parent.LineItem.Specs, function(lineItems) {
+           ProMatrixOld.addToOrder($scope.comboVariants, $scope.product, $scope.$parent.LineItem.Specs, function(lineItems) {
                $scope.addToOrderIndicator = true;
                angular.forEach(lineItems, function(li) {
                    $scope.currentOrder.LineItems.push(li);
