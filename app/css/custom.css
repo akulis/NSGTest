@@ -102,7 +102,7 @@
 /* Fixed Product Image */
 .fixedProductImage {
     position: fixed !important; 
-    z-index: 0;
+    z-index: 1;
     width: 100%;
 }
 /*.NSGCategoryButton:hover {
