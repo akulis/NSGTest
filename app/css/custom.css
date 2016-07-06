@@ -99,7 +99,12 @@
     height: auto;
 }
 
-
+/* Fixed Product Image */
+.fixedProductImage {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+}
 /*.NSGCategoryButton:hover {
     margin: 0px 25px 30px 25px;
 }*/
