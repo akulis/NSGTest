@@ -101,7 +101,7 @@
 
 /* Fixed Product Image */
 .fixedProductImage {
-    position: fixed !important; 
+    position: fixed; 
 }
 /*.NSGCategoryButton:hover {
     margin: 0px 25px 30px 25px;
