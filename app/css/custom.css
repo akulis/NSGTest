@@ -102,8 +102,11 @@
 /* Fixed Product Image */
 .fixedProductImage {
     position: fixed !important;
-    max-height: 300px;
-    margin-bottom: 400px;
+}
+.product-image-large {
+  margin: 0 auto;
+  max-height: 400px;
+  max-width: 100%;
 }
 /*.NSGCategoryButton:hover {
     margin: 0px 25px 30px 25px;
