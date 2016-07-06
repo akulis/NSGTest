@@ -103,7 +103,8 @@
 .fixedProductImage {
     position: fixed !important; 
     z-index: 1;
-    width: 100%;
+    float: left;
+    height: 500px;
 }
 /*.NSGCategoryButton:hover {
     margin: 0px 25px 30px 25px;
