@@ -100,7 +100,7 @@
 }
 
 /* Fixed Product Image */
-.panelFixedImage {
+.fixedProductImage {
     position: fixed !important;
     margin-bottom: 20px;
     background-color: #ffffff;
