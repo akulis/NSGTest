@@ -38,9 +38,9 @@ function productlightbox() {
             '<a ng-click="openLightboxModal($index)" ng-class="{active: $index==$parent.index}">', // removed hidden-xs from a class $ak
             '<img ng-src="{{image.url}}" class="product-image-large img-responsive" />',
             '</a>',
-            '<a class="no-click visible-xs" ng-class="{active: $index==$parent.index}">',
-            '<img ng-src="{{image.url}}" class="product-image-large img-responsive" />',
-            '</a>',
+            //'<a class="no-click visible-xs" ng-class="{active: $index==$parent.index}">', removed because don't need for the resize $ak
+            //'<img ng-src="{{image.url}}" class="product-image-large img-responsive" />',
+            //'</a>',
             '</li>',
             '</ul>',
             '</div>',
