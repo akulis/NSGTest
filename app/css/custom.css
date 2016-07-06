@@ -102,12 +102,6 @@
 /* Fixed Product Image */
 .fixedProductImage {
     position: fixed;
-    margin-bottom: 20px;
-    background-color: #ffffff;
-    border: 1px solid transparent;
-    border-radius: 0;
-    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
 }
 /*.NSGCategoryButton:hover {
     margin: 0px 25px 30px 25px;
