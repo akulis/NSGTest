@@ -8187,7 +8187,6 @@ select.ng-invalid:invalid:invalid:focus {
 .panel-product-list.no-panels .well {
   border: 1px solid #ddd;
 }
-/* Moved to custom.css for scrollable image $ak */
 .product-image-large {
   margin: 0 auto;
   max-height: 300px;
