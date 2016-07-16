@@ -66,7 +66,7 @@ function productmatrix() {
             '<div class="alert alert-danger" style="margin-top:20px;" ng-show="qtyError" ng-bind-html="qtyError"></div>',
             '<button class="btn btn-success btn-block btn-lg" type="button" id="451_btn_orderadd" ng-disabled="qtyError" ng-click="addVariantsToOrder()">',
             '<loadingindicator ng-show="addToOrderIndicator" /><i ng-show="qtyError" class="fa fa-warning"></i> {{addToOrderText | r}}</button>',
-            '<div class="NSGcenter"><p><strong>Total piece price will be calculated in cart.</strong></p></div>'
+            '<div class="NSGcenter"><p><strong>Total piece price will be calculated in cart.</strong></p></div>',
             '</div>'
         ].join('');
     }
