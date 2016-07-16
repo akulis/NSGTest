@@ -30,7 +30,7 @@ function productlightbox() {
             '.galleryImages a {display:block;}',
             '.galleryImages a.no-click {cursor:none;pointer-events: none;}',
             '.galleryImages .product-image-large {display:none;}',
-            '.galleryImages .active .product-image-large {display:block !important;max-width:100%;position:relative;top:0;}', // removed max-height:100% $ak
+            '.galleryImages .active .product-image-large {display:block !important;max-height:100%;max-width:100%;position:relative;top:0;}', // removed max-height:100% $ak
             '</style>',
             '<div class="panel-body">',
             '<ul class="galleryImages">',
