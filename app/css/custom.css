@@ -365,7 +365,7 @@
 
 /*Gives items a list style*/
 .prod-desc-list-style ul {
-    list-style-type: circle;
+    /*list-style-type: circle;*/
     margin-left:25px;
 }
 
