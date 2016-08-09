@@ -6,8 +6,6 @@
     text-align: center;
 }
 
-
-
 /* These will line up from left if needed
 #NSGCircleNavBar {
     display: inline;
@@ -94,9 +92,9 @@
     color: #FFFFFF;
 }
 
-.NSGNavbarIconContainer {
+.navLogo {
     max-width: 100%;
-    height: auto;
+    max-height: 30px;
 }
 
 /* Fixed Product Image */
@@ -365,7 +363,7 @@
 
 /*Gives items a list style*/
 .prod-desc-list-style ul {
-    list-style-type: disc;
+    list-style-type: circle;
     margin-left:25px;
 }
 
