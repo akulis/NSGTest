@@ -68,7 +68,7 @@ function productmatrix() {
             '<button class="btn btn-success btn-block btn-lg" type="button" id="451_btn_orderadd" ng-disabled="qtyError || matrixSpecForm.$invalid" ng-click="addVariantsToOrder()">',
             '<loadingindicator ng-show="addToOrderIndicator" /><i ng-show="qtyError" class="fa fa-warning"></i> {{addToOrderText | r}}</button>',
             '</div>',
-            '<p><em><strong>Total Piece Price will be recalculated in the cart.</strong></em></p>',
+            '<div class="NSGcenter"><p><em><strong>Total Piece Price will be recalculated in the cart.</strong></em></p></div>',
             '</form>'
         ].join('');
     }
