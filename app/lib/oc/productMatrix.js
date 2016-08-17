@@ -22,7 +22,7 @@ function productmatrix() {
         return [
             '<style>.matrix-grid > div {padding: 0;}.matrix-grid > div > div {text-align: center;height: 50px;padding: 10px 5px;}.matrix-grid > div > div:nth-of-type(even) {background-color: #f5f5f5;}.matrix-grid > div:last-of-type > div {padding: 5px;}.matrix-grid > div:last-of-type > div input {text-align: center;}.qty-invalid{border-color: #d9534f;-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);color: #ccc;}</style>',
             '<form name="matrixSpecForm" novalidate="">',
-            '<div class="form-group" ng-repeat="s in product.Specs | definesvariant | onproperty:[{Property: \'CanSetForLineItem\', Value: true}]">',
+            '<div class="form-group" ng-repeat="s in product.Specs | onproperty:[{Property: \'CanSetForLineItem\', Value: true}]">', //Removed '' | definesvariant' for upload variable spec to work
 				'<customfilefield customfield="s" ng-if="s.ControlType == \'File\'"></customfilefield>',
 				'<customtextfield customfield="s" ng-if="s.ControlType == \'Text\'"></customtextfield>',
 				'<customselectionfield change="specChanged" customfield="s" ng-if="s.ControlType == \'Selection\'"></customselectionfield>',
@@ -385,7 +385,7 @@ function ProductMatrix($451, Variant) {
                     for (var spec in product.Specs) {
                         liSpecs[spec] = angular.copy(product.Specs[spec]);
                         if(!liSpecs[spec].Value){
-                            liSpecs[spec].Value = item.tempSpecs[spec] ? item.tempSpecs[spec].Value : null;   
+                            liSpecs[spec].Value = item.tempSpecs[spec] ? item.tempSpecs[spec].Value : null;
                         }
                     }
                     var li = {
