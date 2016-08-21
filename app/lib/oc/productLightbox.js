@@ -49,7 +49,7 @@ function productlightbox() {
             '<div class="scrollLightbox">',
             '<li ng-repeat="image in LineItem.images">',
             '<a ng-click="$parent.index=$index" ng-class="{active: $index==$parent.index}">',
-            '<img ng-src="{{image.url}}" class="img-thumbnail img-responsive" data-toggle="tooltip" data-placement="bottom" title="Hooray!"/>',
+            '<img ng-src="{{image.url}}" class="img-thumbnail img-responsive" data-toggle="tooltip" data-placement="bottom" title="[[Color]]"/>',
             '</a>',
             '</li>',
             '</div>',
