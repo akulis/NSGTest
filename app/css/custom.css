@@ -111,6 +111,7 @@
     width: auto;
     height: 55px;
     overflow: auto;
+    white-space: nowrap;
 }
 .testy {
     max-width: 400px;
