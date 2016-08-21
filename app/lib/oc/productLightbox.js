@@ -44,7 +44,7 @@ function productlightbox() {
             '</li>',
             '</ul>',
             '</div>',
-            '<div class="panel-footer">',
+            '<div class="panel-footer scrollLightbox">',
             '<ul class="galleryThumbs">',
             '<li ng-repeat="image in LineItem.images">',
             '<a ng-click="$parent.index=$index" ng-class="{active: $index==$parent.index}">',
