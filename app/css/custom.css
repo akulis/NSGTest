@@ -107,6 +107,9 @@
   max-height: 400px;
   max-width: 100%;
 }
+.scrollLightbox {
+    overflow: scroll;
+}
 .testy {
     max-width: 400px;
 }
