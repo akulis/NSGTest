@@ -52,7 +52,7 @@ function productlightbox() {
             '<img ng-src="{{image.url}}" class="img-thumbnail img-responsive" />',
             '</a>',
             '</li>',
-            '</div>'
+            '</div>',
             '</ul>',
             '</div>'
         ].join('');
