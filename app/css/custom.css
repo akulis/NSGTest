@@ -110,8 +110,7 @@
 .scrollLightbox {
     width: auto;
     height: 55px;
-    overflow-x: scroll;
-    overflow-y: hidden;
+    overflow: auto;
 }
 .testy {
     max-width: 400px;
