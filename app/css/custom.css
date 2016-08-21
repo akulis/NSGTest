@@ -109,6 +109,7 @@
 }
 .scrollLightbox {
     width: 325px;
+    height: 55px;
     overflow: scroll;
 }
 .testy {
