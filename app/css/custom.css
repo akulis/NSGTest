@@ -108,7 +108,7 @@
   max-width: 100%;
 }
 .scrollLightbox {
-    width: 325px;
+    width: auto;
     height: 55px;
     overflow: scroll;
 }
