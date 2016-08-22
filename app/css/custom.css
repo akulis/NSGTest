@@ -121,6 +121,13 @@
     color: #ffffff;
     background-color: #ffffff;
 }
+
+.panel-order .panel-heading.yes i:first-of-type {
+  color: #ffffff;
+}
+.panel-order .panel-heading.no i:first-of-type {
+  color: #ffffff;
+}
 /*.NSGCategoryButton:hover {
     margin: 0px 25px 30px 25px;
 }*/
