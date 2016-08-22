@@ -1,6 +1,6 @@
 <div class="panel panel-default panel-order">
     <div class="panel-heading" ng-class="{'no': cart_order.$invalid, 'yes': !cart_order.$invalid, 'open': checkOutSection == 'order' }">
-        <h3 ng-click="checkOutSection = 'order'" class="panel-title panel-primary">
+        <h3 ng-click="checkOutSection = 'order'" class="panel-title panel-primary" ng-class="{'btn-warning': cart_shipping.$invalid || cart_order.$invalid || cart_billing.$invalid, 'btn-success': !cart_shipping.$invalid && !cart_order.$invalid && !cart_billing.$invalid }">
             <i class="pull-left" ng-class="{'fa fa-warning': cart_order.$invalid, 'fa fa-check-circle': !cart_order.$invalid }"></i>
             {{'Order' | r | xlat}}
             <i class="pull-right" ng-class="{'fa fa-caret-up': checkOutSection == 'order', 'fa fa-caret-down': checkOutSection == 'shipping' || checkOutSection == 'billing' }"></i>
