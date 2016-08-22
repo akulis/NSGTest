@@ -125,10 +125,10 @@
   color: #ffffff;
 }
 .checkoutPage-warning {
-  color: #f0ad4e !important;
+  color: #f0ad4e;
 }
 .checkoutPage-success {
-  color: #5CB85C !important;
+  color: #5CB85C;
 }
 /*.NSGCategoryButton:hover {
     margin: 0px 25px 30px 25px;
