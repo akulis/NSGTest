@@ -117,19 +117,6 @@
 .testy {
     max-width: 400px;
 }
-/* Makes fa icons on checkout page white */
-.panel-order .panel-heading.yes i:first-of-type {
-  color: #ffffff;
-}
-.panel-order .panel-heading.no i:first-of-type {
-  color: #ffffff;
-}
-.checkoutPage-warning {
-  color: #f0ad4e;
-}
-.checkoutPage-success {
-  color: #5CB85C;
-}
 /*.NSGCategoryButton:hover {
     margin: 0px 25px 30px 25px;
 }*/
