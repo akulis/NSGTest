@@ -212,7 +212,7 @@
     font-size: 13pt;
     margin-top: 0px;
     clear: both;
-    background-color: #ccdad1;
+    background-color: #cacfd6;
     height: 150px;
     width: 100%;
     bottom: 0;
@@ -229,7 +229,7 @@
 .NSGxsFooter {
     margin-top: 0px;
     clear: both;
-    background-color: #ccdad1;
+    background-color: #cacfd6;
     height: 150px;
     bottom: 0;
     padding: 45px 0px;
@@ -245,7 +245,7 @@
 .NSGxxsFooter {
     margin-top: 0px;
     clear: both;
-    background-color: #ccdad1;
+    background-color: #cacfd6;
     height: 150px;
     bottom: 0;
     padding: 55px 0px;
@@ -412,7 +412,7 @@
     box-shadow: 5px 5px 10px 0px rgba(119, 119, 119, 0.3);
     -moz-box-shadow: 5px 5px 10px 0px rgba(119, 119, 119, 0.3);
     -webkit-box-shadow: 5px 5px 10px 0px rgba(119, 119, 119, 0.3);
-    background-color: #ccdad1;
+    background-color: #cacfd6;
 }
 
 .thPPTimeline {
@@ -642,7 +642,7 @@ h2 .jumbotron {
   color: #FFFFFF;
 }
 .panel-default .panel-heading .panel-title {
-  background-color: #ccdad1;
+  background-color: #cacfd6;
 }
 .panel-default .panel-heading .panel-title {
   color: #333333;
@@ -651,7 +651,7 @@ h2 .jumbotron {
   background-color: #FFFFFF;
 }
 .panel-footer {
-  background-color: #ccdad1;
+  background-color: #cacfd6;
 }
 .panel-category-list .well {
   background-color: #FFFFFF;
@@ -660,7 +660,7 @@ h2 .jumbotron {
   color: #333333;
 }
 .panel-category-list .well {
-  border-color: #ccdad1;
+  border-color: #cacfd6;
 }
 /* Adjust product list border/backgrounds $ak */
 .panel-product-list {
