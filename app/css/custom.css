@@ -642,7 +642,7 @@ h2 .jumbotron {
   color: #FFFFFF;
 }
 .panel-default .panel-heading .panel-title {
-  background-color: #F5F5F5;
+  background-color: #dedede;
 }
 .panel-default .panel-heading .panel-title {
   color: #333333;
@@ -651,7 +651,7 @@ h2 .jumbotron {
   background-color: #FFFFFF;
 }
 .panel-footer {
-  background-color: #F5F5F5;
+  background-color: #dedede;
 }
 .panel-category-list .well {
   background-color: #FFFFFF;
