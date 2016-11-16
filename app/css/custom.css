@@ -5,7 +5,12 @@
 .NSGcenter {
     text-align: center;
 }
-
+.FontSmall {
+    font-size: 85%;
+}
+.FontSize10 {
+    font-size: 10pt;
+}
 /* These will line up from left if needed
 #NSGCircleNavBar {
     display: inline;
@@ -33,6 +38,28 @@
     /*position: relative;
     top: 50%;
     transform: translateY(-50%);*/
+}
+
+/* NSG Tooltip */
+.NSGtooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+.NSGtooltip .NSGtooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+.NSGtooltip:hover .NSGtooltiptext {
+    visibility: visible;
 }
 
 .jumbotronInnerShadow {
@@ -371,9 +398,13 @@
     font-size: 4vw;
 }
 
-/*Gives items a list style*/
+/*Gives items a list style, bullets*/
 .prod-desc-list-style ul {
-    list-style-type: circle;
+    list-style-type: disc;
+    margin-left:25px;
+}
+.contactListStyle ul li {
+    list-style-type: disc;
     margin-left:25px;
 }
 
