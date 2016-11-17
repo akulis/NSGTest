@@ -59,7 +59,7 @@
     z-index: 1;
     bottom: 150%;
     left: 50%;
-    margin-left: -10px;
+    margin-left: -100px;
 }
 .NSGtooltip .NSGtooltiptext::after {
     content: "";
