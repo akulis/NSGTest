@@ -48,9 +48,10 @@
 }
 .NSGtooltip .NSGtooltiptext {
     visibility: hidden;
-    width: 150px;
+    width: 200px;
     background-color: black;
     color: #fff;
+    font-size: 10pt;
     text-align: center;
     border-radius: 6px;
     padding: 5px 0;
