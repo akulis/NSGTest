@@ -116,6 +116,14 @@
   max-width: 100%;
   margin: 0 auto 15px;
 }
+/* Adjust product list border/backgrounds $ak */
+.panel-product-list .well {
+  background-color: transparent;
+}
+.panel-product-list .well {
+  border: none;
+  border-color: transparent;
+}
 
 .NSGCategoryButtonPadding {
     margin: 0px 25px 25px 25px;
