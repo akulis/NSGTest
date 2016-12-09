@@ -104,11 +104,21 @@
   transform: translateY(-50%);
 }
 
-/* This counters the spacing issue on the product list page with <a> links */
-.aLinkSpacingFix p a {
-    padding: 0em !important;
-    display: inline !important;
-    text-decoration: none;
+/* Adjust product list border/backgrounds $ak */
+.panel-product-list {
+    border-radius: 0px;
+    border-color: transparent;
+}
+.panel-product-list .well {
+  background-color: transparent;
+  border: none;
+  border-color: transparent;
+}
+.panel-product-list .aLinkSpacingFix {
+  color: #333333;
+}
+.panel-product-list .well {
+  border-color: transparent;
 }
 /*Changes size of images on category page*/
 .thumbnail img {
@@ -116,13 +126,12 @@
   max-width: 100%;
   margin: 0 auto 15px;
 }
-/* Adjust product list border/backgrounds $ak */
-.panel-product-list .well {
-  background-color: transparent;
-}
-.panel-product-list .well {
-  border: none;
-  border-color: transparent;
+
+/* This counters the spacing issue on the product list page with <a> links */
+.aLinkSpacingFix p a {
+    padding: 0em !important;
+    display: inline !important;
+    text-decoration: none;
 }
 
 .NSGCategoryButtonPadding {
@@ -723,25 +732,6 @@ h2 .jumbotron {
 }
 .panel-category-list .well {
   border-color: #dedede;
-}
-/* Adjust product list border/backgrounds $ak */
-.panel-product-list {
-    border-radius: 0px;
-    border-color: transparent;
-}
-.panel-product-list .well {
-  background-color: transparent;
-}
-.panel-product-list .aLinkSpacingFix {
-  color: #333333;
-}
-.panel-product-list .well {
-  border-color: transparent;
-}/*Changes size of images on category page*/
-.thumbnail img {
-  max-height: 100px; /*must match smallest size of thumbnail image*/
-  max-width: 100%;
-  margin: 0 auto 15px;
 }
 
 /* Float Shadow */
