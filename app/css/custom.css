@@ -490,22 +490,22 @@
 }
 
 .thPPTimeline {
-    border:2px;
+    /*border:2px;
     border-style: solid;
     border-color: #0B3648;
     border-collapse:collapse;
-    padding:5px;
-  text-align:center;
+    padding:5px;*/
+    text-align:center;
 }
 
 .tdPPTimeline {
-  font-family: arial,helvetica,sans-serif;
-  font-size: 14px;
-  font-weight: bold;
-    border:2px;
+    font-family: arial,helvetica,sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    /*border:2px;
     border-style: solid;
     border-color: #0B3648;
-    border-collapse:collapse;
+    border-collapse:collapse;*/
     padding:5px;
     text-align:center;
 }
