@@ -167,13 +167,13 @@
                     </li>
                     <!-- If Logged In -->
                     <li class="contactus" ng-if="user.Permissions.contains('ViewContactUs')" ng-show="user.Type == 'Customer'" ng-class="{'active': isActive('contactus')}">
-                        <a id="451qa_mesg_link" class="hidden-xs hidden-sm" href="contactus">
+                        <a id="451qa_mesg_link" class="hidden-xs hidden-sm hidden-md" href="contactus">
                             <i class="fa fa-support"></i>
                             {{'Help' | r | xlat}}
                         </a>
                     </li>
                     <li class="contactus" ng-if="user.Permissions.contains('ViewContactUs')" ng-show="user.Type == 'Customer'" ng-class="{'active': isActive('contactus')}">
-                        <a id="451qa_mesg_link" class="hidden-xs hidden-sm" href="contactus">
+                        <a id="451qa_mesg_link" class="hidden-xs hidden-sm hidden-md" href="contactus">
                             <i class="fa fa-file"></i>
                             {{'Forms' | r | xlat}}
                          </a>
