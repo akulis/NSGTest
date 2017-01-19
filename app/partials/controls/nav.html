@@ -187,7 +187,7 @@
                   </ul>
 
                 <!-- Shopping Cart -->
-                <ul class="nav navbar-nav pull-right shoppingCartNavBar">
+                <!-- <ul class="nav navbar-nav pull-right shoppingCartNavBar">
                     <li class="cart" ng-class="{'active': isActive(['cart', 'checkout'])}">
                         <a id="451qa_cart_link" ng-show="cartCount && user.CurrentOrderID" class="cart" href="cart">
                             <span ng-bind="cartCount" class="badge"></span>
@@ -195,6 +195,10 @@
                             <i class="fa fa-caret-down"></i>
                         </a>
                     </li>
+                </ul> -->
+                <!-- For Mini Cart, replaces Shopping Cart code above -->
+                <ul class="pull-right">
+                    <minicart></minicart>
                 </ul>
                 <!-- <productsearchinput></productsearchinput> -->
                 <productsearchinputnav></productsearchinputnav>
