@@ -21,7 +21,7 @@ function minicart() {
             '.text-muted {color: #000000;}',
             '.text-mutedCaretDown {color: #ffffff;}',
             '.minicart .fa-shopping-cart {position: relative;top: 3px;padding-right: 5px; font-size:1.5em;}',
-            '.minicart .label.label-default {border-top-right-radius: 0;border-top-left-radius: 0;border-bottom-right-radius: 0;border-bottom-left-radius: 0;background-color: #transparent;}',
+            '.minicart .label.label-default {border-top-right-radius: 0;border-top-left-radius: 0;border-bottom-right-radius: 0;border-bottom-left-radius: 0;background-color: transparent;}',
             '.minicart:active .minicart-detail, .minicart:focus .minicart-detail, .minicart:hover .minicart-detail {display: block;}',
             '@media (max-width: 768px) {.minicart:active .minicart-detail, .minicart:focus .minicart-detail, .minicart:hover .minicart-detail {min-width:260px;} }',
             '.minicart .minicart-detail {display: none;border-radius: 4px;-webkit-box-shadow: 0px 6px 12px 0px rgba(0, 0, 0, 0.176);box-shadow: 0px 6px 12px 0px rgba(0, 0, 0, 0.176);padding: 10px;position: absolute;top: 100%;right: 10px;background-color: #fff;z-index: 20;}',
