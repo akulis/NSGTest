@@ -16,12 +16,12 @@ function minicart() {
     function template(){
         return [
             '<style>',
-            '.minicart { padding: 15px 15px 15px 0; float: right; cursor: pointer;color: #ffffff; min-width:300px; text-align:right;}',
+            '.minicart { padding: 15px 20px 5px 0; float: right; cursor: pointer;color: #ffffff; min-width:200px; text-align:right;}',
             '@media (max-width: 768px) {.minicart { min-width:auto; } }',
             '.text-muted {color: #000000;}',
             '.text-mutedCaretDown {color: #ffffff;}',
             '.minicart .fa-shopping-cart {position: relative;top: 3px;padding-right: 5px; font-size:1.5em;}',
-            '.minicart .label.label-default {border-top-right-radius: 0;border-top-left-radius: 0;border-bottom-right-radius: 0;border-bottom-left-radius: 0;background-color: #000000;}',
+            '.minicart .label.label-default {border-top-right-radius: 0;border-top-left-radius: 0;border-bottom-right-radius: 0;border-bottom-left-radius: 0;background-color: #transparent;}',
             '.minicart:active .minicart-detail, .minicart:focus .minicart-detail, .minicart:hover .minicart-detail {display: block;}',
             '@media (max-width: 768px) {.minicart:active .minicart-detail, .minicart:focus .minicart-detail, .minicart:hover .minicart-detail {min-width:260px;} }',
             '.minicart .minicart-detail {display: none;border-radius: 4px;-webkit-box-shadow: 0px 6px 12px 0px rgba(0, 0, 0, 0.176);box-shadow: 0px 6px 12px 0px rgba(0, 0, 0, 0.176);padding: 10px;position: absolute;top: 100%;right: 10px;background-color: #fff;z-index: 20;}',
@@ -39,7 +39,7 @@ function minicart() {
             '</style>',
             '<div ng-show="currentOrder && cartCount && !isInPath(\'order/\')">',
             '    <div class="minicart">',
-            '        <i class="fa fa-shopping-cart"></i> <span class="label label-default">{{cartCount + \' ITEM(S)\'}}</span> <span class="hidden-xs"> - {{currentOrder.Total | currency }}</span> <i class="fa fa-caret-down text-mutedCaretDown"></i>',
+            '        <i class="fa fa-shopping-cart"></i> <span class="label label-default hidden-xs">{{cartCount + \' ITEM(S)\'}}</span> <span class="hidden-xs"> - {{currentOrder.Total | currency }}</span> <i class="fa fa-caret-down text-mutedCaretDown"></i>',
             '        <div class="minicart-detail">',
             '            <i class="fa fa-caret-up fa-2x"></i>',
             '            <ul>',
