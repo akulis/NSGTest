@@ -16,9 +16,9 @@ function minicart() {
     function template(){
         return [
             '<style>',
-            '.minicart { padding: 15px 15px 15px 0; float: right; cursor: pointer;color: #ffffff; min-width:300px; text-align:right;}',
+            '.minicart { padding: 15px 15px 15px 0; float: right; cursor: pointer;color: #000000; min-width:300px; text-align:right;}',
             '@media (max-width: 768px) {.minicart { min-width:auto; } }',
-            '.text-muted {color: #000000;}',
+            '.text-muted {color: #ffffff;}',
             '.minicart .fa-shopping-cart {position: relative;top: 3px;padding-right: 5px; font-size:1.5em;}',
             '.minicart .label.label-default {border-top-right-radius: 0;border-top-left-radius: 0;border-bottom-right-radius: 0;border-bottom-left-radius: 0;background-color: #000000;}',
             '.minicart:active .minicart-detail, .minicart:focus .minicart-detail, .minicart:hover .minicart-detail {display: block;}',
