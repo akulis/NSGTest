@@ -46,6 +46,9 @@
                             <span class="hidden-xs">{{'Programs' | rc | xlat}}</span>
                         </a>
                     </li>
+                    <li>
+                        <productsearchinputnav></productsearchinputnav>
+                    </li>
 
                     <!-- Orders Button -->
                     <li class="order" ng-if="user.Type == 'Customer'" ng-class="{'active': isActive('order'), 'active-xs': isActive('favoriteorders')}">
@@ -196,13 +199,8 @@
                     </li>
                 </ul> -->
                 <!-- For Mini Cart, replaces Shopping Cart code above -->
-                <ul class="nav navbar-nav pull-right">
-                    <li>
-                        <productsearchinputnav></productsearchinputnav>
-                    </li>
-                    <li>
-                        <minicart></minicart>
-                    </li>
+                <ul class="pull-right">
+                    <minicart></minicart>
                 </ul>
                 <!-- Social Icons -->
                 <!-- <span class="hidden-xs hidden-sm">
