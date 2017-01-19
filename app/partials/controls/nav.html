@@ -51,7 +51,7 @@
                     <li class="order" ng-if="user.Type == 'Customer'" ng-class="{'active': isActive('order'), 'active-xs': isActive('favoriteorders')}">
                         <a id="451qa_order_link" href="order">
                             <i class="fa fa-clipboard"></i>
-                            <span class="hidden-xs">{{'Orders' | r | xlat}}</span>
+                            <span class="hidden-xs hidden-sm">{{'Orders' | r | xlat}}</span>
                         </a>
                     </li>
 
@@ -59,7 +59,7 @@
                     <li class="report" ng-if="user.Type == 'Customer' && user.Permissions.contains('AdvancedReporting')" ng-class="{'active': isActive('reports')}">
                         <a id="451qa_order_link" href="reports">
                             <i class="fa fa-bar-chart-o"></i>
-                            <span class="hidden-xs">{{'Reports' | r | xlat}}</span>
+                            <span class="hidden-xs hidden-sm">{{'Reports' | r | xlat}}</span>
                         </a>
                     </li>
 
@@ -73,7 +73,7 @@
                         <!-- If Logged In -->
                         <a id="451qa_acct_link" href="admin" ng-show="user.Type == 'Customer'" class="hidden-md hidden-lg">
                             <i class="fa fa-cogs"></i>
-                            <span class="hidden-xs">{{'Account' | r | xlat}}</span>
+                            <span class="hidden-xs hidden-sm">{{'Account' | r | xlat}}</span>
                         </a>
                     </li>
 
@@ -88,7 +88,7 @@
                         <!-- If Logged In -->
                         <a id="451qa_acct_link2" ng-show="user.Type == 'Customer'" class="dropdown-toggle" data-toggle="dropdown">
                             <i class="fa fa-cogs"></i>
-                            <span class="hidden-xs">{{'Account' | r | xlat}}</span>
+                            <span class="hidden-xs hidden-sm">{{'Account' | r | xlat}}</span>
                             <b class="caret"></b>
                         </a>
                         <ul class="dropdown-menu">
