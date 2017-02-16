@@ -19,6 +19,10 @@
     color: #ffffff;
     font-size: 75%;
 }
+.minicart-pull-right {
+  float: right;
+  padding: 20px 0px 0px 0px;
+}
 /* These will line up from left if needed
 #NSGCircleNavBar {
     display: inline;
