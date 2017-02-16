@@ -600,9 +600,9 @@ a:focus {
 }
 /* Overrides bootstrap.css */
 .navbar-default {
-  background-color: #0B3648; /*0B3648*/
+  background-color: #0B3648;
   border: 0px;
-  border-color: none;
+  border-color: none !important;
 }
 .container .navbar-nav li a {
   color: #FFFFFF;
