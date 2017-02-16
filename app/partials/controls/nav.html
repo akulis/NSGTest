@@ -166,7 +166,7 @@
                     <li class="contactus" ng-if="user.Permissions.contains('ViewContactUs')" ng-hide="user.Type == 'Customer'" ng-class="{'active': isActive('contactus')}">
                         <a id="451qa_mesg_link" href="contactus">
                             <i class="fa fa-question-circle"></i>
-                            <span class="hidden-xs">{{'About Us/Help' | r | xlat}}</span>
+                            <span class="hidden-xs hidden-sm hidden-md">{{'About Us/Help' | r | xlat}}</span>
                         </a>
                     </li>
                     <!-- If Logged In -->
@@ -185,7 +185,7 @@
                     <li class="contactus" ng-if="user.Permissions.contains('ViewContactUs')" ng-show="user.Type == 'Customer'" ng-class="{'active': isActive('contactus')}">
                         <a id="451qa_mesg_link" href="contactus">
                             <i class="fa fa-question-circle"></i>
-                            <span class="hidden-xs hidden-sm">{{'About Us/Help' | r | xlat}}</span>
+                            <span class="hidden-xs hidden-sm hidden-md">{{'About Us/Help' | r | xlat}}</span>
                         </a>
                     </li>
                     <!--SPENDING ACCOUNTS NAV-->
@@ -205,7 +205,7 @@
                     </li>
                 </ul> -->
                 <!-- For Mini Cart, replaces Shopping Cart code above -->
-                <ul class="minicart-pull-right">
+                <ul class="pull-right">
                     <minicart></minicart>
                 </ul>
                 <!-- Social Icons -->
