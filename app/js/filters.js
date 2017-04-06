@@ -85,7 +85,7 @@ four51.app.filter('shipperFilter', function() {
         var freight = [];
 
         angular.forEach(shipper, function(s) {
-            if(s.Name.indexOf('NPS - Over 150# Weight Shipping') != -1){
+            if(s.Name.indexOf('Over 150# Weight Shipping') != -1){
                 freight.push(s);
             }
             else{
