@@ -33,7 +33,8 @@
     display: inline;
     float: left;
     margin-left: 10px;
-}*/
+}
+*/
 /*.NSGMiddle {
     vertical-align: middle;
 }
@@ -48,10 +49,24 @@
     top: 50%;
     transform: translateY(-50%);*/
 }
+/* Nav Logo */
+.navLogo {
+    max-width: 100%;
+    max-height: 35px;
+}
 /* Banner Logo */
 .bannerLogo {
     max-width: 100%;
-    max-height: 250px;
+    /*max-height: 250px;*/
+}
+.jumbotron {
+  padding: 0px;
+}
+/*Edit Jumbrotron width - $ak */
+.jumbotron {
+  margin: 45px 0px -45px;
+  /* margin: 45px 5px -45px; */
+  display: none;
 }
 /* NSG Tooltip */
 .NSGtooltip {
@@ -161,15 +176,11 @@
 .shoppingCartIndicator ul li a {
     color: #FFFFFF;
 }
-.navLogo {
-    max-width: 100%;
-    max-height: 30px;
-}
 /* Fixed Product Image */
 .fixedProductImage {
     position: fixed !important;
 }
-/* Alters main image size on main product page - overrides same class in bootstrap-451.css */
+/* Alters image size on main product page - overrides same class in bootstrap-451.css */
 .product-image-large {
   margin: 0 auto;
   max-height: 400px;
@@ -519,28 +530,28 @@
 }
 /* Theme CSS Edits */
 .container .navbar-nav li.active a:hover {
-  background-color: #99C24D; /*#A8AB00*/
+  background-color: #cf5c36; /*99C24D*/
 }
 .container .navbar-nav li.active a:focus {
-  background-color: #99C24D; /*#A8AB00*/;
+  background-color: #cf5c36;
 }
 .navbar-default .navbar-nav .open > a {
-  background-color: #99C24D; /*#A8AB00*/
+  background-color: #cf5c36;
 }
 .navbar-default .navbar-nav .open > a:hover {
-  background-color: #99C24D; /*#A8AB00*/
+  background-color: #cf5c36;
 }
 .navbar-default .navbar-nav .open > a:focus {
-  background-color: #99C24D; /*#A8AB00*/
+  background-color: #cf5c36;
 }
 .navbar-nav li.dropdown li > a:hover {
-  background-color: #99C24D; /*#A8AB00*/
+  background-color: #cf5c36;
 }
 .navbar-nav li.dropdown li > a:focus {
-  background-color: #99C24D; /*#A8AB00*/
+  background-color: #cf5c36;
 }
 .navbar .container .navbar-nav li.active .fa-caret-down {
-  color: #99C24D; /*#A8AB00*/
+  color: #cf5c36;
 }
 .navbar-nav li.dropdown li > a {
   color: #333333;
@@ -559,13 +570,13 @@
   color: #FFFFFF;
 }
 .navbar-default {
-  background-color: #0B3648; /*0B3648*/
+  background-color: #0069aa; /*0B3648 3E7CB1*/
 }
 .container .navbar-nav li a {
   color: #FFFFFF;
 }
 .container .navbar-nav li.active > a {
-  background-color: #99C24D; /*#A8AB00*/
+  background-color: #cf5c36;
 }
 .container .navbar-nav li.active > a {
   color: undefined;
@@ -661,7 +672,8 @@ body a {
   background-color: #D2322D;
 }
 .jumbotron {
-  background-color: #3E7CB1; /*3E7CB1*/
+  background-color: transparent !important;
+  /*background-color: #3E7CB1;*/
 }
 h2 .jumbotron {
   color: #FFFFFF;
