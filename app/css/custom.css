@@ -194,7 +194,7 @@
 /* Lightbox Scroll Bar */
 .scrollLightbox {
     width: auto;
-    height: 80px;
+    height: 85px;
     overflow: auto;
     white-space: nowrap;
 }
