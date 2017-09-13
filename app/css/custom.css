@@ -1,7 +1,7 @@
 /* Login Logo */
 .loginLogo {
   max-width: 100%;
-  max-height: 60px;
+  max-height: 80px;
   margin-right: auto;
   margin-left: auto;
   padding-top: 15px;
@@ -9,7 +9,7 @@
 .login-background-image {
   width: 100%;
   height: 100%;
-  position: fixed;
+  /*position: fixed;*/
   left: 0;
   top: 0;
   overflow: hidden;
