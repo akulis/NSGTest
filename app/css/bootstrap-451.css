@@ -6882,7 +6882,7 @@ select.ng-invalid:invalid:invalid:focus {
     text-shadow: 0 0 0 #4d4d4d;
   }
 }
-.order-cloud-image {
+/*.order-cloud-image {
   width: 100%;
   height: 100%;
   position: fixed;
@@ -6894,7 +6894,7 @@ select.ng-invalid:invalid:invalid:focus {
   -o-background-size: cover;
   -ms-background-size: cover;
   background-size: cover;
-}
+}*/
 .order-cloud {
   padding: 0 5px;
 }
