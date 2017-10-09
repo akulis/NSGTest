@@ -59,26 +59,24 @@
   <!--[if (gte IE 9)|!(IE)]><!-->
   <body ng-cloak ng-class="ng-cloak">
     <section>
-        <section ng-hide="Four51User.isAuthenticated() || isAnon" class="container">
-          <login />
+      <section ng-hide="Four51User.isAuthenticated() || isAnon" class="container">
+        <login />
+      </section>
+      <section ng-if="Four51User.isAuthenticated()" id="content">
+        <section class="hidden-print">
+          <navigation />
         </section>
-        <section ng-if="Four51User.isAuthenticated()" id="content">
-          <section class="hidden-print">
-            <navigation />
-          </section>
-          <section class="hidden-print">
-            <branding />
-          </section>
-          <section class="container-view">
-            <ng-view autoscroll />
-          </section>
-          <section class="hidden-print">
-  	         <fixedfooter />
-           </section>
+        <section class="hidden-print">
+          <branding />
+        </section>
+        <section class="container-view">
+          <ng-view autoscroll />
+        </section>
+        <section class="hidden-print">
+          <fixedfooter />
         </section>
       </section>
-
-
+    </section>
     <!-- Add for Back to Top icon -->
     <backtotop offsetbottom="30" offsetright="30" duration="200"></backtotop>
 
