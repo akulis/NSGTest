@@ -32,7 +32,7 @@
         </button>
     </li>
     <li>
-        <button class="btn checkoutButtonZIndex"
+        <button class="btn checkoutButtonZIndex">
                 ng-class="{'btn-warning': cart_shipping.$invalid || cart_order.$invalid || cart_billing.$invalid || submitClicked, 'btn-success': !cart_shipping.$invalid && !cart_order.$invalid && !cart_billing.$invalid || !submitClicked }"
                 ng-click="submitOrder()" ng-disabled="cart_shipping.$invalid || cart_order.$invalid || cart_billing.$invalid || submitClicked">
             <i ng-show="cart_shipping.$invalid || cart_order.$invalid || cart_billing.$invalid || submitClicked" class="fa fa-warning"></i>
