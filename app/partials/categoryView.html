@@ -1,13 +1,5 @@
 <section>
   <!-- Edit Announcement Here -->
-  <!-- Category Header for Special Categories -->
-  <div ng-show="(currentCategory.Name === 'Special Order Items')" >
-    <h1 class="text-center">Welcome to the Special Order Items</h1>
-    <h3 class="text-center">FRIENDLY DISCLAIMER - PLEASE READ</h3>
-    <h4 class="text-center">Special Order Items only ship out once a month. Please click and <contentmodal></contentmodal> to find out when your item will ship. Contact Customer Service at 1.855.444.0847 or email us at <a href="mailto:service@nationalservicegear.org?subject=NSG%20Expedited%20Purchase%20Power%20Pricing%20Request">service@nationalservicegear.org</a> to request pricing for shipping items outside of the Special Order schedule.</h4>
-  </div>
-  <br>
-  <!-- END Category Header for Special Categories -->
   <!--<div class="panel panel-primary">
     <div class="panel-heading">
       <h2 class="panel-title panel-primary">
@@ -34,6 +26,21 @@
   </div>
   <br />-->
   <!-- End Announcement -->
+  <br>
+  <!-- Category Header for Special Categories -->
+  <div ng-show="(currentCategory.Name === 'Special Order Items')" >
+    <h1 class="text-center"><strong>Welcome to the Special Order Items</strong></h1>
+    <h3 class="text-center">FRIENDLY DISCLAIMER - PLEASE READ</h3>
+    <h4 class="text-center">Special Order Items only ship out once a month based off the time the order was placed. Please click and <contentmodal></contentmodal> to find out when your item will ship. Contact Customer Service at 1.855.444.0847 or email us at <a href="mailto:service@nationalservicegear.org?subject=NSG%20Expedited%20Purchase%20Power%20Pricing%20Request">service@nationalservicegear.org</a> to request pricing for shipping items outside of the Special Order schedule.</h4>
+  </div>
+  <br>
+  <div ng-show="(currentCategory.Name === 'AmeriCorps')" >
+    <h1 class="text-center"><strong>Welcome to the AmeriCorps Webstore</strong></h1>
+    <h4 class="text-center">If you need something that's not on the webstore, please contact Customer Service at 1.855.444.0847 or email us at <a href="mailto:service@nationalservicegear.org?subject=NSG%20AmeriCorps%20Webstore%20Question">service@nationalservicegear.org</a>.</h4>
+    <h3 class="text-center"><strong>Our Purchase Power items have moved and are now part of our new <a href="https://americorps.nationalservicegear.org/store/catalog/AC-Special-Order">Special Order Items! Check them out by cliking here or going to the new category below.</a></strong></h3>
+  </div>
+  <br>
+  <!-- END Category Header for Special Categories -->
   <!-- Special Category Disclaimer - Based off YMCA Store -->
   <!-- <br />
   <div class="panel panel-primary" ng-show="(currentCategory.Name === 'Print to Order' || currentCategory.Name === 'RP - Running Purchase Power' || currentCategory.Name === 'RPY-Polos' || currentCategory.Name === 'RPY-Tees' || currentCategory.Name === 'RPY-Outerwear' || currentCategory.Name === 'RPY-Twills')">
