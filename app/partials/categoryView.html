@@ -1,19 +1,29 @@
 <section>
   <!-- Edit Announcement Here -->
   <br>
+  <!-- Above Category Message -->
+  <!-- <br>
+  <div class="categoryPanel text-center" ng-show="(currentCategory.Name === 'Special Order Items')">
+    <h1><strong>Welcome to the Special Order Items</strong></h1>
+    <h3>FRIENDLY DISCLAIMER - PLEASE READ</h3>
+    <h4>Special Order Items only ship out once a month. Please click and <contentmodal></contentmodal> to find out when your item will ship. Contact Customer Service at 1.855.444.0847 or email us at <a href="mailto:service@nationalservicegear.org?subject=NSG%20Expedited%20Purchase%20Power%20Pricing%20Request">service@nationalservicegear.org</a> to request pricing for shipping items outside of the Special Order schedule.</h4>
+  </div>
+  <br> -->
+  <!-- End Message -->
   <!-- Category Header for Special Categories -->
   <!-- <div class="panel panel-primary" ng-show="currentCategory.Name('AmeriCorps')" > -->
-  <!--<div class="panel panel-primary" ng-show="currentCategory.Name == 'AmeriCorps'" >
+  <div class="panel panel-primary" ng-show="(currentCategory.Name === 'Special Order Items')" >
     <div class="panel-heading">
       <h2 class="panel-title panel-primary">
-        {{'Important Announcement -- PLEASE READ' | r | xlat}}
+        {{'Welcome to the Special Order Items' | r | xlat}}
       </h2>
     </div>
     <div class="panel-body">
-      <h4 class="text-center"><i class="fa fa-exclamation-circle" aria-hidden="true"></i>  This is a TEST <a href="mailto:service@nationalservicegear.org?subject=NSG%20Maintenance%20Question">service@nationalservicegear.org</a>.</h4>
+      <h3>FRIENDLY DISCLAIMER - PLEASE READ</h3>
+      <h4 class="text-center"><i class="fa fa-exclamation-circle" aria-hidden="true"></i>  Special Order Items only ship out once a month. Please click and <contentmodal></contentmodal> to find out when your item will ship. Contact Customer Service at 1.855.444.0847 or email us at <a href="mailto:service@nationalservicegear.org?subject=NSG%20Expedited%20Purchase%20Power%20Pricing%20Request">service@nationalservicegear.org</a> to request pricing for shipping items outside of the Special Order schedule.</h4>
     </div>
   </div>
-  <br> -->
+  <br>
   <!-- END Category Header for Special Categories -->
   <!--<div class="panel panel-primary">
     <div class="panel-heading">
@@ -88,15 +98,7 @@
     </aside>
     <div ng-class="{ 'col-md-9': navStatus.visible, 'col-md-12': !navStatus.visible }" >
       <categorylistview></categorylistview>
-      <!-- Above Category Message -->
-      <br>
-      <div class="categoryPanel text-center" ng-show="(currentCategory.Name === 'Special Order Items')">
-        <h1><strong>Welcome to the Special Order Items</strong></h1>
-        <h3>FRIENDLY DISCLAIMER - PLEASE READ</h3>
-        <h4>Special Order Items only ship out once a month. Please click and <contentmodal></contentmodal> to find out when your item will ship. Contact Customer Service at 1.855.444.0847 or email us at <a href="mailto:service@nationalservicegear.org?subject=NSG%20Expedited%20Purchase%20Power%20Pricing%20Request">service@nationalservicegear.org</a> to request pricing for shipping items outside of the Special Order schedule.</h4>
-      </div>
-      <br>
-      <!-- End Message -->
+
       <loadingindicator ng-show="productLoadingIndicator" title="{{'Please wait while we fetch all products' | r | xlat}}"/>
       <productlistview></productlistview>
     </div>
