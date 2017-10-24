@@ -87,15 +87,15 @@
       </div>
     </aside>
     <div ng-class="{ 'col-md-9': navStatus.visible, 'col-md-12': !navStatus.visible }" >
+      <categorylistview></categorylistview>
       <!-- Above Category Message -->
       <br>
-      <div class="categoryPanel text-center" ng-show="(currentCategory.Name === {{'Special Order Items' | r | xlat}})">
+      <div class="categoryPanel text-center" ng-show="(currentCategory.Name === 'Special Order Items')">
         <h2 class="colorNavy"><strong>Welcome to the Special Order Items</strong></h2>
         <h4 >These will ship out every 2 weeks.</h4>
       </div>
       <br>
       <!-- End Message -->
-      <categorylistview></categorylistview>
       <loadingindicator ng-show="productLoadingIndicator" title="{{'Please wait while we fetch all products' | r | xlat}}"/>
       <productlistview></productlistview>
     </div>
