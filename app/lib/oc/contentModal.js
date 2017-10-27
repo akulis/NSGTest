@@ -22,7 +22,7 @@ function contentmodal() {
             // update the size of the modal window within the open()
             '<a ng-click="open(500)">',
             // replace the *Open Modal* below with your link name
-            '<span class="fa fa-info-circle"></span> {{\'READ PRODUCTION SCHEDULE DETAILS\' | r | xlat}}',
+            '<span class="fa fa-info-circle"></span> {{\'CLICK HERE & READ THE SPECIAL ORDER PRODUCTION SCHEDULE\' | r | xlat}}',
             '</a>'
         ].join('');
     }
@@ -63,7 +63,7 @@ function ContentModalCtrl($scope, $modal) {
                 '</style>',
                 '<div class="modal-header" class="col-xs-12 row pull-right">',
                 //Optional title in top header
-                '<h5 class="modal-title text-primary">2017 Purchase Power Production Schedule</h5>',
+                '<h5 class="modal-title text-primary">2017 Special Order Production Schedule</h5>',
                 //Optional close (x) in top header
                 '<a class="pull-right close" ng-click="close()">',
                 '<i class="fa fa-times"></i>',
