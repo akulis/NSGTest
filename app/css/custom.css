@@ -6,68 +6,9 @@
   margin-left: auto;
   padding-top: 15px;
 }
-.white {
-    color: #FFFFFF;
-}
-.NSGcenter {
-    text-align: center;
-}
-.checkoutButtonText {
-  font-size: 2vmin !important;
-}
 /* Moves checkout buttons behind navbar when scrolling */
 .checkoutButtonZIndex {
   z-index: -1;
-}
-.FontSmall {
-    font-size: 85%;
-}
-/* Billing Bullets */
-.FontSmall ul li {
-  list-style-type: disc;
-}
-.FontSize07 {
-    font-size: 7pt;
-}
-.FontItalics {
-    font-style: italic;
-}
-/* Spending Account Nav Option */
-.spendingaccounts {
-  padding: 15px 8px;
-  color: #ffffff;
-  font-size: 75%;
-}
-.spendingaccounts-xs {
-  padding: 18px 0px 0px 0px;
-  color: #ffffff;
-  font-size: 1.7vmin;
-}
-/* These will line up from left if needed
-#NSGCircleNavBar {
-    display: inline;
-    float: left;
-}
-#NSGFontNavBar {
-    clear: none;
-    display: inline;
-    float: left;
-    margin-left: 10px;
-}
-*/
-/*.NSGMiddle {
-    vertical-align: middle;
-}
-*/
-/* Jumbor Header Home Page*/
-.jumboHeaderText {
-    text-align: center;
-    /*vertical-align: middle;*/
-    padding-top: 20px;
-    color: #FFFFFF;
-    /*position: relative;
-    top: 50%;
-    transform: translateY(-50%);*/
 }
 /* Nav Logo */
 .navLogo {
@@ -79,90 +20,9 @@
     max-width: 100%;
     /*max-height: 250px;*/
 }
-.jumbotron {
-  padding: 0px;
-}
-/*Edit Jumbrotron width - $ak */
-.jumbotron {
-  margin: 45px 0px -45px;
-  /* margin: 45px 5px -45px; */
-  display: none;
-}
-/* NSG Tooltip */
-.NSGtooltip {
-    position: relative;
-    display: inline-block;
-    border-bottom: 1px dotted black;
-}
-.NSGtooltip .NSGtooltiptext {
-    visibility: hidden;
-    width: 200px;
-    background-color: black;
-    color: #fff;
-    font-style: normal;
-    font-size: 10pt;
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px 0;
-    position: absolute;
-    z-index: 1;
-    bottom: 150%;
-    left: 50%;
-    margin-left: -100px;
-}
-.NSGtooltip .NSGtooltiptext::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: black transparent transparent transparent;
-}
-.NSGtooltip:hover .NSGtooltiptext {
-    visibility: visible;
-}
 .purchasePowerModalBox {
     text-align: center;
     max-width: 500px;
-}
-.jumbotronInnerShadow {
-    -webkit-box-shadow: inset 0px 0px 20px 10px rgba(0,0,0,0.1);
-    -moz-box-shadow: inset 0px 0px 20px 10px rgba(0,0,0,0.1);
-    box-shadow: inset 0px 0px 20px 10px rgba(0,0,0,0.1);
-}
-/* Navbar Drop Shadow */
-.navbarDropShadow {
-    -webkit-box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.42);
-    -moz-box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.42);
-    box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.42);
-}
-.navbarInnerShadow {
-    -webkit-box-shadow: inset 0px 0px 15px 5px rgba(0,0,0,0.1);
-    -moz-box-shadow: inset 0px 0px 15px 5px rgba(0,0,0,0.1);
-    box-shadow: inset 0px 0px 15px 5px rgba(0,0,0,0.1);
-}
-#vertAlignJumbo {
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-}
-/* Adjust product list border/backgrounds $ak */
-.panel-product-list {
-    border-radius: 0px;
-    border-color: transparent;
-}
-.panel-product-list .well {
-  background-color: transparent;
-  border: none;
-  border-color: transparent;
-}
-.panel-product-list .aLinkSpacingFix {
-  color: #333333;
-}
-.panel-product-list .well {
-  border-color: transparent;
 }
 /*Changes size of images on category page*/
 .thumbnail img {
@@ -171,20 +31,6 @@
   margin: 0 auto 15px;
 }
 
-/* This counters the spacing issue on the product list page with <a> links */
-.aLinkSpacingFix p a {
-    padding: 0em !important;
-    display: inline !important;
-    text-decoration: none;
-}
-.NSGCategoryButtonPadding {
-    margin: 0px 25px 25px 25px;
-}
-.NSGCategoryButton {
-    -webkit-box-shadow: 8px 8px 15px 0px rgba(0,0,0,0.42);
-    -moz-box-shadow: 8px 8px 15px 0px rgba(0,0,0,0.42);
-    box-shadow: 8px 8px 15px 0px rgba(0,0,0,0.42);
-}
 /* Fixes row issues with Category List page */
 .panel-category-list ul li a h5 {
     height: 50px;
@@ -724,4 +570,12 @@ h2 .jumbotron {
 }
 .panel-category-list .well {
   border-color: #dedede;
+}
+.NSGCategoryButtonPadding {
+    margin: 0px 25px 25px 25px;
+}
+.NSGCategoryButton {
+    -webkit-box-shadow: 8px 8px 15px 0px rgba(0,0,0,0.42);
+    -moz-box-shadow: 8px 8px 15px 0px rgba(0,0,0,0.42);
+    box-shadow: 8px 8px 15px 0px rgba(0,0,0,0.42);
 }
