@@ -13,11 +13,11 @@
         </a>
     </div>
     <div class="col-sm-8 text-left">
-        <div class="panel-body">
+        <div class="panel-body searchViewBullets">
             <h3>{{LineItem.Product.Name}}
                 <small class="pull-right text-info">{{LineItem.Product.ExternalID}}</small>
             </h3>
-            <p class="searchViewBullets hidden-xs hidden-sm" ng-bind-html="trustedDescription(LineItem.Product)" ng-show="LineItem.Product.Description" />
+            <p class="hidden-xs hidden-sm" ng-bind-html="trustedDescription(LineItem.Product)" ng-show="LineItem.Product.Description" />
             <!-- Shows large price on category page -->
             <h3 ng-show="LineItem.PriceSchedule.PriceBreaks[0]" ng-if="!(user.Permissions.contains('HidePricing'))">
                 {{LineItem.PriceSchedule.PriceBreaks[0].Price | culturecurrency}}
