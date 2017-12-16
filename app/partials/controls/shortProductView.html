@@ -17,25 +17,24 @@
             <h3>{{LineItem.Product.Name}}
                 <small class="pull-right text-info">{{LineItem.Product.ExternalID}}</small>
             </h3>
-            <p class="searchViewBullets" ng-bind-html="trustedDescription(LineItem.Product)" ng-show="LineItem.Product.Description" />
+            <p class="searchViewBullets hidden-xs hidden-sm" ng-bind-html="trustedDescription(LineItem.Product)" ng-show="LineItem.Product.Description" />
             <!-- Shows large price on category page -->
             <h3 ng-show="LineItem.PriceSchedule.PriceBreaks[0]" ng-if="!(user.Permissions.contains('HidePricing'))">
                 {{LineItem.PriceSchedule.PriceBreaks[0].Price | culturecurrency}}
             </h3>
-            <section class="hidden-xs hidden-sm panel-body">
-                <!-- <p ng-show="LineItem.PriceSchedule.PriceBreaks[0]" ng-if="!(user.Permissions.contains('HidePricing'))">
+            <p ng-show="LineItem.Product.UnitOfMeasure">
+                {{'Unit of Measure' | r | xlat}}: {{LineItem.Product.UnitOfMeasure}}
+            </p>
+            <p ng-show="LineItem.Product.DisplayInventory && inventoryDisplay(LineItem.Product, LineItem.Variant) != undefined">
+                {{'Quantity Available' | r | xlat}}: {{inventoryDisplay(LineItem.Product, LineItem.Variant) }}
+            </p>
+            <!-- <section class="panel-body">
+                <p ng-show="LineItem.PriceSchedule.PriceBreaks[0]" ng-if="!(user.Permissions.contains('HidePricing'))">
                     {{LineItem.PriceSchedule.PriceBreaks[0].Quantity}}
                     <span ng-show="LineItem.Product.QuantityMultiplier > 1">(x {{LineItem.Product.QuantityMultiplier}})</span>
                     {{'for' | xlat}} {{LineItem.PriceSchedule.PriceBreaks[0].Price | culturecurrency}}
-                </p> -->
-                <p ng-show="LineItem.Product.UnitOfMeasure">
-                    {{'Unit of Measure' | r | xlat}}: {{LineItem.Product.UnitOfMeasure}}
                 </p>
-
-                <p ng-show="LineItem.Product.DisplayInventory && inventoryDisplay(LineItem.Product, LineItem.Variant) != undefined">
-                    {{'Quantity Available' | r | xlat}}: {{inventoryDisplay(LineItem.Product, LineItem.Variant) }}
-                </p>
-            </section>
+            </section> -->
         </div>
     </div>
     <section class="hidden-lg hidden-md" ng-show="showSwipe" ng-swipe-right="showSwipe = false">
