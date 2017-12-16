@@ -310,7 +310,7 @@
     list-style-type: disc;
     margin-left:25px;
 }
-.searchViewBullets p ul li {
+.searchViewBullets ul {
     list-style-type: disc;
     /*margin-left:25px;*/
 }
