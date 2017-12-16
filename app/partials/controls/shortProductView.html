@@ -17,17 +17,17 @@
             <h3>{{LineItem.Product.Name}}
                 <small class="pull-right text-info">{{LineItem.Product.ExternalID}}</small>
             </h3>
-            <p ng-bind-html="trustedDescription(LineItem.Product)" ng-show="LineItem.Product.Description" />
-            <section class="hidden-xs hidden-sm panel-body searchViewBullets">
+            <p class="searchViewBullets" ng-bind-html="trustedDescription(LineItem.Product)" ng-show="LineItem.Product.Description" />
+            <!-- Shows large price on category page -->
+            <h3 ng-show="LineItem.PriceSchedule.PriceBreaks[0]" ng-if="!(user.Permissions.contains('HidePricing'))">
+                {{LineItem.PriceSchedule.PriceBreaks[0].Price | culturecurrency}}
+            </h3>
+            <section class="hidden-xs hidden-sm panel-body">
                 <!-- <p ng-show="LineItem.PriceSchedule.PriceBreaks[0]" ng-if="!(user.Permissions.contains('HidePricing'))">
                     {{LineItem.PriceSchedule.PriceBreaks[0].Quantity}}
                     <span ng-show="LineItem.Product.QuantityMultiplier > 1">(x {{LineItem.Product.QuantityMultiplier}})</span>
                     {{'for' | xlat}} {{LineItem.PriceSchedule.PriceBreaks[0].Price | culturecurrency}}
                 </p> -->
-                <!-- Shows large price on category page -->
-                <h3 ng-show="LineItem.PriceSchedule.PriceBreaks[0]" ng-if="!(user.Permissions.contains('HidePricing'))">
-                    {{LineItem.PriceSchedule.PriceBreaks[0].Price | culturecurrency}}
-                </h3>
                 <p ng-show="LineItem.Product.UnitOfMeasure">
                     {{'Unit of Measure' | r | xlat}}: {{LineItem.Product.UnitOfMeasure}}
                 </p>
