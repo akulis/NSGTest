@@ -310,6 +310,10 @@
     list-style-type: disc;
     margin-left:25px;
 }
+.searchViewBullets ul {
+    list-style-type: disc;
+    /*margin-left:25px;*/
+}
 .contactListStyle ul li {
     list-style-type: disc;
     margin-left:25px;
