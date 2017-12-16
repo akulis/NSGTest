@@ -105,8 +105,8 @@ four51.app.filter('shipperFilter', function() {
 four51.app.filter('LowInventory',function() {
     debugger;
     return function(object) {
-        if QuantityAvailable < 1 {
-            return object.replace(QuantityAvailable, 'Item on Back Order');
+        if item.QuantityAvailable < 1 {
+            return object.replace(item.QuantityAvailable, 'Item on Back Order');
         }
     }
 });
