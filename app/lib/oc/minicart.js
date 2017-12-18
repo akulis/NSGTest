@@ -39,7 +39,7 @@
                 '</style>',
                 '<div ng-show="currentOrder && cartCount && !isInPath(\'order/\')">',
                 '    <div class="minicart">',
-                '        <i class="fa fa-shopping-cart"></i> <span class="label label-default hidden-xs">{{cartCount + \' ITEM(S)\'}}</span> <span class="hidden-xs"> - {{currentOrder.Total | currency }}</span> <i class="fa fa-caret-down text-mutedCaretDown"></i>',
+                '        <i class="fa fa-shopping-cart"></i> <span class="label label-default hidden-xs hidden-sm">{{cartCount + \' ITEM(S)\'}}</span> <span class="hidden-xs hidden-sm"> - {{currentOrder.Total | currency }}</span> <i class="fa fa-caret-down text-mutedCaretDown"></i>',
                 '        <div class="minicart-detail">',
                 '            <i class="fa fa-caret-up fa-2x"></i>',
                 '            <ul>',
