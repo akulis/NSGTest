@@ -2,7 +2,7 @@ angular.module('OrderCloud-FixedFooter', []);
 
 angular.module('OrderCloud-FixedFooter')
     .directive('fixedfooter', fixedfooter)
-    .directive('orderbuttons', orderbuttons)
+    // .directive('orderbuttons', orderbuttons)
     .controller('FixedFooterCtrl', FixedFooterCtrl)
 ;
 
