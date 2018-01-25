@@ -4,7 +4,7 @@
                 ng-show="user.Permissions.contains('PayByPO')"
                 ng-click="currentOrder.PaymentMethod = 'PurchaseOrder'">
             <i ng-class="{'fa fa-check': currentOrder.PaymentMethod == 'PurchaseOrder' }"></i>
-            {{'Purchase Order' | r | xlat}}
+            {{'Purchase Order/Prepay By Check' | r | xlat}}
         </button>
         <button class="btn btn-default" type="button"
                 ng-show="user.Permissions.contains('SubmitForApproval') && currentOrder.Approvals"
