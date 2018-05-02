@@ -17,7 +17,8 @@
 }
 
 .checkoutButtonText {
-  font-size: 2vmin !important;
+  font-size: 1.4vmin;
+  font-size: 1.4vmax;
 }
 
 /* Moves checkout buttons behind navbar when scrolling */
