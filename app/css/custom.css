@@ -681,6 +681,10 @@
 
 /* Theme CSS Edits */
 
+.table .table {
+  background-color: #f7f7f7;
+}
+
 .container .navbar-nav li.active a:hover {
   background-color: #cf5c36;
   /*99C24D*/
@@ -726,6 +730,12 @@
   border-color: #ffffff;
 }
 
+.dropup .caret, .navbar-fixed-bottom .dropdown .caret, .navbar-fixed-bottom .dropdown-mega .caret {
+  border-top: 0;
+  border-bottom: 0px none;
+  content: "";
+}
+
 .badge {
   background-color: undefined;
 }
@@ -765,13 +775,10 @@ body {
   background-color: #ffffff;
 }
 
-/*body {
-  background-color: #ffffff;
+a:hover, a:focus {
+  color: #2b2b2b;
+  text-decoration: underline;
 }
-
-body {
-  color: #333333;
-}*/
 
 .text-primary {
   color: #0b3648;
@@ -783,6 +790,12 @@ body {
 
 body a {
   color: #e04f4f;
+}
+
+.btn-link:hover, .btn-link:focus {
+  color: #2b2b2b;
+  text-decoration: underline;
+  background-color: transparent;
 }
 
 .btn-primary {
