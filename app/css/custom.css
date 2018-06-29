@@ -758,12 +758,20 @@
 }
 
 body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #333333;
+  background-color: #ffffff;
+}
+
+/*body {
   background-color: #ffffff;
 }
 
 body {
   color: #333333;
-}
+}*/
 
 .text-primary {
   color: #0b3648;
