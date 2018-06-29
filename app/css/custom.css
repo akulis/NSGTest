@@ -373,7 +373,8 @@
   margin: 0;
 }
 
-.flushFooter, .push {
+.flushFooter,
+.push {
   height: 210px;
   /* .push must be the same height as .footer */
 }
@@ -519,7 +520,9 @@
 
 /* Use this to transition icons */
 
-.iconTrans, .iconTrans:hover, .iconTrans:focus {
+.iconTrans,
+.iconTrans:hover,
+.iconTrans:focus {
   -webkit-transition: all ease-in-out 0.5s;
   -moz-transition: all ease-in-out 0.5s;
   -ms-transition: all ease-in-out 0.5s;
@@ -527,27 +530,27 @@
   transition: all ease-in-out 0.5s;
 }
 
-.socialFooter>.text-left>.iconTrans {
+.socialFooter > .text-left > .iconTrans {
   color: #ffffff;
   /*E04F4F*/
 }
 
-.socialFooter>.text-left>.iconTwitter:hover {
+.socialFooter > .text-left > .iconTwitter:hover {
   color: #00aced !important;
   /* 2B2B2B */
 }
 
-.socialFooter>.text-left>.iconFacebook:hover {
+.socialFooter > .text-left > .iconFacebook:hover {
   color: #3b5998 !important;
   /* 2B2B2B */
 }
 
-.socialFooter>.text-left>.iconInstagram:hover {
+.socialFooter > .text-left > .iconInstagram:hover {
   color: #517fa4 !important;
   /* 2B2B2B */
 }
 
-.socialFooter>.text-left>.iconLinkedIn:hover {
+.socialFooter > .text-left > .iconLinkedIn:hover {
   color: #007bb6 !important;
   /* 2B2B2B */
 }
@@ -694,23 +697,23 @@
   background-color: #cf5c36;
 }
 
-.navbar-default .navbar-nav .open>a {
+.navbar-default .navbar-nav .open > a {
   background-color: #cf5c36;
 }
 
-.navbar-default .navbar-nav .open>a:hover {
+.navbar-default .navbar-nav .open > a:hover {
   background-color: #cf5c36;
 }
 
-.navbar-default .navbar-nav .open>a:focus {
+.navbar-default .navbar-nav .open > a:focus {
   background-color: #cf5c36;
 }
 
-.navbar-nav li.dropdown li>a:hover {
+.navbar-nav li.dropdown li > a:hover {
   background-color: #cf5c36;
 }
 
-.navbar-nav li.dropdown li>a:focus {
+.navbar-nav li.dropdown li > a:focus {
   background-color: #cf5c36;
 }
 
@@ -718,11 +721,11 @@
   color: #cf5c36;
 }
 
-.navbar-nav li.dropdown li>a {
+.navbar-nav li.dropdown li > a {
   color: #333333;
 }
 
-.navbar-nav li.dropdown li>a:hover {
+.navbar-nav li.dropdown li > a:hover {
   color: #ffffff;
 }
 
@@ -730,7 +733,9 @@
   border-color: #ffffff;
 }
 
-.dropup .caret, .navbar-fixed-bottom .dropdown .caret, .navbar-fixed-bottom .dropdown-mega .caret {
+.dropup .caret,
+.navbar-fixed-bottom .dropdown .caret,
+.navbar-fixed-bottom .dropdown-mega .caret {
   border-top: 0;
   border-bottom: 0px none;
   content: "";
@@ -751,12 +756,34 @@
   background-color: #0b3648;
   border-radius: 10px;
 }
-
+.well {
+  min-height: 20px;
+  padding: 19px;
+  margin-bottom: 20px;
+  background-color: #ffffff;
+  border: 1px solid #f7f7f7;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+}
 .navbar-default {
   background-color: #0069aa;
   border-color: none;
 }
-
+/* Change Back Left Arrow Color */
+.navbar .container .navbar-nav.pull-left li.fadeInLeft a i,
+.navbar .container-view .navbar-nav.pull-left li.fadeInLeft a i {
+  color: #ffffff;
+}
+/* Remove Border Radius and Border for Shopping Cart Icon, Add to Custom CSS for Shopping Cart Only. This is to avoid having circles around social media icons -$ak */
+.navbar .container .navbar-nav.pull-right li a i:first-of-type,
+.navbar .container-view .navbar-nav.pull-right li a i:first-of-type {
+  border-radius: 0;
+  border: none;
+  text-align: center;
+  padding: 10px;
+  margin-top: -10px;
+}
 /*Navbar*/
 
 .nav {
@@ -764,8 +791,12 @@
   padding-left: 0;
   list-style: none;
 }
-
-.nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus {
+.nav.visible-sm.visible-xs.visible-xxs {
+  margin-bottom: 10px;
+}
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
   color: #555555;
   background-color: #f7f7f7;
   border: 1px solid #dddddd;
@@ -777,11 +808,11 @@
   color: #ffffff;
 }
 
-.container .navbar-nav li.active>a {
+.container .navbar-nav li.active > a {
   background-color: #cf5c36;
 }
 
-.container .navbar-nav li.active>a {
+.container .navbar-nav li.active > a {
   color: undefined;
 }
 
@@ -796,19 +827,21 @@
   border: none;
 }
 
-.navbar-default, .dropdown-mega {
+.navbar-default,
+.dropdown-mega {
   border-color: ;
 }
 
 body {
-  font-family: 'Droid Sans', sans-serif;
+  font-family: "Droid Sans", sans-serif;
   font-size: 14px;
   line-height: 1.42857143;
   color: #333333;
   background-color: #ffffff;
 }
 
-a:hover, a:focus {
+a:hover,
+a:focus {
   color: #2b2b2b;
   text-decoration: underline;
 }
@@ -833,13 +866,17 @@ body a {
   border-radius: 4px;
 }
 
-.pagination>li>a:hover, .pagination>li>span:hover, .pagination>li>a:focus, .pagination>li>span:focus {
+.pagination > li > a:hover,
+.pagination > li > span:hover,
+.pagination > li > a:focus,
+.pagination > li > span:focus {
   color: #2b2b2b;
   background-color: #eeeeee;
   border-color: #dddddd;
 }
 
-.btn-link:hover, .btn-link:focus {
+.btn-link:hover,
+.btn-link:focus {
   color: #2b2b2b;
   text-decoration: underline;
   background-color: transparent;
@@ -849,7 +886,8 @@ body a {
   background-color: #0b3648;
 }
 
-.btn-primary, .btn-primary:hover {
+.btn-primary,
+.btn-primary:hover {
   color: #ffffff;
 }
 
@@ -865,7 +903,8 @@ body a {
   background-color: #ffffff;
 }
 
-.btn-default, .btn-default:hover {
+.btn-default,
+.btn-default:hover {
   color: #333333;
 }
 
@@ -881,7 +920,8 @@ body a {
   background-color: #ffffff;
 }
 
-.btn-checkout, .btn-checkout:hover {
+.btn-checkout,
+.btn-checkout:hover {
   color: #333333;
 }
 
@@ -899,7 +939,8 @@ body a {
   background-color: #ffffff;
 }
 
-.btn-checkout, .btn-checkout:hover {
+.btn-checkout,
+.btn-checkout:hover {
   color: #333333;
 }
 
@@ -917,17 +958,37 @@ body a {
   border-color: #cccccc;
 }
 
-.btn-checkout:hover, .btn-checkout:focus, .btn-checkout:active, .btn-checkout.active, .open .dropdown-toggle.btn-checkout {
+.btn-checkout:hover,
+.btn-checkout:focus,
+.btn-checkout:active,
+.btn-checkout.active,
+.open .dropdown-toggle.btn-checkout {
   color: #333333;
   background-color: #ebebeb;
   border-color: #adadad;
 }
 
-.btn-checkout:active, .btn-checkout.active, .open .dropdown-toggle.btn-checkout {
+.btn-checkout:active,
+.btn-checkout.active,
+.open .dropdown-toggle.btn-checkout {
   background-image: none;
 }
 
-.btn-checkout.disabled, .btn-checkout[disabled], fieldset[disabled] .btn-checkout, .btn-checkout.disabled:hover, .btn-checkout[disabled]:hover, fieldset[disabled] .btn-checkout:hover, .btn-checkout.disabled:focus, .btn-checkout[disabled]:focus, fieldset[disabled] .btn-checkout:focus, .btn-checkout.disabled:active, .btn-checkout[disabled]:active, fieldset[disabled] .btn-checkout:active, .btn-checkout.disabled.active, .btn-checkout[disabled].active, fieldset[disabled] .btn-checkout.active {
+.btn-checkout.disabled,
+.btn-checkout[disabled],
+fieldset[disabled] .btn-checkout,
+.btn-checkout.disabled:hover,
+.btn-checkout[disabled]:hover,
+fieldset[disabled] .btn-checkout:hover,
+.btn-checkout.disabled:focus,
+.btn-checkout[disabled]:focus,
+fieldset[disabled] .btn-checkout:focus,
+.btn-checkout.disabled:active,
+.btn-checkout[disabled]:active,
+fieldset[disabled] .btn-checkout:active,
+.btn-checkout.disabled.active,
+.btn-checkout[disabled].active,
+fieldset[disabled] .btn-checkout.active {
   background-color: #ffffff;
   border-color: #cccccc;
 }
@@ -943,7 +1004,8 @@ body a {
   background-color: #5bc0de;
 }
 
-.btn-info, .btn-info:hover {
+.btn-info,
+.btn-info:hover {
   color: #ffffff;
 }
 
@@ -959,7 +1021,8 @@ body a {
   background-color: #5cb85c;
 }
 
-.btn-success, .btn-success:hover {
+.btn-success,
+.btn-success:hover {
   color: #ffffff;
 }
 
@@ -975,7 +1038,8 @@ body a {
   background-color: #f0ad4e;
 }
 
-.btn-warning, .btn-warning:hover {
+.btn-warning,
+.btn-warning:hover {
   color: #ffffff;
 }
 
@@ -992,7 +1056,8 @@ body a {
   /*D9534F*/
 }
 
-.btn-danger, .btn-danger:hover {
+.btn-danger,
+.btn-danger:hover {
   color: #ffffff;
 }
 
@@ -1012,7 +1077,15 @@ body a {
 h2 .jumbotron {
   color: #ffffff;
 }
-
+/*Edit Jumbrotron width - $ak */
+.jumbotron {
+  margin: 45px 0px -45px;
+  display: none;
+}
+.panel .panel-heading {
+  border-top: none;
+  padding: 0;
+}
 .panel-primary .panel-heading .panel-title {
   background-color: #cf5c36;
 }
@@ -1058,21 +1131,66 @@ h2 .jumbotron {
 }
 
 @media (min-width: 768px) {
-  .nav-tabs.nav-justified>li>a {
+  .nav-tabs.nav-justified > li > a {
     border-bottom: 1px solid #dddddd;
     border-radius: 4px 4px 0 0;
   }
-  .nav-tabs.nav-justified>.active>a, .nav-tabs.nav-justified>.active>a:hover, .nav-tabs.nav-justified>.active>a:focus {
+  .nav-tabs.nav-justified > .active > a,
+  .nav-tabs.nav-justified > .active > a:hover,
+  .nav-tabs.nav-justified > .active > a:focus {
     border-bottom-color: #f7f7f7;
   }
 }
 
 @media (min-width: 768px) {
-  .nav-tabs-justified>li>a {
+  .nav-tabs-justified > li > a {
     border-bottom: 1px solid #dddddd;
     border-radius: 4px 4px 0 0;
   }
-  .nav-tabs-justified>.active>a, .nav-tabs-justified>.active>a:hover, .nav-tabs-justified>.active>a:focus {
+  .nav-tabs-justified > .active > a,
+  .nav-tabs-justified > .active > a:hover,
+  .nav-tabs-justified > .active > a:focus {
     border-bottom-color: #f7f7f7;
+  }
+}
+.visible-xxs,
+.visible-xs,
+.visible-sm,
+.visible-md,
+.visible-lg {
+  display: none !important;
+}
+
+/* Updated the min-width to work with .visible-xxs - $ak */
+
+@media (max-width: 719px) {
+  .visible-xxs {
+    display: block !important;
+  }
+  table.visible-xxs {
+    display: table;
+  }
+  tr.visible-xxs {
+    display: table-row !important;
+  }
+  th.visible-xxs,
+  td.visible-xxs {
+    display: table-cell !important;
+  }
+}
+
+@media (min-width: 720px) and (max-width: 767px) {
+  .visible-xs {
+    display: block !important;
+  }
+  table.visible-xs {
+    display: table;
+  }
+  tr.visible-xs {
+    display: table-row !important;
+  }
+  th.visible-xs,
+  td.visible-xs {
+    display: table-cell !important;
   }
 }
