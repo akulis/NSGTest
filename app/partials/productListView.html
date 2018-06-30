@@ -1,8 +1,8 @@
 <div class="panel" ng-show="products">
   <div class="panel-heading">
-    <h3 class="panel-title">
+    <h1 class="panel-title">
             {{'Products' | r | xlat}}
-        </h3>
+        </h1>
   </div>
   <div ng-show="currentCategory.Description" ng-bind-html="trusted(currentCategory.Description)" class="category_desc"></div>
   <div ng-show="productCount > settings.pageSize">
