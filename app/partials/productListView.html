@@ -13,7 +13,7 @@
     <nav class="nav">
       <loadingindicator ng-show="searchLoading" title="{{'Please wait while we fetch all products' | r | xlat}}" />
       <div class="row view-form-icon" ng-show="currentCategory.SortOptions.length > 0">
-        <div class="col-xs-9 NSGcenter">
+        <div class="col-xs-9">
           <label>{{'Sort by' | r | xlat}}</label>
           <select class="form-control" ng-options="option.SortValue as (option.Display | xlat) for option in currentCategory.SortOptions" ng-model="sort"><option value=""></option></select>
           <i class="fa fa-sort" />
