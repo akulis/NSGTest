@@ -81,6 +81,17 @@
   </div>
 
   <form ng-show="user.Permissions.contains('ViewSelfAdmin')" name="user_form" ng-submit="save()">
+    <!-- Adds text before "Create Account" -->
+    <!-- <div class="panel panel-default" id="user_form">
+      <div class="panel-heading">
+        <h3 class="panel-title">{{('Please' | r) + ' ' + ('Read' | r) | xlat}}</h3>
+      </div>
+      <div class="panel-body">
+        <div class="NSGcenter">
+          <p class="NSGcenter"><strong>Any questions, please contact Customer Service at 1.855.444.0847 or by email, <a href="mailto:service@nationalservicegear.org?subject=NSG%20Custom%20Inquiry">service@nationalservicegear.org</a>.</strong></p>
+        </div>
+      </div>
+    </div> -->
     <div class="panel panel-default" id="user_form">
       <div class="panel-heading">
         <h3 class="panel-title">{{(user.Type == 'TempCustomer' ? 'Create' : 'My') + ' ' + ('Account' | r) | xlat}}</h3>
