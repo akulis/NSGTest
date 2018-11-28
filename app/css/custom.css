@@ -6,31 +6,13 @@
   margin-left: auto;
   padding-top: 15px;
 }
-/* Jumbor Header Text*/
-.jumboHeaderText {
-  padding-top: 20px;
-  color: #ffffff;
-  margin: 0 auto;
-  text-align: center;
-  /*position: relative;
-    top: 50%;
-    transform: translateY(-50%);*/
-}
+/* Main Home Page Banner */
 /* Jumbotron settings */
 .jumbotron {
   background-color: transparent !important;
 }
 h2 .jumbotron {
   color: #ffffff;
-}
-
-/*Edit Jumbrotron width - $ak */
-/.jumbotron {
-  margin: 45px 0px -45px;
-  display: none;
-}
-.jumbotron {
-  padding: 0px;
 }
 /* Navbar Logo */
 .navLogo {
@@ -41,12 +23,6 @@ h2 .jumbotron {
 .bannerLogo {
   max-width: 100%;
   /*max-height: 250px;*/
-}
-
-#vertAlignJumbo {
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
 }
 /*Changes size of images on category page*/
 .thumbnail img {
@@ -108,61 +84,10 @@ h2 .jumbotron {
 .table .table {
   background-color: #f7f7f7;
 }
-.dropup .caret,
-.navbar-fixed-bottom .dropdown .caret,
-.navbar-fixed-bottom .dropdown-mega .caret {
-  border-top: 0;
-  border-bottom: 0px none;
-  content: "";
-}
-.badge {
-  display: inline-block;
-  min-width: 10px;
-  padding: 3px 7px;
-  font-size: 11px;
-  font-weight: bold;
-  color: #ffffff;
-  line-height: 1;
-  vertical-align: baseline;
-  white-space: nowrap;
-  text-align: center;
-  /* Change Shopping Cart Indicator Background - $ak */
-  background-color: undefined;
-  border-radius: 10px;
-}
-.well {
-  min-height: 20px;
-  padding: 19px;
-  margin-bottom: 20px;
-  background-color: #ffffff;
-  border: 1px solid #f7f7f7;
-  border-radius: 4px;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
-}
 /* Change Back Left Arrow Color */
 .navbar .container .navbar-nav.pull-left li.fadeInLeft a i,
 .navbar .container-view .navbar-nav.pull-left li.fadeInLeft a i {
   color: #ffffff;
-}
-/* Remove Border Radius and Border for Shopping Cart Icon, Add to Custom CSS for Shopping Cart Only. This is to avoid having circles around social media icons -$ak */
-.navbar .container .navbar-nav.pull-right li a i:first-of-type,
-.navbar .container-view .navbar-nav.pull-right li a i:first-of-type {
-  border-radius: 0;
-  border: none;
-  text-align: center;
-  padding: 10px;
-  margin-top: -10px;
-}
-
-/*Navbar*/
-.nav {
-  margin-bottom: 0;
-  padding-left: 0;
-  list-style: none;
-}
-.nav.visible-sm.visible-xs.visible-xxs {
-  margin-bottom: 10px;
 }
 .nav-tabs > li.active > a,
 .nav-tabs > li.active > a:hover,
@@ -182,16 +107,6 @@ h2 .jumbotron {
 .container .navbar-nav li.active > a {
   color: undefined;
 }
-
-/* Adjust Navbar Margin and Border*/
-.navbar {
-  /*position: relative;
-  min-height: 60px;
-  margin-left: 0;
-  margin-right: 0;
-  margin-bottom: 0;*/
-  border: none;
-}
 .navbar-default,
 .dropdown-mega {
   border-color: ;
@@ -202,177 +117,6 @@ h2 .jumbotron {
 .text-info {
   color: #31708f;
 }
-.breadcrumb {
-  padding: 8px 15px;
-  margin-bottom: 20px;
-  list-style: none;
-  background-color: #f7f7f7;
-  border-radius: 4px;
-}
-.pagination > li > a:hover,
-.pagination > li > span:hover,
-.pagination > li > a:focus,
-.pagination > li > span:focus {
-  color: #2b2b2b;
-  background-color: #eeeeee;
-  border-color: #dddddd;
-}
-.btn-link:hover,
-.btn-link:focus {
-  color: #2b2b2b;
-  text-decoration: underline;
-  background-color: transparent;
-}
-.btn-primary {
-  background-color: #0b3648;
-}
-.btn-primary,
-.btn-primary:hover {
-  color: #ffffff;
-}
-.btn-primary {
-  border-color: #081b24;
-}
-.btn-primary:hover {
-  background-color: #051118;
-}
-.btn-default {
-  background-color: #ffffff;
-}
-.btn-default,
-.btn-default:hover {
-  color: #333333;
-}
-.btn-default {
-  border-color: #cccccc;
-}
-.btn-default:hover {
-  background-color: #ebebeb;
-}
-.btn-checkout {
-  background-color: #ffffff;
-}
-.btn-checkout,
-.btn-checkout:hover {
-  color: #333333;
-}
-.btn-checkout {
-  border-color: #cccccc;
-}
-.btn-checkout:hover {
-  background-color: #ebebeb;
-}
-/*Checkout Payment Selection Buttons */
-.btn-checkout {
-  background-color: #ffffff;
-}
-.btn-checkout,
-.btn-checkout:hover {
-  color: #333333;
-}
-.btn-checkout {
-  border-color: #cccccc;
-}
-.btn-checkout:hover {
-  background-color: #ebebeb;
-}
-.btn-checkout {
-  color: #333333;
-  background-color: #ffffff;
-  border-color: #cccccc;
-}
-.btn-checkout:hover,
-.btn-checkout:focus,
-.btn-checkout:active,
-.btn-checkout.active,
-.open .dropdown-toggle.btn-checkout {
-  color: #333333;
-  background-color: #ebebeb;
-  border-color: #adadad;
-}
-.btn-checkout:active,
-.btn-checkout.active,
-.open .dropdown-toggle.btn-checkout {
-  background-image: none;
-}
-.btn-checkout.disabled,
-.btn-checkout[disabled],
-fieldset[disabled] .btn-checkout,
-.btn-checkout.disabled:hover,
-.btn-checkout[disabled]:hover,
-fieldset[disabled] .btn-checkout:hover,
-.btn-checkout.disabled:focus,
-.btn-checkout[disabled]:focus,
-fieldset[disabled] .btn-checkout:focus,
-.btn-checkout.disabled:active,
-.btn-checkout[disabled]:active,
-fieldset[disabled] .btn-checkout:active,
-.btn-checkout.disabled.active,
-.btn-checkout[disabled].active,
-fieldset[disabled] .btn-checkout.active {
-  background-color: #ffffff;
-  border-color: #cccccc;
-}
-.btn-checkout .badge {
-  color: #ffffff;
-  background-color: #333333;
-}
-
-/*end checkout payment buttons*/
-.btn-info {
-  background-color: #5bc0de;
-}
-.btn-info,
-.btn-info:hover {
-  color: #ffffff;
-}
-.btn-info {
-  border-color: #46b8da;
-}
-.btn-info:hover {
-  background-color: #39b3d7;
-}
-.btn-success {
-  background-color: #5cb85c;
-}
-.btn-success,
-.btn-success:hover {
-  color: #ffffff;
-}
-.btn-success {
-  border-color: #4cae4c;
-}
-.btn-success:hover {
-  background-color: #00ab41;
-}
-.btn-warning {
-  background-color: #f0ad4e;
-}
-.btn-warning,
-.btn-warning:hover {
-  color: #ffffff;
-}
-.btn-warning {
-  border-color: #eea236;
-}
-.btn-warning:hover {
-  background-color: #ed9c28;
-}
-.btn-danger {
-  background-color: #e04f4f;
-  /*D9534F*/
-}
-.btn-danger,
-.btn-danger:hover {
-  color: #ffffff;
-}
-.btn-danger {
-  border-color: #d43f3a;
-}
-.btn-danger:hover {
-  background-color: #d2322d;
-}
-
 .panel .panel-heading {
   border-top: none;
   padding: 0;
@@ -409,61 +153,4 @@ fieldset[disabled] .btn-checkout.active {
 }
 .panel-category-list .well {
   border-color: #dedede;
-}
-@media (min-width: 768px) {
-  .nav-tabs.nav-justified > li > a {
-    border-bottom: 1px solid #dddddd;
-    border-radius: 4px 4px 0 0;
-  }
-  .nav-tabs.nav-justified > .active > a,
-  .nav-tabs.nav-justified > .active > a:hover,
-  .nav-tabs.nav-justified > .active > a:focus {
-    border-bottom-color: #f7f7f7;
-  }
-}
-@media (min-width: 768px) {
-  .nav-tabs-justified > li > a {
-    border-bottom: 1px solid #dddddd;
-    border-radius: 4px 4px 0 0;
-  }
-  .nav-tabs-justified > .active > a,
-  .nav-tabs-justified > .active > a:hover,
-  .nav-tabs-justified > .active > a:focus {
-    border-bottom-color: #f7f7f7;
-  }
-}
-.visible-xxs {
-  display: none !important;
-}
-
-/* Updated the min-width to work with .visible-xxs - $ak */
-@media (max-width: 719px) {
-  .visible-xxs {
-    display: block !important;
-  }
-  table.visible-xxs {
-    display: table;
-  }
-  tr.visible-xxs {
-    display: table-row !important;
-  }
-  th.visible-xxs,
-  td.visible-xxs {
-    display: table-cell !important;
-  }
-}
-@media (min-width: 720px) and (max-width: 767px) {
-  .visible-xs {
-    display: block !important;
-  }
-  table.visible-xs {
-    display: table;
-  }
-  tr.visible-xs {
-    display: table-row !important;
-  }
-  th.visible-xs,
-  td.visible-xs {
-    display: table-cell !important;
-  }
 }
