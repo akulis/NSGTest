@@ -65,7 +65,7 @@ function productmatrix() {
       '</div>',
       '<div class="alert alert-danger" style="margin-top:20px;" ng-show="qtyError" ng-bind-html="qtyError"></div>',
       '<button class="btn btn-success btn-block btn-lg" type="button" id="451_btn_orderadd" ng-disabled="qtyError || matrixSpecForm.$invalid" ng-click="addVariantsToOrder()">',
-      '<loadingindicator ng-show="addToOrderIndicator" /><i ng-show="qtyError" class="fa fa-warning"></i> {{addToOrderText | r}} <span class="badge" ng-if="!(user.Permissions.contains(\'HidePricing\')) && (product.LineTotal)">{{(product.LineTotal) | culturecurrency}}</span></button>',
+      '<loadingindicator ng-show="addToOrderIndicator" /><i ng-show="qtyError" class="fa fa-warning"></i> {{addToOrderText | r}} <!-- <span class="badge" ng-if="!(user.Permissions.contains(\'HidePricing\')) && (product.LineTotal + group.Markup)">{{(product.LineTotal + group.Markup) | culturecurrency}}--></span></button>',
       '</div>',
       '</form>'
     ].join('');
