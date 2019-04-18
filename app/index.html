@@ -72,7 +72,7 @@
     </section>
     <section ng-if="Four51User.isAuthenticated()" id="content">
       <section class="hidden-print">
-        <navigation />
+        <hamburgernavigation />
       </section>
       <section class="hidden-print">
         <branding />
@@ -200,7 +200,8 @@
   <script src="js/directives/customphonefield.js" data-group="source"></script>
   <script src="js/directives/customfilefield.js" data-group="source"></script>
   <script src="js/directives/approvalrulelist.js" data-group="source"></script>
-  <script src="js/directives/tree.js" data-group="source"></script>
+  <!-- Comment out for Hamburger Navbar -->
+  <!-- <script src="js/directives/tree.js" data-group="source"></script> -->
   <script src="js/directives/addressinput.js" data-group="source"></script>
   <script src="js/directives/reporting.js" data-group="source"></script>
   <script src="js/directives/inlineerror.js" data-group="source"></script>
@@ -241,6 +242,7 @@
   <script src="lib/oc/minicart.js" data-group="resources"></script>
   <script src="lib/oc/fixedFooter.js" data-group="resources"></script>
   <script src="lib/oc/checkoutItemSummary.js" data-group="resources"></script>
+  <script src="lib/oc/hamburgerNavigation.js" data-group="resources"></script>
 </body>
 <!-- <![endif]-->
 
