@@ -28,6 +28,6 @@ four51.app = angular.module("451order", [
   "OrderCloud-BackToTop",
   "OrderCloud-SameAsShippingCheckbox",
   "OrderCloud-Minicart",
-  "OrderCloud-FixedFooter"
+  "OrderCloud-FixedFooter",
   "OrderCloud-CheckoutItemSummary"
 ]);
